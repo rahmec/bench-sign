@@ -1,0 +1,209 @@
+\doxysection{/home/raximus/repos/work/speck/implementation/\+SPECK/repo/optimized/lib/permutation.c File Reference}
+\hypertarget{permutation_8c}{}\label{permutation_8c}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/permutation.c@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/permutation.c}}
+{\ttfamily \#include "{}permutation.\+h"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}utils.\+h"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for permutation.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{permutation_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{permutation_8c_aeea625e986e8c5992ff47404f8ffbd58}{POS\+\_\+\+BITS}}~\mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}-\/1)
+\item 
+\#define \mbox{\hyperlink{permutation_8c_a015d47469b975951f2f5c8227ed40dcc}{POS\+\_\+\+MASK}}~(((\mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}}) 1 $<$$<$ \mbox{\hyperlink{permutation_8c_aeea625e986e8c5992ff47404f8ffbd58}{POS\+\_\+\+BITS}}) -\/ 1)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{permutation_8c_a5cef305903749c5f5bae466ed0ec312b}{yt\+\_\+shuffle\+\_\+state\+\_\+limit}} (\mbox{\hyperlink{sha3_8h_adae9f13da8f3a47ecf60fc57d69be0d0}{SHAKE\+\_\+\+STATE\+\_\+\+STRUCT}} \texorpdfstring{$\ast$}{*}shake\+\_\+monomial\+\_\+state, \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}} \texorpdfstring{$\ast$}{*}permutation, const uint32\+\_\+t n)
+\item 
+void \mbox{\hyperlink{permutation_8c_a0991280985d2c3dfe0c516d2c24e1126}{yt\+\_\+shuffle\+\_\+state}} (\mbox{\hyperlink{sha3_8h_adae9f13da8f3a47ecf60fc57d69be0d0}{SHAKE\+\_\+\+STATE\+\_\+\+STRUCT}} \texorpdfstring{$\ast$}{*}shake\+\_\+monomial\+\_\+state, \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}} permutation\mbox{[}\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}\mbox{]})
+\item 
+void \mbox{\hyperlink{permutation_8c_a8eb78f252fd74ac7939ee329c0aa2681}{yt\+\_\+shuffle}} (\mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}} permutation\mbox{[}\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}\mbox{]})
+\item 
+void \mbox{\hyperlink{permutation_8c_a9b7326ad4937457371242ad24df78e09}{permutation\+\_\+sample\+\_\+prikey}} (\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}res, const unsigned char seed\mbox{[}\mbox{\hyperlink{parameters_8h_ac23fa7ed851db8ac69cc6e869e700187}{PRIVATE\+\_\+\+KEY\+\_\+\+SEED\+\_\+\+LENGTH\+\_\+\+BYTES}}\mbox{]})
+\item 
+void \mbox{\hyperlink{permutation_8c_a7ca4691c5d5945ccedf5b1e9420244a7}{permutation\+\_\+inv}} (\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}res, const \mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}const to\+\_\+invert)
+\item 
+void \mbox{\hyperlink{permutation_8c_ac2df57d95e9c5367dc0eae54e3f64743}{word\+\_\+permutation\+\_\+sample\+\_\+salt}} (\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} u\mbox{[}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}\mbox{]}, \mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}res, const unsigned char seed\mbox{[}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}}\mbox{]}, const unsigned char salt\mbox{[}\mbox{\hyperlink{parameters_8h_a4f084f0537806da54ffa64182398f6af}{HASH\+\_\+\+DIGEST\+\_\+\+LENGTH}}\mbox{]}, const uint16\+\_\+t round\+\_\+index)
+\item 
+void \mbox{\hyperlink{permutation_8c_a04ace4b9585b71b633bbb0c29fa51b29}{word\+\_\+sample\+\_\+salt}} (\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} u\mbox{[}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}\mbox{]}, const unsigned char seed\mbox{[}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}}\mbox{]}, const unsigned char salt\mbox{[}\mbox{\hyperlink{parameters_8h_a4f084f0537806da54ffa64182398f6af}{HASH\+\_\+\+DIGEST\+\_\+\+LENGTH}}\mbox{]}, const uint16\+\_\+t round\+\_\+index)
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{permutation_8c_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{permutation_8c_aeea625e986e8c5992ff47404f8ffbd58}\index{permutation.c@{permutation.c}!POS\_BITS@{POS\_BITS}}
+\index{POS\_BITS@{POS\_BITS}!permutation.c@{permutation.c}}
+\doxysubsubsection{\texorpdfstring{POS\_BITS}{POS\_BITS}}
+{\footnotesize\ttfamily \label{permutation_8c_aeea625e986e8c5992ff47404f8ffbd58} 
+\#define POS\+\_\+\+BITS~\mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}-\/1)}
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHORS \textquotesingle{}\textquotesingle{}AS IS\textquotesingle{}\textquotesingle{} AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. \Hypertarget{permutation_8c_a015d47469b975951f2f5c8227ed40dcc}\index{permutation.c@{permutation.c}!POS\_MASK@{POS\_MASK}}
+\index{POS\_MASK@{POS\_MASK}!permutation.c@{permutation.c}}
+\doxysubsubsection{\texorpdfstring{POS\_MASK}{POS\_MASK}}
+{\footnotesize\ttfamily \label{permutation_8c_a015d47469b975951f2f5c8227ed40dcc} 
+\#define POS\+\_\+\+MASK~(((\mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}}) 1 $<$$<$ \mbox{\hyperlink{permutation_8c_aeea625e986e8c5992ff47404f8ffbd58}{POS\+\_\+\+BITS}}) -\/ 1)}
+
+
+
+\label{doc-func-members}
+\Hypertarget{permutation_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{permutation_8c_a7ca4691c5d5945ccedf5b1e9420244a7}\index{permutation.c@{permutation.c}!permutation\_inv@{permutation\_inv}}
+\index{permutation\_inv@{permutation\_inv}!permutation.c@{permutation.c}}
+\doxysubsubsection{\texorpdfstring{permutation\_inv()}{permutation\_inv()}}
+{\footnotesize\ttfamily \label{permutation_8c_a7ca4691c5d5945ccedf5b1e9420244a7} 
+void permutation\+\_\+inv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{res}{, }\item[{const \mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}const}]{to\+\_\+invert}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em res\mbox{[}out\mbox{]}} & = to\+\_\+invert\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}-\/1 \\
+\hline
+{\em to\+\_\+invert\mbox{[}in\mbox{]}} & permutation to invert \\
+\hline
+{\em res\mbox{[}out\mbox{]}} & = to\+\_\+invert\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}-\/1 \\
+\hline
+{\em to\+\_\+invert\mbox{[}in\mbox{]}} & permutation to invert \\
+\hline
+\end{DoxyParams}
+\Hypertarget{permutation_8c_a9b7326ad4937457371242ad24df78e09}\index{permutation.c@{permutation.c}!permutation\_sample\_prikey@{permutation\_sample\_prikey}}
+\index{permutation\_sample\_prikey@{permutation\_sample\_prikey}!permutation.c@{permutation.c}}
+\doxysubsubsection{\texorpdfstring{permutation\_sample\_prikey()}{permutation\_sample\_prikey()}}
+{\footnotesize\ttfamily \label{permutation_8c_a9b7326ad4937457371242ad24df78e09} 
+void permutation\+\_\+sample\+\_\+prikey (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{res}{, }\item[{const unsigned char}]{seed}{\mbox{[}\+PRIVATE\+\_\+\+KEY\+\_\+\+SEED\+\_\+\+LENGTH\+\_\+\+BYTES\mbox{]}}\end{DoxyParamCaption})}
+
+expands a monomial matrix, given a double length PRNG seed (used to prevent multikey attacks) 
+\begin{DoxyParams}{Parameters}
+{\em res\mbox{[}out\mbox{]}} & the randomly sampled permutation vector \\
+\hline
+{\em seed\mbox{[}in\mbox{]}} & the seed \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{permutation_8c_a9b7326ad4937457371242ad24df78e09_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{permutation_8c_a9b7326ad4937457371242ad24df78e09_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{permutation_8c_ac2df57d95e9c5367dc0eae54e3f64743}\index{permutation.c@{permutation.c}!word\_permutation\_sample\_salt@{word\_permutation\_sample\_salt}}
+\index{word\_permutation\_sample\_salt@{word\_permutation\_sample\_salt}!permutation.c@{permutation.c}}
+\doxysubsubsection{\texorpdfstring{word\_permutation\_sample\_salt()}{word\_permutation\_sample\_salt()}}
+{\footnotesize\ttfamily \label{permutation_8c_ac2df57d95e9c5367dc0eae54e3f64743} 
+void word\+\_\+permutation\+\_\+sample\+\_\+salt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}}}]{u}{\mbox{[}\+K\mbox{]}, }\item[{\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{res}{, }\item[{const unsigned char}]{seed}{\mbox{[}\+SEED\+\_\+\+LENGTH\+\_\+\+BYTES\mbox{]}, }\item[{const unsigned char}]{salt}{\mbox{[}\+HASH\+\_\+\+DIGEST\+\_\+\+LENGTH\mbox{]}, }\item[{const uint16\+\_\+t}]{round\+\_\+index}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{permutation_8c_ac2df57d95e9c5367dc0eae54e3f64743_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{permutation_8c_a04ace4b9585b71b633bbb0c29fa51b29}\index{permutation.c@{permutation.c}!word\_sample\_salt@{word\_sample\_salt}}
+\index{word\_sample\_salt@{word\_sample\_salt}!permutation.c@{permutation.c}}
+\doxysubsubsection{\texorpdfstring{word\_sample\_salt()}{word\_sample\_salt()}}
+{\footnotesize\ttfamily \label{permutation_8c_a04ace4b9585b71b633bbb0c29fa51b29} 
+void word\+\_\+sample\+\_\+salt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}}}]{u}{\mbox{[}\+K\mbox{]}, }\item[{const unsigned char}]{seed}{\mbox{[}\+SEED\+\_\+\+LENGTH\+\_\+\+BYTES\mbox{]}, }\item[{const unsigned char}]{salt}{\mbox{[}\+HASH\+\_\+\+DIGEST\+\_\+\+LENGTH\mbox{]}, }\item[{const uint16\+\_\+t}]{round\+\_\+index}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{permutation_8c_a04ace4b9585b71b633bbb0c29fa51b29_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{permutation_8c_a04ace4b9585b71b633bbb0c29fa51b29_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{permutation_8c_a8eb78f252fd74ac7939ee329c0aa2681}\index{permutation.c@{permutation.c}!yt\_shuffle@{yt\_shuffle}}
+\index{yt\_shuffle@{yt\_shuffle}!permutation.c@{permutation.c}}
+\doxysubsubsection{\texorpdfstring{yt\_shuffle()}{yt\_shuffle()}}
+{\footnotesize\ttfamily \label{permutation_8c_a8eb78f252fd74ac7939ee329c0aa2681} 
+void yt\+\_\+shuffle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}}}]{permutation}{\mbox{[}\+N\mbox{]}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{permutation_8c_a8eb78f252fd74ac7939ee329c0aa2681_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{permutation_8c_a8eb78f252fd74ac7939ee329c0aa2681_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{permutation_8c_a0991280985d2c3dfe0c516d2c24e1126}\index{permutation.c@{permutation.c}!yt\_shuffle\_state@{yt\_shuffle\_state}}
+\index{yt\_shuffle\_state@{yt\_shuffle\_state}!permutation.c@{permutation.c}}
+\doxysubsubsection{\texorpdfstring{yt\_shuffle\_state()}{yt\_shuffle\_state()}}
+{\footnotesize\ttfamily \label{permutation_8c_a0991280985d2c3dfe0c516d2c24e1126} 
+void yt\+\_\+shuffle\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sha3_8h_adae9f13da8f3a47ecf60fc57d69be0d0}{SHAKE\+\_\+\+STATE\+\_\+\+STRUCT}} \texorpdfstring{$\ast$}{*}}]{shake\+\_\+monomial\+\_\+state}{, }\item[{\mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}}}]{permutation}{\mbox{[}\+N\mbox{]}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em shake\+\_\+monomial\+\_\+state\mbox{[}in/out\mbox{]}} & \\
+\hline
+{\em permutation\mbox{[}in/out\mbox{]}} & random permutation. Must be initialized with \mbox{[}0,....,n-\/1\mbox{]} \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{permutation_8c_a0991280985d2c3dfe0c516d2c24e1126_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{permutation_8c_a5cef305903749c5f5bae466ed0ec312b}\index{permutation.c@{permutation.c}!yt\_shuffle\_state\_limit@{yt\_shuffle\_state\_limit}}
+\index{yt\_shuffle\_state\_limit@{yt\_shuffle\_state\_limit}!permutation.c@{permutation.c}}
+\doxysubsubsection{\texorpdfstring{yt\_shuffle\_state\_limit()}{yt\_shuffle\_state\_limit()}}
+{\footnotesize\ttfamily \label{permutation_8c_a5cef305903749c5f5bae466ed0ec312b} 
+void yt\+\_\+shuffle\+\_\+state\+\_\+limit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sha3_8h_adae9f13da8f3a47ecf60fc57d69be0d0}{SHAKE\+\_\+\+STATE\+\_\+\+STRUCT}} \texorpdfstring{$\ast$}{*}}]{shake\+\_\+monomial\+\_\+state}{, }\item[{\mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}} \texorpdfstring{$\ast$}{*}}]{permutation}{, }\item[{const uint32\+\_\+t}]{n}{}\end{DoxyParamCaption})}
+
+applies a random permutation between \mbox{[}0, n-\/1\mbox{]} on the input permutation 
+\begin{DoxyParams}{Parameters}
+{\em shake\+\_\+monomial\+\_\+state\mbox{[}in/out\mbox{]}} & \\
+\hline
+{\em permutation\mbox{[}in/out\mbox{]}} & random permutation. Must be initialized with \mbox{[}0,....,n-\/1\mbox{]} \\
+\hline
+{\em n} & \texorpdfstring{$<$}{<}= N\+: number of elements in the permutation \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{permutation_8c_a5cef305903749c5f5bae466ed0ec312b_icgraph}
+\end{center}
+\end{figure}

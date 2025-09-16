@@ -1,0 +1,1386 @@
+\doxysection{/home/raximus/repos/work/speck/implementation/\+SPECK/repo/optimized/lib/test/test\+\_\+helpers.c File Reference}
+\hypertarget{test__helpers_8c}{}\label{test__helpers_8c}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/test/test\_helpers.c@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/test/test\_helpers.c}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include "{}sort.\+h"{}}\newline
+{\ttfamily \#include "{}transpose.\+h"{}}\newline
+{\ttfamily \#include "{}fq\+\_\+arith.\+h"{}}\newline
+{\ttfamily \#include "{}LESS.\+h"{}}\newline
+{\ttfamily \#include "{}codes.\+h"{}}\newline
+{\ttfamily \#include "{}monomial\+\_\+mat.\+h"{}}\newline
+{\ttfamily \#include "{}utils.\+h"{}}\newline
+{\ttfamily \#include "{}rng.\+h"{}}\newline
+{\ttfamily \#include "{}canonical.\+h"{}}\newline
+{\ttfamily \#include "{}test\+\_\+helpers.\+h"{}}\newline
+Include dependency graph for test\+\_\+helpers.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{test__helpers_8c_aac454c8db8a423b23c289d725590f194}{int8\+\_\+\+MINMAX}}(a,  b)
+\begin{DoxyCompactList}\small\item\em Sorting ///. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a3a3ccf456439e05d034b125367f2082d}{column\+\_\+swap}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}V, const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}} col1, const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}} col2)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a492aa6aaacb18ae287d4006c6dd392ea}{generator\+\_\+rnd}} (\mbox{\hyperlink{structgenerator__mat__t}{generator\+\_\+mat\+\_\+t}} \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Generator ///. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__helpers_8c_a7cbd76bc13244f4cf3855ab48973b25a}{generator\+\_\+sf}} (\mbox{\hyperlink{structgenerator__mat__t}{generator\+\_\+mat\+\_\+t}} \texorpdfstring{$\ast$}{*}res)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a749488e7d37bf67263de79920481f4f2}{generator\+\_\+pretty\+\_\+print}} (const \mbox{\hyperlink{structgenerator__mat__t}{generator\+\_\+mat\+\_\+t}} \texorpdfstring{$\ast$}{*}const G)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a022d1c37af0190e6aa0e563319893d4f}{generator\+\_\+pretty\+\_\+print\+\_\+name}} (char \texorpdfstring{$\ast$}{*}name, const \mbox{\hyperlink{structgenerator__mat__t}{generator\+\_\+mat\+\_\+t}} \texorpdfstring{$\ast$}{*}const G)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a10174826e9dd67cd9164fec0c0254fe3}{generator\+\_\+rref\+\_\+pretty\+\_\+print\+\_\+name}} (char \texorpdfstring{$\ast$}{*}name, const \mbox{\hyperlink{structrref__generator__mat__t}{rref\+\_\+generator\+\_\+mat\+\_\+t}} \texorpdfstring{$\ast$}{*}const G)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a93cccfadd912c7adaae13d4eaf5d7beb}{normalized\+\_\+rng}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}V)
+\begin{DoxyCompactList}\small\item\em Normalized ///. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__helpers_8c_a9d1dfdaf7c1e5c218442142d3182c783}{normalized\+\_\+ind}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}V)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a2eda987cf1202ced92c5ef9e6ac3c19d}{normalized\+\_\+sf}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}V)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a369d7187ddf7e6860e5c92010957205e}{generator\+\_\+to\+\_\+normalized}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}V, const \mbox{\hyperlink{structgenerator__mat__t}{generator\+\_\+mat\+\_\+t}} \texorpdfstring{$\ast$}{*}const G)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a111f66fb11404e209a1b7ae8fdc1c421}{normalized\+\_\+pretty\+\_\+print}} (const \mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}const G)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_ad8b2073acc71b079e443c4b90b489e51}{normalized\+\_\+pretty\+\_\+print\+\_\+v}} (const \mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} values\mbox{[}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}\mbox{]}\mbox{[}\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}-\/\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}\mbox{]})
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a46398b87f0d281422b57d5bb8df7fafd}{monomial\+\_\+mat\+\_\+rnd}} (monomial\+\_\+t \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Permutation ///. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__helpers_8c_a3828fdfeea9cf8f955762b3509997ad2}{monomial\+\_\+mat\+\_\+rnd\+\_\+unique}} (monomial\+\_\+t \texorpdfstring{$\ast$}{*}res)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a9528ad83c6ea14d89136e1d4eea2dc59}{monomial\+\_\+mat\+\_\+pretty\+\_\+print\+\_\+name}} (char \texorpdfstring{$\ast$}{*}name, const monomial\+\_\+t \texorpdfstring{$\ast$}{*}to\+\_\+print)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_acfd855c4afa20e8c224c92b537b60be3}{monomial\+\_\+mat\+\_\+print\+\_\+exp\+\_\+name}} (char \texorpdfstring{$\ast$}{*}name, const monomial\+\_\+t \texorpdfstring{$\ast$}{*}to\+\_\+print)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a12c6544cec22b9bebf3914b850c77716}{monomial\+\_\+mat\+\_\+pretty\+\_\+print}} (const monomial\+\_\+t \texorpdfstring{$\ast$}{*}const to\+\_\+print)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_abfc28b32efea750ce4de052f29c299ed}{permutation\+\_\+apply\+\_\+col}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G, const \mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}P)
+\begin{DoxyCompactList}\small\item\em Permutation ///. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__helpers_8c_ab453f1e0adc611a9bdf51a0cd247e0a9}{permutation\+\_\+apply\+\_\+row}} (const \mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}P, \mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a65ef8186473ebd33af527bd1debc745e}{permutation\+\_\+swap}} (\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}P, const uint32\+\_\+t i, const uint32\+\_\+t j)
+\begin{DoxyCompactList}\small\item\em Permutation ///. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__helpers_8c_a3975d383b5574eabcc2e716869febbff}{permutation\+\_\+cswap}} (\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}P, const uint32\+\_\+t i, const uint32\+\_\+t j, const uintptr\+\_\+t mask)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a9a83261259171135d5cc3642f3b0d33d}{permutation\+\_\+mat\+\_\+id}} (\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}P)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_afba412680ecd1b40eb67c2b789888c84}{permutation\+\_\+mat\+\_\+rng}} (\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}P)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a78f7cec3d4c4b96ab6b24f79a31f554b}{permutation\+\_\+mat\+\_\+id\+\_\+v2}} (\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}P, const uint32\+\_\+t max)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a173176a2ff7d246e91e344e93d1b2f2c}{permutation\+\_\+mat\+\_\+rng\+\_\+v2}} (\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}P, const uint32\+\_\+t max)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a9e4d9c4b76ca07d4e448f47def6c3f09}{permutation\+\_\+pretty\+\_\+print}} (const \mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}const P)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_ab19c3bc12fd8dedd7361436de405a872}{diagonal\+\_\+apply\+\_\+col}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G, const \mbox{\hyperlink{structdiagonal__t}{diagonal\+\_\+t}} \texorpdfstring{$\ast$}{*}P)
+\begin{DoxyCompactList}\small\item\em Diagonal ///. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__helpers_8c_a1e5f16202f075d7373954e930a9ad9ca}{diagonal\+\_\+apply\+\_\+row}} (const \mbox{\hyperlink{structdiagonal__t}{diagonal\+\_\+t}} \texorpdfstring{$\ast$}{*}P, \mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a1ca03cfec0b6b0ac4d8ccf683f19fde1}{diagonal\+\_\+mat\+\_\+zero}} (\mbox{\hyperlink{structdiagonal__t}{diagonal\+\_\+t}} \texorpdfstring{$\ast$}{*}D)
+\begin{DoxyCompactList}\small\item\em Diagonal ///. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__helpers_8c_a09b0cb0276c3d7543641ec081a8a0162}{diagonal\+\_\+mat\+\_\+id}} (\mbox{\hyperlink{structdiagonal__t}{diagonal\+\_\+t}} \texorpdfstring{$\ast$}{*}D)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a9f2d13c87a28ab9dd543a3e41795c33a}{diagonal\+\_\+mat\+\_\+rnd}} (\mbox{\hyperlink{structdiagonal__t}{diagonal\+\_\+t}} \texorpdfstring{$\ast$}{*}D)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_accb41ccf018e326370989c32a7d4a2db}{diagonal\+\_\+mat\+\_\+id\+\_\+v2}} (\mbox{\hyperlink{structdiagonal__t}{diagonal\+\_\+t}} \texorpdfstring{$\ast$}{*}D, const uint32\+\_\+t max)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_ae7b6775f5ce6a39edd88718404477440}{diagonal\+\_\+mat\+\_\+rnd\+\_\+v2}} (\mbox{\hyperlink{structdiagonal__t}{diagonal\+\_\+t}} \texorpdfstring{$\ast$}{*}D, const uint32\+\_\+t max)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a35c8b20f0e86a379eaf5b7fa58003c09}{diagonal\+\_\+pretty\+\_\+print}} (const \mbox{\hyperlink{structdiagonal__t}{diagonal\+\_\+t}} \texorpdfstring{$\ast$}{*}const D)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_ac57183d74aab973a11bc86de2942dc10}{bitonic\+\_\+sort\+\_\+i8}} (\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} \texorpdfstring{$\ast$}{*}x, const long long n)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_adcf9553fb1b4a46501ce9705de07b3ed}{compare\+\_\+rows\+\_\+bitonic\+\_\+sort}} (\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}rows, const uint32\+\_\+t row1, const uint32\+\_\+t row2)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_a04da49e9592a82928c0e1ba3c7116b43}{row\+\_\+bitonic\+\_\+sort}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_ad36c44608592b15ba9cc24d51d852dc6}{row\+\_\+quick\+\_\+sort\+\_\+recursive\+\_\+internal}} (\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} \texorpdfstring{$\ast$}{*}ptr\mbox{[}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}\mbox{]}, uint32\+\_\+t P\mbox{[}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}\mbox{]}, const uint32\+\_\+t start, const uint32\+\_\+t end)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_a8c2d820666146669b4b41b3fb0576362}{row\+\_\+quick\+\_\+sort\+\_\+recursive}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G, const uint32\+\_\+t n)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{test__helpers_8c_a578a305a671568f35ac9ed6097630ce8}{row\+\_\+quick\+\_\+sort\+\_\+internal\+\_\+hoare\+\_\+partition\+\_\+without\+\_\+histogram}} (\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} \texorpdfstring{$\ast$}{*}ptr\mbox{[}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}\mbox{]}, uint32\+\_\+t P\mbox{[}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}\mbox{]}, const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}} row\+\_\+l, const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}} row\+\_\+h)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{test__helpers_8c_a43a983cf1cb171c398663d1ee125ba5c}{row\+\_\+quick\+\_\+sort\+\_\+recursive\+\_\+internal\+\_\+without\+\_\+histogram}} (\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} \texorpdfstring{$\ast$}{*}ptr\mbox{[}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}\mbox{]}, uint32\+\_\+t P\mbox{[}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}\mbox{]}, const uint32\+\_\+t start, const uint32\+\_\+t end)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_a4157eb37e17673e03bf2c11afcdc6b9f}{col\+\_\+bitonic\+\_\+sort\+\_\+transposed}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_ae23a86dec80977675698d6574bf4e02c}{col\+\_\+bitonic\+\_\+sort\+\_\+transpose}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}V)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_a614fc0685ce850291376960228b46231}{lex\+\_\+compare\+\_\+column}} (const \mbox{\hyperlink{structgenerator__mat__t}{generator\+\_\+mat\+\_\+t}} \texorpdfstring{$\ast$}{*}G1, const \mbox{\hyperlink{structgenerator__mat__t}{generator\+\_\+mat\+\_\+t}} \texorpdfstring{$\ast$}{*}G2, const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}} col1, const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}} col2)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_a09ff425447bf61a5149b7c7912ead509}{lex\+\_\+compare\+\_\+col}} (const \mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G1, const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}} col1, const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}} col2)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_ad184d77743a1f81d17423a7d7416d3c8}{lex\+\_\+compare\+\_\+with\+\_\+pivot}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}V, const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}} col\+\_\+idx, const \mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} pivot\mbox{[}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}\mbox{]})
+\item 
+int \mbox{\hyperlink{test__helpers_8c_a5134c120ac35de26bb7ddbfd87e9aef3}{Hoare\+\_\+partition}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}V, const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}} col\+\_\+l, const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}} col\+\_\+h)
+\begin{DoxyCompactList}\small\item\em NOTE\+: only used in {\ttfamily col\+\_\+lex\+\_\+quicksort} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__helpers_8c_a8d0d65e40e20fc3c9af18a4483139660}{col\+\_\+lex\+\_\+quicksort}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}V, int start, int end)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a01f7389dccd011cc1f89053b76032bcb}{lex\+\_\+sort\+\_\+cols}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}V)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_a217ef889c9b269bb87ad841a9a6d078b}{compute\+\_\+canonical\+\_\+form\+\_\+type3\+\_\+ct}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G)
+\begin{DoxyCompactList}\small\item\em Canonical Form ///. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{test__helpers_8c_ac551e742fac0e99bbba7e8bdeb6ce2d3}{compute\+\_\+canonical\+\_\+form\+\_\+type4\+\_\+ct}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_ac8de8d0b722ab76aad23c3b375a40902}{compute\+\_\+canonical\+\_\+form\+\_\+type5\+\_\+ct}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_a0fef1687d0b98034496c80c0ad75c813}{compare\+\_\+matrices\+\_\+fastest}} (const \mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}\+\_\+\+\_\+restrict\+\_\+\+\_\+ V1, const \mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}\+\_\+\+\_\+restrict\+\_\+\+\_\+ V2, const uint32\+\_\+t z)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_a245274e46542642986a6acc22322aed9}{compute\+\_\+canonical\+\_\+form\+\_\+type3\+\_\+sub}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G, const uint32\+\_\+t z)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_a988f9bb4517338b286f076104e3e6054}{compute\+\_\+canonical\+\_\+form\+\_\+type4\+\_\+sub\+\_\+v2}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G, const uint32\+\_\+t z)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_ae51bb496ecc86f3c7d9bff9109a1cefc}{compute\+\_\+canonical\+\_\+form\+\_\+type5\+\_\+single\+\_\+row\+\_\+v2}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}M, \mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G, const uint32\+\_\+t row)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_af69274b3f79fa2866058a8b84f78cc8b}{compute\+\_\+canonical\+\_\+form\+\_\+type5\+\_\+fastest}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_a10e111639cc76bd520dae8cdf20f6ffe}{compute\+\_\+canonical\+\_\+form\+\_\+type5\+\_\+single\+\_\+row}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G, const uint32\+\_\+t row)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_aee12e657dbebdc643a57e06162b26308}{compute\+\_\+canonical\+\_\+form\+\_\+type5\+\_\+tony}} (\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}G)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_a46a14eb363796179eb5aa5a5bdf97694}{Sort\+Rows\+\_\+internal2}} (\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} \texorpdfstring{$\ast$}{*}ptr\mbox{[}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}\mbox{]}, uint32\+\_\+t P\mbox{[}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}\mbox{]}, const uint32\+\_\+t n)
+\item 
+int \mbox{\hyperlink{test__helpers_8c_af3a6096c7ceedbe9d71ced315f853b58}{Sort\+Rows\+\_\+internal3}} (\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} \texorpdfstring{$\ast$}{*}ptr\mbox{[}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}\mbox{]}, uint32\+\_\+t P\mbox{[}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}\mbox{]}, const uint32\+\_\+t n)
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a83c68ba10590c5ad51bacd4b64c04b16}{pseed}} (unsigned char seed\mbox{[}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}}\mbox{]})
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a800aa7f063d87075743acdb650b666c4}{psalt}} (unsigned char salt\mbox{[}\mbox{\hyperlink{parameters_8h_a23438446fea87b735bec6d115ef09910}{SALT\+\_\+\+LENGTH\+\_\+\+BYTES}}\mbox{]})
+\item 
+void \mbox{\hyperlink{test__helpers_8c_abe93b07bb83a1324ba9c29e7ac81a1ee}{ptree}} (unsigned char seed\+\_\+tree\mbox{[}\mbox{\hyperlink{parameters_8h_aa6675740065d584d56ec4d913fc892b9}{NUM\+\_\+\+NODES\+\_\+\+SEED\+\_\+\+TREE}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}}\mbox{]})
+\item 
+void \mbox{\hyperlink{test__helpers_8c_a5e2d3ae8eebdc7bf8afc2dcb0f3dc50b}{p\+\_\+fs\+\_\+tree}} (unsigned char seed\+\_\+tree\mbox{[}\mbox{\hyperlink{parameters_8h_aa6675740065d584d56ec4d913fc892b9}{NUM\+\_\+\+NODES\+\_\+\+SEED\+\_\+\+TREE}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}}\mbox{]}, unsigned char flag\+\_\+tree\mbox{[}\mbox{\hyperlink{parameters_8h_aa6675740065d584d56ec4d913fc892b9}{NUM\+\_\+\+NODES\+\_\+\+SEED\+\_\+\+TREE}}\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{test__helpers_8c_a00b11b032bd186b2eb30c8f35844b77e}{network}} \mbox{[}$\,$\mbox{]} = \{ 0,2,1,3,4,6,5,7,8,10,9,11,12,14,13,15,16,18,17,19,20,22,21,23,24,26,25,27,28,30,29,31,32,34,33,35,36,38,37,39,40,42,41,43,44,46,45,47,48,50,49,51,52,54,53,55,56,58,57,59,60,62,61,63,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,0,52,1,2,3,55,4,48,5,6,7,51,8,60,9,10,11,63,12,56,13,14,15,59,16,32,17,18,19,35,20,24,21,22,23,27,25,26,28,44,29,30,31,47,33,34,36,40,37,38,39,43,41,42,45,46,49,50,53,54,57,58,61,62,0,20,1,53,2,54,3,23,4,28,5,49,6,50,7,31,8,36,9,61,10,62,11,39,12,16,13,57,14,58,15,19,17,33,18,34,21,25,22,26,24,52,27,55,29,45,30,46,32,56,35,59,37,41,38,42,40,60,43,63,44,48,47,51,0,4,1,21,2,22,3,7,5,29,6,30,8,12,9,37,10,38,11,15,13,17,14,18,16,20,19,23,24,32,25,53,26,54,27,35,28,36,31,39,33,57,34,58,40,44,41,61,42,62,43,47,45,49,46,50,48,52,51,55,56,60,59,63,0,8,1,5,2,6,3,11,4,12,7,15,9,13,10,14,16,40,17,21,18,22,19,43,20,44,23,47,24,28,25,33,26,34,27,31,29,37,30,38,32,36,35,39,41,45,42,46,48,56,49,53,50,54,51,59,52,60,55,63,57,61,58,62,1,9,2,10,4,8,5,13,6,14,7,11,12,48,15,51,16,24,17,41,18,42,19,27,20,28,21,45,22,46,23,31,25,29,26,30,32,40,33,37,34,38,35,43,36,44,39,47,49,57,50,58,52,56,53,61,54,62,55,59,4,16,5,9,6,10,7,19,8,24,11,27,13,49,14,50,17,25,18,26,20,32,21,29,22,30,23,35,28,40,31,43,33,41,34,42,36,52,37,45,38,46,39,55,44,56,47,59,53,57,54,58,1,4,5,17,6,18,8,16,9,25,10,26,11,19,12,24,15,27,21,33,22,34,29,41,30,42,36,48,37,53,38,54,39,51,44,52,45,57,46,58,47,55,59,62,2,8,9,17,10,18,12,20,13,25,14,26,15,23,24,32,27,35,28,36,31,39,37,49,38,50,40,48,43,51,45,53,46,54,55,61,2,4,12,16,13,21,14,22,15,19,20,24,23,27,25,33,26,34,28,32,29,37,30,38,31,35,36,40,39,43,41,49,42,50,44,48,47,51,59,61,4,16,5,20,10,40,13,17,14,18,21,25,22,26,23,53,24,28,27,31,29,33,30,34,32,36,35,39,37,41,38,42,43,58,45,49,46,50,47,59,3,17,6,36,7,21,8,32,9,24,11,41,13,28,14,44,15,45,18,48,19,49,22,52,25,29,26,30,27,57,31,55,33,37,34,38,35,50,39,54,42,56,46,60,6,20,8,16,10,24,11,25,14,28,15,29,17,33,18,32,21,37,22,36,26,42,27,41,30,46,31,45,34,48,35,49,38,52,39,53,43,57,47,55,3,18,5,8,6,12,7,22,15,21,17,32,19,33,23,37,26,40,30,44,31,46,41,56,42,48,45,60,51,57,55,58,3,16,7,20,11,26,18,24,19,25,22,28,23,29,27,33,30,36,34,40,35,41,37,52,38,44,39,45,43,56,47,60,3,9,7,13,10,16,11,17,14,20,15,30,19,34,21,36,23,38,25,40,26,32,27,42,29,44,31,37,33,48,43,49,46,52,47,53,50,56,54,60,3,8,7,10,9,12,11,18,13,14,15,24,17,22,19,28,21,26,23,25,27,34,29,36,30,32,31,33,35,44,37,42,38,40,39,48,41,46,45,52,49,50,51,54,53,56,55,60,3,6,7,12,11,16,15,17,18,20,19,24,21,22,23,30,25,32,26,28,27,29,31,38,33,40,34,36,35,37,39,44,41,42,43,45,46,48,47,52,51,56,57,60,3,5,6,8,7,9,10,12,11,13,14,16,15,18,17,20,19,21,22,24,23,26,25,28,27,30,29,32,31,34,33,36,35,38,37,40,39,41,42,44,43,46,45,48,47,49,50,52,51,53,54,56,55,57,58,60,3,4,7,8,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,55,56,59,60\}
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{test__helpers_8c_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{test__helpers_8c_aac454c8db8a423b23c289d725590f194}\index{test\_helpers.c@{test\_helpers.c}!int8\_MINMAX@{int8\_MINMAX}}
+\index{int8\_MINMAX@{int8\_MINMAX}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{int8\_MINMAX}{int8\_MINMAX}}
+{\footnotesize\ttfamily \label{test__helpers_8c_aac454c8db8a423b23c289d725590f194} 
+\#define int8\+\_\+\+MINMAX(\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ int8\_t\ ab\ =\ (int8\_t)b\ \string^\ (int8\_t)a;\ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ int8\_t\ c\ \ =\ (int8\_t)b\ -\/\ (int8\_t)a;\ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ c\ \string^=\ ab\ \&\ (c\ \string^\ (int8\_t)b);\ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ c\ >>=\ 7;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ c\ \&=\ ab;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ a\ \string^=\ (\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\_ELEM}})c;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ b\ \string^=\ (\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\_ELEM}})c;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+
+
+Sorting ///. 
+
+taken from djbsort 
+\begin{DoxyParams}{Parameters}
+{\em a\mbox{[}in/out\mbox{]}} & first input \\
+\hline
+{\em b\mbox{[}in/out\mbox{]}} & second input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing but\+: a = min(a, b), b = max(a, b) 
+\end{DoxyReturn}
+
+
+\label{doc-func-members}
+\Hypertarget{test__helpers_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{test__helpers_8c_ac57183d74aab973a11bc86de2942dc10}\index{test\_helpers.c@{test\_helpers.c}!bitonic\_sort\_i8@{bitonic\_sort\_i8}}
+\index{bitonic\_sort\_i8@{bitonic\_sort\_i8}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{bitonic\_sort\_i8()}{bitonic\_sort\_i8()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_ac57183d74aab973a11bc86de2942dc10} 
+void bitonic\+\_\+sort\+\_\+i8 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} \texorpdfstring{$\ast$}{*}}]{x}{, }\item[{const long long}]{n}{}\end{DoxyParamCaption})}
+
+NOTE\+: taken from djbsort 
+\begin{DoxyParams}{Parameters}
+{\em x\mbox{[}in/out\mbox{]}} & input array \\
+\hline
+{\em n\mbox{[}in\mbox{]}} & length \\
+\hline
+\end{DoxyParams}
+\Hypertarget{test__helpers_8c_ae23a86dec80977675698d6574bf4e02c}\index{test\_helpers.c@{test\_helpers.c}!col\_bitonic\_sort\_transpose@{col\_bitonic\_sort\_transpose}}
+\index{col\_bitonic\_sort\_transpose@{col\_bitonic\_sort\_transpose}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{col\_bitonic\_sort\_transpose()}{col\_bitonic\_sort\_transpose()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_ae23a86dec80977675698d6574bf4e02c} 
+void col\+\_\+bitonic\+\_\+sort\+\_\+transpose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{V}{}\end{DoxyParamCaption})}
+
+NOTE\+: constant time version NOTE\+: sort pointers, and applies the final resulting permutation afterward to the generator matrix. Sorts the columns of the input matrix, via first transposing the matrix, subsequent sorting rows, and finally transposing it back. \textbackslash{}input G\mbox{[}in/out\mbox{]}\+: normalised non IS part of a generator matrix Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_ae23a86dec80977675698d6574bf4e02c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a4157eb37e17673e03bf2c11afcdc6b9f}\index{test\_helpers.c@{test\_helpers.c}!col\_bitonic\_sort\_transposed@{col\_bitonic\_sort\_transposed}}
+\index{col\_bitonic\_sort\_transposed@{col\_bitonic\_sort\_transposed}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{col\_bitonic\_sort\_transposed()}{col\_bitonic\_sort\_transposed()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a4157eb37e17673e03bf2c11afcdc6b9f} 
+int col\+\_\+bitonic\+\_\+sort\+\_\+transposed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G}{}\end{DoxyParamCaption})}
+
+NOTE\+: internal function, do not call it directly. NOTE\+: constant time version NOTE\+: sort pointers, and applies the final resulting permutation afterward to the generator matrix. Sorts the columns of the input matrix, via first transposing the matrix, subsequent sorting rows, and finally transposing it back. \textbackslash{}input G\mbox{[}in/out\mbox{]}\+: normalised non IS part of a generator matrix Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a4157eb37e17673e03bf2c11afcdc6b9f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a4157eb37e17673e03bf2c11afcdc6b9f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a8d0d65e40e20fc3c9af18a4483139660}\index{test\_helpers.c@{test\_helpers.c}!col\_lex\_quicksort@{col\_lex\_quicksort}}
+\index{col\_lex\_quicksort@{col\_lex\_quicksort}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{col\_lex\_quicksort()}{col\_lex\_quicksort()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a8d0d65e40e20fc3c9af18a4483139660} 
+void col\+\_\+lex\+\_\+quicksort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{V}{, }\item[{int}]{start}{, }\item[{int}]{end}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a8d0d65e40e20fc3c9af18a4483139660_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{test__helpers_8c_a8d0d65e40e20fc3c9af18a4483139660_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a3a3ccf456439e05d034b125367f2082d}\index{test\_helpers.c@{test\_helpers.c}!column\_swap@{column\_swap}}
+\index{column\_swap@{column\_swap}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{column\_swap()}{column\_swap()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a3a3ccf456439e05d034b125367f2082d} 
+void column\+\_\+swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{V}{, }\item[{const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}}}]{col1}{, }\item[{const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}}}]{col2}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a3a3ccf456439e05d034b125367f2082d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a0fef1687d0b98034496c80c0ad75c813}\index{test\_helpers.c@{test\_helpers.c}!compare\_matrices\_fastest@{compare\_matrices\_fastest}}
+\index{compare\_matrices\_fastest@{compare\_matrices\_fastest}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{compare\_matrices\_fastest()}{compare\_matrices\_fastest()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a0fef1687d0b98034496c80c0ad75c813} 
+int compare\+\_\+matrices\+\_\+fastest (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}\+\_\+\+\_\+restrict\+\_\+\+\_\+}]{V1}{, }\item[{const \mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}\+\_\+\+\_\+restrict\+\_\+\+\_\+}]{V2}{, }\item[{const uint32\+\_\+t}]{z}{}\end{DoxyParamCaption})}
+
+NOTE\+: only for "{}fastest"{} CF computation NOTE\+: non-\/constant time implements a total order on matrices we simply compare the columns lexicographically 
+\begin{DoxyParams}{Parameters}
+{\em V1\mbox{[}in\mbox{]}} & \\
+\hline
+{\em V2\mbox{[}in\mbox{]}} & \\
+\hline
+{\em z\mbox{[}in\mbox{]}} & number of rows within both matrices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/x if V2 \texorpdfstring{$>$}{>} V1 0 if V2 == V1 +x 
+\end{DoxyReturn}
+\Hypertarget{test__helpers_8c_adcf9553fb1b4a46501ce9705de07b3ed}\index{test\_helpers.c@{test\_helpers.c}!compare\_rows\_bitonic\_sort@{compare\_rows\_bitonic\_sort}}
+\index{compare\_rows\_bitonic\_sort@{compare\_rows\_bitonic\_sort}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{compare\_rows\_bitonic\_sort()}{compare\_rows\_bitonic\_sort()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_adcf9553fb1b4a46501ce9705de07b3ed} 
+int compare\+\_\+rows\+\_\+bitonic\+\_\+sort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{rows}{, }\item[{const uint32\+\_\+t}]{row1}{, }\item[{const uint32\+\_\+t}]{row2}{}\end{DoxyParamCaption})}
+
+NOTE\+: helper function for type3 canonical form. NOTE\+: specially made for the bitonic sort, which operates on pointers. \textbackslash{}input rows\mbox{[}in/out\mbox{]}\+: K x (N-\/K) matrix \textbackslash{}input row1\mbox{[}in\mbox{]}\+: first row to compare \textbackslash{}input row2\mbox{[}in\mbox{]}\+: secnd row to compare \begin{DoxyReturn}{Returns}
+\+: 0 if multiset(row1) == multiset(row2) x if row1 \texorpdfstring{$>$}{>} row2 -\/x if row1 \texorpdfstring{$<$}{<} row2 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_adcf9553fb1b4a46501ce9705de07b3ed_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a217ef889c9b269bb87ad841a9a6d078b}\index{test\_helpers.c@{test\_helpers.c}!compute\_canonical\_form\_type3\_ct@{compute\_canonical\_form\_type3\_ct}}
+\index{compute\_canonical\_form\_type3\_ct@{compute\_canonical\_form\_type3\_ct}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{compute\_canonical\_form\_type3\_ct()}{compute\_canonical\_form\_type3\_ct()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a217ef889c9b269bb87ad841a9a6d078b} 
+int compute\+\_\+canonical\+\_\+form\+\_\+type3\+\_\+ct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G}{}\end{DoxyParamCaption})}
+
+
+
+Canonical Form ///. 
+
+NOTE\+: constant time impl computes the result inplace first sort the rows, then the columns \begin{DoxyReturn}{Returns}
+0 on failure (identical rows, which create the same multiset) 1 on success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{test__helpers_8c_a217ef889c9b269bb87ad841a9a6d078b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a217ef889c9b269bb87ad841a9a6d078b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a245274e46542642986a6acc22322aed9}\index{test\_helpers.c@{test\_helpers.c}!compute\_canonical\_form\_type3\_sub@{compute\_canonical\_form\_type3\_sub}}
+\index{compute\_canonical\_form\_type3\_sub@{compute\_canonical\_form\_type3\_sub}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{compute\_canonical\_form\_type3\_sub()}{compute\_canonical\_form\_type3\_sub()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a245274e46542642986a6acc22322aed9} 
+int compute\+\_\+canonical\+\_\+form\+\_\+type3\+\_\+sub (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G}{, }\item[{const uint32\+\_\+t}]{z}{}\end{DoxyParamCaption})}
+
+NOTE\+: only operates on the first z rows NOTE\+: non-\/constant time NOTE\+: computes the result inplace first sort the rows, then the columns 
+\begin{DoxyParams}{Parameters}
+{\em G\mbox{[}in/out\mbox{]}} & scaled submatrix which is going to sort \\
+\hline
+{\em z\mbox{[}in\mbox{]}} & number of rows in G \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on failure (identical rows, which create the same multiset) 1 on success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{test__helpers_8c_a245274e46542642986a6acc22322aed9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a245274e46542642986a6acc22322aed9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_ac551e742fac0e99bbba7e8bdeb6ce2d3}\index{test\_helpers.c@{test\_helpers.c}!compute\_canonical\_form\_type4\_ct@{compute\_canonical\_form\_type4\_ct}}
+\index{compute\_canonical\_form\_type4\_ct@{compute\_canonical\_form\_type4\_ct}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{compute\_canonical\_form\_type4\_ct()}{compute\_canonical\_form\_type4\_ct()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_ac551e742fac0e99bbba7e8bdeb6ce2d3} 
+int compute\+\_\+canonical\+\_\+form\+\_\+type4\+\_\+ct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G}{}\end{DoxyParamCaption})}
+
+NOTE\+: constant time NOTE\+: computes the result inplace \begin{DoxyReturn}{Returns}
+0 on failure\+:
+\begin{DoxyItemize}
+\item compute\+\_\+power\+\_\+column fails.
+\item identical rows, which create the same multiset 1 on success 
+\end{DoxyItemize}
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_ac551e742fac0e99bbba7e8bdeb6ce2d3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_ac551e742fac0e99bbba7e8bdeb6ce2d3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a988f9bb4517338b286f076104e3e6054}\index{test\_helpers.c@{test\_helpers.c}!compute\_canonical\_form\_type4\_sub\_v2@{compute\_canonical\_form\_type4\_sub\_v2}}
+\index{compute\_canonical\_form\_type4\_sub\_v2@{compute\_canonical\_form\_type4\_sub\_v2}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{compute\_canonical\_form\_type4\_sub\_v2()}{compute\_canonical\_form\_type4\_sub\_v2()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a988f9bb4517338b286f076104e3e6054} 
+int compute\+\_\+canonical\+\_\+form\+\_\+type4\+\_\+sub\+\_\+v2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G}{, }\item[{const uint32\+\_\+t}]{z}{}\end{DoxyParamCaption})}
+
+NOTE\+: non-\/constant time Applies the row scaling to only z rows 
+\begin{DoxyParams}{Parameters}
+{\em G\mbox{[}in/out\mbox{]}} & sub matrix with only z rows \\
+\hline
+{\em z\mbox{[}in\mbox{]}} & number of rows in G \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0\+: if a row cannot be scaled any further 1\+: on success 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a988f9bb4517338b286f076104e3e6054_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_ac8de8d0b722ab76aad23c3b375a40902}\index{test\_helpers.c@{test\_helpers.c}!compute\_canonical\_form\_type5\_ct@{compute\_canonical\_form\_type5\_ct}}
+\index{compute\_canonical\_form\_type5\_ct@{compute\_canonical\_form\_type5\_ct}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{compute\_canonical\_form\_type5\_ct()}{compute\_canonical\_form\_type5\_ct()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_ac8de8d0b722ab76aad23c3b375a40902} 
+int compute\+\_\+canonical\+\_\+form\+\_\+type5\+\_\+ct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G}{}\end{DoxyParamCaption})}
+
+NOTE\+: constant time NOTE\+: computes the result inplace 
+\begin{DoxyParams}{Parameters}
+{\em G\mbox{[}in/out\mbox{]}} & non IS part of a generator matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on failure 1 on success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_ac8de8d0b722ab76aad23c3b375a40902_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_af69274b3f79fa2866058a8b84f78cc8b}\index{test\_helpers.c@{test\_helpers.c}!compute\_canonical\_form\_type5\_fastest@{compute\_canonical\_form\_type5\_fastest}}
+\index{compute\_canonical\_form\_type5\_fastest@{compute\_canonical\_form\_type5\_fastest}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{compute\_canonical\_form\_type5\_fastest()}{compute\_canonical\_form\_type5\_fastest()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_af69274b3f79fa2866058a8b84f78cc8b} 
+int compute\+\_\+canonical\+\_\+form\+\_\+type5\+\_\+fastest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G}{}\end{DoxyParamCaption})}
+
+NOTE\+: not fully correct, see comment in the function NOTE\+: not constant time 
+\begin{DoxyParams}{Parameters}
+{\em G\mbox{[}in/out\mbox{]}} & non IS part of a generator matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on failure 1 on success 
+\end{DoxyReturn}
+NOTE\+: is this always correct?
+
+Storage fo the scaled matrix
+
+NOTE\+: the problem is that this function is very good at finding the shortest row. But this row necessary does not need to have sum() != 0Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_af69274b3f79fa2866058a8b84f78cc8b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a10e111639cc76bd520dae8cdf20f6ffe}\index{test\_helpers.c@{test\_helpers.c}!compute\_canonical\_form\_type5\_single\_row@{compute\_canonical\_form\_type5\_single\_row}}
+\index{compute\_canonical\_form\_type5\_single\_row@{compute\_canonical\_form\_type5\_single\_row}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{compute\_canonical\_form\_type5\_single\_row()}{compute\_canonical\_form\_type5\_single\_row()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a10e111639cc76bd520dae8cdf20f6ffe} 
+int compute\+\_\+canonical\+\_\+form\+\_\+type5\+\_\+single\+\_\+row (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G}{, }\item[{const uint32\+\_\+t}]{row}{}\end{DoxyParamCaption})}
+
+NOTE\+: non-\/constant time NOTE\+: computes the result inplace scales a single row {\ttfamily row} and computes cf5 for it 
+\begin{DoxyParams}{Parameters}
+{\em G\mbox{[}in/out\mbox{]}} & non IS part of a generator matrix \\
+\hline
+{\em row\mbox{[}in\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on failure 1 on success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a10e111639cc76bd520dae8cdf20f6ffe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a10e111639cc76bd520dae8cdf20f6ffe_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_ae51bb496ecc86f3c7d9bff9109a1cefc}\index{test\_helpers.c@{test\_helpers.c}!compute\_canonical\_form\_type5\_single\_row\_v2@{compute\_canonical\_form\_type5\_single\_row\_v2}}
+\index{compute\_canonical\_form\_type5\_single\_row\_v2@{compute\_canonical\_form\_type5\_single\_row\_v2}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{compute\_canonical\_form\_type5\_single\_row\_v2()}{compute\_canonical\_form\_type5\_single\_row\_v2()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_ae51bb496ecc86f3c7d9bff9109a1cefc} 
+int compute\+\_\+canonical\+\_\+form\+\_\+type5\+\_\+single\+\_\+row\+\_\+v2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{M}{, }\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G}{, }\item[{const uint32\+\_\+t}]{row}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_ae51bb496ecc86f3c7d9bff9109a1cefc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_ae51bb496ecc86f3c7d9bff9109a1cefc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_aee12e657dbebdc643a57e06162b26308}\index{test\_helpers.c@{test\_helpers.c}!compute\_canonical\_form\_type5\_tony@{compute\_canonical\_form\_type5\_tony}}
+\index{compute\_canonical\_form\_type5\_tony@{compute\_canonical\_form\_type5\_tony}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{compute\_canonical\_form\_type5\_tony()}{compute\_canonical\_form\_type5\_tony()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_aee12e657dbebdc643a57e06162b26308} 
+int compute\+\_\+canonical\+\_\+form\+\_\+type5\+\_\+tony (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G}{}\end{DoxyParamCaption})}
+
+NOTE\+: non-\/constant time NOTE\+: computes the result inplace 
+\begin{DoxyParams}{Parameters}
+{\em G\mbox{[}in/out\mbox{]}} & non IS part of a generator matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on failure 1 on success 
+\end{DoxyReturn}
+NOTE\+: is this always correct?Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_aee12e657dbebdc643a57e06162b26308_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_aee12e657dbebdc643a57e06162b26308_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_ab19c3bc12fd8dedd7361436de405a872}\index{test\_helpers.c@{test\_helpers.c}!diagonal\_apply\_col@{diagonal\_apply\_col}}
+\index{diagonal\_apply\_col@{diagonal\_apply\_col}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{diagonal\_apply\_col()}{diagonal\_apply\_col()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_ab19c3bc12fd8dedd7361436de405a872} 
+void diagonal\+\_\+apply\+\_\+col (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G}{, }\item[{const \mbox{\hyperlink{structdiagonal__t}{diagonal\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{P}{}\end{DoxyParamCaption})}
+
+
+
+Diagonal ///. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em G\mbox{[}in/out\mbox{]}} & \\
+\hline
+{\em P\mbox{[}in\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{test__helpers_8c_a1e5f16202f075d7373954e930a9ad9ca}\index{test\_helpers.c@{test\_helpers.c}!diagonal\_apply\_row@{diagonal\_apply\_row}}
+\index{diagonal\_apply\_row@{diagonal\_apply\_row}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{diagonal\_apply\_row()}{diagonal\_apply\_row()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a1e5f16202f075d7373954e930a9ad9ca} 
+void diagonal\+\_\+apply\+\_\+row (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structdiagonal__t}{diagonal\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{P}{, }\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em P\mbox{[}in\mbox{]}} & \\
+\hline
+{\em G\mbox{[}in/out\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{test__helpers_8c_a09b0cb0276c3d7543641ec081a8a0162}\index{test\_helpers.c@{test\_helpers.c}!diagonal\_mat\_id@{diagonal\_mat\_id}}
+\index{diagonal\_mat\_id@{diagonal\_mat\_id}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{diagonal\_mat\_id()}{diagonal\_mat\_id()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a09b0cb0276c3d7543641ec081a8a0162} 
+void diagonal\+\_\+mat\+\_\+id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdiagonal__t}{diagonal\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{D}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\mbox{[}in\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{test__helpers_8c_accb41ccf018e326370989c32a7d4a2db}\index{test\_helpers.c@{test\_helpers.c}!diagonal\_mat\_id\_v2@{diagonal\_mat\_id\_v2}}
+\index{diagonal\_mat\_id\_v2@{diagonal\_mat\_id\_v2}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{diagonal\_mat\_id\_v2()}{diagonal\_mat\_id\_v2()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_accb41ccf018e326370989c32a7d4a2db} 
+void diagonal\+\_\+mat\+\_\+id\+\_\+v2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdiagonal__t}{diagonal\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{D}{, }\item[{const uint32\+\_\+t}]{max}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\mbox{[}in\mbox{]}} & \\
+\hline
+{\em max\mbox{[}in\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{test__helpers_8c_a9f2d13c87a28ab9dd543a3e41795c33a}\index{test\_helpers.c@{test\_helpers.c}!diagonal\_mat\_rnd@{diagonal\_mat\_rnd}}
+\index{diagonal\_mat\_rnd@{diagonal\_mat\_rnd}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{diagonal\_mat\_rnd()}{diagonal\_mat\_rnd()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a9f2d13c87a28ab9dd543a3e41795c33a} 
+void diagonal\+\_\+mat\+\_\+rnd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdiagonal__t}{diagonal\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{D}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\mbox{[}in\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{test__helpers_8c_ae7b6775f5ce6a39edd88718404477440}\index{test\_helpers.c@{test\_helpers.c}!diagonal\_mat\_rnd\_v2@{diagonal\_mat\_rnd\_v2}}
+\index{diagonal\_mat\_rnd\_v2@{diagonal\_mat\_rnd\_v2}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{diagonal\_mat\_rnd\_v2()}{diagonal\_mat\_rnd\_v2()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_ae7b6775f5ce6a39edd88718404477440} 
+void diagonal\+\_\+mat\+\_\+rnd\+\_\+v2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdiagonal__t}{diagonal\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{D}{, }\item[{const uint32\+\_\+t}]{max}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\mbox{[}in\mbox{]}} & \\
+\hline
+{\em max\mbox{[}in\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{test__helpers_8c_a1ca03cfec0b6b0ac4d8ccf683f19fde1}\index{test\_helpers.c@{test\_helpers.c}!diagonal\_mat\_zero@{diagonal\_mat\_zero}}
+\index{diagonal\_mat\_zero@{diagonal\_mat\_zero}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{diagonal\_mat\_zero()}{diagonal\_mat\_zero()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a1ca03cfec0b6b0ac4d8ccf683f19fde1} 
+void diagonal\+\_\+mat\+\_\+zero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdiagonal__t}{diagonal\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{D}{}\end{DoxyParamCaption})}
+
+
+
+Diagonal ///. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\mbox{[}in\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{test__helpers_8c_a35c8b20f0e86a379eaf5b7fa58003c09}\index{test\_helpers.c@{test\_helpers.c}!diagonal\_pretty\_print@{diagonal\_pretty\_print}}
+\index{diagonal\_pretty\_print@{diagonal\_pretty\_print}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{diagonal\_pretty\_print()}{diagonal\_pretty\_print()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a35c8b20f0e86a379eaf5b7fa58003c09} 
+void diagonal\+\_\+pretty\+\_\+print (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structdiagonal__t}{diagonal\+\_\+t}} \texorpdfstring{$\ast$}{*}const}]{D}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\mbox{[}in\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{test__helpers_8c_a749488e7d37bf67263de79920481f4f2}\index{test\_helpers.c@{test\_helpers.c}!generator\_pretty\_print@{generator\_pretty\_print}}
+\index{generator\_pretty\_print@{generator\_pretty\_print}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{generator\_pretty\_print()}{generator\_pretty\_print()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a749488e7d37bf67263de79920481f4f2} 
+void generator\+\_\+pretty\+\_\+print (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structgenerator__mat__t}{generator\+\_\+mat\+\_\+t}} \texorpdfstring{$\ast$}{*}const}]{G}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em G\mbox{[}in\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{test__helpers_8c_a022d1c37af0190e6aa0e563319893d4f}\index{test\_helpers.c@{test\_helpers.c}!generator\_pretty\_print\_name@{generator\_pretty\_print\_name}}
+\index{generator\_pretty\_print\_name@{generator\_pretty\_print\_name}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{generator\_pretty\_print\_name()}{generator\_pretty\_print\_name()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a022d1c37af0190e6aa0e563319893d4f} 
+void generator\+\_\+pretty\+\_\+print\+\_\+name (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const \mbox{\hyperlink{structgenerator__mat__t}{generator\+\_\+mat\+\_\+t}} \texorpdfstring{$\ast$}{*}const}]{G}{}\end{DoxyParamCaption})}
+
+\Hypertarget{test__helpers_8c_a492aa6aaacb18ae287d4006c6dd392ea}\index{test\_helpers.c@{test\_helpers.c}!generator\_rnd@{generator\_rnd}}
+\index{generator\_rnd@{generator\_rnd}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{generator\_rnd()}{generator\_rnd()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a492aa6aaacb18ae287d4006c6dd392ea} 
+void generator\+\_\+rnd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgenerator__mat__t}{generator\+\_\+mat\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{res}{}\end{DoxyParamCaption})}
+
+
+
+Generator ///. 
+
+\Hypertarget{test__helpers_8c_a10174826e9dd67cd9164fec0c0254fe3}\index{test\_helpers.c@{test\_helpers.c}!generator\_rref\_pretty\_print\_name@{generator\_rref\_pretty\_print\_name}}
+\index{generator\_rref\_pretty\_print\_name@{generator\_rref\_pretty\_print\_name}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{generator\_rref\_pretty\_print\_name()}{generator\_rref\_pretty\_print\_name()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a10174826e9dd67cd9164fec0c0254fe3} 
+void generator\+\_\+rref\+\_\+pretty\+\_\+print\+\_\+name (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const \mbox{\hyperlink{structrref__generator__mat__t}{rref\+\_\+generator\+\_\+mat\+\_\+t}} \texorpdfstring{$\ast$}{*}const}]{G}{}\end{DoxyParamCaption})}
+
+\Hypertarget{test__helpers_8c_a7cbd76bc13244f4cf3855ab48973b25a}\index{test\_helpers.c@{test\_helpers.c}!generator\_sf@{generator\_sf}}
+\index{generator\_sf@{generator\_sf}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{generator\_sf()}{generator\_sf()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a7cbd76bc13244f4cf3855ab48973b25a} 
+void generator\+\_\+sf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgenerator__mat__t}{generator\+\_\+mat\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{res}{}\end{DoxyParamCaption})}
+
+\Hypertarget{test__helpers_8c_a369d7187ddf7e6860e5c92010957205e}\index{test\_helpers.c@{test\_helpers.c}!generator\_to\_normalized@{generator\_to\_normalized}}
+\index{generator\_to\_normalized@{generator\_to\_normalized}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{generator\_to\_normalized()}{generator\_to\_normalized()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a369d7187ddf7e6860e5c92010957205e} 
+void generator\+\_\+to\+\_\+normalized (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{V}{, }\item[{const \mbox{\hyperlink{structgenerator__mat__t}{generator\+\_\+mat\+\_\+t}} \texorpdfstring{$\ast$}{*}const}]{G}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & \\
+\hline
+{\em G} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{test__helpers_8c_a5134c120ac35de26bb7ddbfd87e9aef3}\index{test\_helpers.c@{test\_helpers.c}!Hoare\_partition@{Hoare\_partition}}
+\index{Hoare\_partition@{Hoare\_partition}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{Hoare\_partition()}{Hoare\_partition()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a5134c120ac35de26bb7ddbfd87e9aef3} 
+int Hoare\+\_\+partition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{V}{, }\item[{const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}}}]{col\+\_\+l}{, }\item[{const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}}}]{col\+\_\+h}{}\end{DoxyParamCaption})}
+
+
+
+NOTE\+: only used in {\ttfamily col\+\_\+lex\+\_\+quicksort} 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{test__helpers_8c_a5134c120ac35de26bb7ddbfd87e9aef3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a5134c120ac35de26bb7ddbfd87e9aef3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a09ff425447bf61a5149b7c7912ead509}\index{test\_helpers.c@{test\_helpers.c}!lex\_compare\_col@{lex\_compare\_col}}
+\index{lex\_compare\_col@{lex\_compare\_col}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{lex\_compare\_col()}{lex\_compare\_col()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a09ff425447bf61a5149b7c7912ead509} 
+int lex\+\_\+compare\+\_\+col (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G1}{, }\item[{const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}}}]{col1}{, }\item[{const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}}}]{col2}{}\end{DoxyParamCaption})}
+
+lexicographic comparison \begin{DoxyReturn}{Returns}
+G1\mbox{[}col1\mbox{]} \texorpdfstring{$<$}{<}=\texorpdfstring{$>$}{>} G1\mbox{[}col2\mbox{]}\+: 1\+: G1\mbox{[}col1\mbox{]} \texorpdfstring{$>$}{>} G1\mbox{[}col2\mbox{]} 0\+: G1\mbox{[}col1\mbox{]} == G1\mbox{[}col2\mbox{]} -\/1\+: G1\mbox{[}col1\mbox{]} \texorpdfstring{$<$}{<} G1\mbox{[}col2\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{test__helpers_8c_a614fc0685ce850291376960228b46231}\index{test\_helpers.c@{test\_helpers.c}!lex\_compare\_column@{lex\_compare\_column}}
+\index{lex\_compare\_column@{lex\_compare\_column}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{lex\_compare\_column()}{lex\_compare\_column()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a614fc0685ce850291376960228b46231} 
+int lex\+\_\+compare\+\_\+column (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structgenerator__mat__t}{generator\+\_\+mat\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G1}{, }\item[{const \mbox{\hyperlink{structgenerator__mat__t}{generator\+\_\+mat\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G2}{, }\item[{const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}}}]{col1}{, }\item[{const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}}}]{col2}{}\end{DoxyParamCaption})}
+
+lexicographic comparison \begin{DoxyReturn}{Returns}
+G1\mbox{[}col1\mbox{]} \texorpdfstring{$<$}{<}=\texorpdfstring{$>$}{>} G2\mbox{[}col2\mbox{]}\+: -\/1\+: G1\mbox{[}col1\mbox{]} \texorpdfstring{$>$}{>} G2\mbox{[}col2\mbox{]} 0\+: G1\mbox{[}col1\mbox{]} == G2\mbox{[}col2\mbox{]} 1\+: G1\mbox{[}col1\mbox{]} \texorpdfstring{$<$}{<} G2\mbox{[}col2\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{test__helpers_8c_ad184d77743a1f81d17423a7d7416d3c8}\index{test\_helpers.c@{test\_helpers.c}!lex\_compare\_with\_pivot@{lex\_compare\_with\_pivot}}
+\index{lex\_compare\_with\_pivot@{lex\_compare\_with\_pivot}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{lex\_compare\_with\_pivot()}{lex\_compare\_with\_pivot()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_ad184d77743a1f81d17423a7d7416d3c8} 
+int lex\+\_\+compare\+\_\+with\+\_\+pivot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{V}{, }\item[{const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}}}]{col\+\_\+idx}{, }\item[{const \mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}}}]{pivot}{\mbox{[}\+K\mbox{]}}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_ad184d77743a1f81d17423a7d7416d3c8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a01f7389dccd011cc1f89053b76032bcb}\index{test\_helpers.c@{test\_helpers.c}!lex\_sort\_cols@{lex\_sort\_cols}}
+\index{lex\_sort\_cols@{lex\_sort\_cols}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{lex\_sort\_cols()}{lex\_sort\_cols()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a01f7389dccd011cc1f89053b76032bcb} 
+void lex\+\_\+sort\+\_\+cols (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{V}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a01f7389dccd011cc1f89053b76032bcb_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a12c6544cec22b9bebf3914b850c77716}\index{test\_helpers.c@{test\_helpers.c}!monomial\_mat\_pretty\_print@{monomial\_mat\_pretty\_print}}
+\index{monomial\_mat\_pretty\_print@{monomial\_mat\_pretty\_print}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{monomial\_mat\_pretty\_print()}{monomial\_mat\_pretty\_print()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a12c6544cec22b9bebf3914b850c77716} 
+void monomial\+\_\+mat\+\_\+pretty\+\_\+print (\begin{DoxyParamCaption}\item[{const monomial\+\_\+t \texorpdfstring{$\ast$}{*}const}]{to\+\_\+print}{}\end{DoxyParamCaption})}
+
+\Hypertarget{test__helpers_8c_a9528ad83c6ea14d89136e1d4eea2dc59}\index{test\_helpers.c@{test\_helpers.c}!monomial\_mat\_pretty\_print\_name@{monomial\_mat\_pretty\_print\_name}}
+\index{monomial\_mat\_pretty\_print\_name@{monomial\_mat\_pretty\_print\_name}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{monomial\_mat\_pretty\_print\_name()}{monomial\_mat\_pretty\_print\_name()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a9528ad83c6ea14d89136e1d4eea2dc59} 
+void monomial\+\_\+mat\+\_\+pretty\+\_\+print\+\_\+name (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const monomial\+\_\+t \texorpdfstring{$\ast$}{*}}]{to\+\_\+print}{}\end{DoxyParamCaption})}
+
+\Hypertarget{test__helpers_8c_acfd855c4afa20e8c224c92b537b60be3}\index{test\_helpers.c@{test\_helpers.c}!monomial\_mat\_print\_exp\_name@{monomial\_mat\_print\_exp\_name}}
+\index{monomial\_mat\_print\_exp\_name@{monomial\_mat\_print\_exp\_name}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{monomial\_mat\_print\_exp\_name()}{monomial\_mat\_print\_exp\_name()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_acfd855c4afa20e8c224c92b537b60be3} 
+void monomial\+\_\+mat\+\_\+print\+\_\+exp\+\_\+name (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const monomial\+\_\+t \texorpdfstring{$\ast$}{*}}]{to\+\_\+print}{}\end{DoxyParamCaption})}
+
+\Hypertarget{test__helpers_8c_a46398b87f0d281422b57d5bb8df7fafd}\index{test\_helpers.c@{test\_helpers.c}!monomial\_mat\_rnd@{monomial\_mat\_rnd}}
+\index{monomial\_mat\_rnd@{monomial\_mat\_rnd}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{monomial\_mat\_rnd()}{monomial\_mat\_rnd()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a46398b87f0d281422b57d5bb8df7fafd} 
+void monomial\+\_\+mat\+\_\+rnd (\begin{DoxyParamCaption}\item[{monomial\+\_\+t \texorpdfstring{$\ast$}{*}}]{res}{}\end{DoxyParamCaption})}
+
+
+
+Permutation ///. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a46398b87f0d281422b57d5bb8df7fafd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a46398b87f0d281422b57d5bb8df7fafd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a3828fdfeea9cf8f955762b3509997ad2}\index{test\_helpers.c@{test\_helpers.c}!monomial\_mat\_rnd\_unique@{monomial\_mat\_rnd\_unique}}
+\index{monomial\_mat\_rnd\_unique@{monomial\_mat\_rnd\_unique}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{monomial\_mat\_rnd\_unique()}{monomial\_mat\_rnd\_unique()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a3828fdfeea9cf8f955762b3509997ad2} 
+void monomial\+\_\+mat\+\_\+rnd\+\_\+unique (\begin{DoxyParamCaption}\item[{monomial\+\_\+t \texorpdfstring{$\ast$}{*}}]{res}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a3828fdfeea9cf8f955762b3509997ad2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a9d1dfdaf7c1e5c218442142d3182c783}\index{test\_helpers.c@{test\_helpers.c}!normalized\_ind@{normalized\_ind}}
+\index{normalized\_ind@{normalized\_ind}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{normalized\_ind()}{normalized\_ind()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a9d1dfdaf7c1e5c218442142d3182c783} 
+void normalized\+\_\+ind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{V}{}\end{DoxyParamCaption})}
+
+generates a K \textbackslash{}times (N-\/K) identity matrix. 
+\begin{DoxyParams}{Parameters}
+{\em V\mbox{[}in/out\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a9d1dfdaf7c1e5c218442142d3182c783_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a111f66fb11404e209a1b7ae8fdc1c421}\index{test\_helpers.c@{test\_helpers.c}!normalized\_pretty\_print@{normalized\_pretty\_print}}
+\index{normalized\_pretty\_print@{normalized\_pretty\_print}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{normalized\_pretty\_print()}{normalized\_pretty\_print()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a111f66fb11404e209a1b7ae8fdc1c421} 
+void normalized\+\_\+pretty\+\_\+print (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}const}]{G}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em G} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{test__helpers_8c_ad8b2073acc71b079e443c4b90b489e51}\index{test\_helpers.c@{test\_helpers.c}!normalized\_pretty\_print\_v@{normalized\_pretty\_print\_v}}
+\index{normalized\_pretty\_print\_v@{normalized\_pretty\_print\_v}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{normalized\_pretty\_print\_v()}{normalized\_pretty\_print\_v()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_ad8b2073acc71b079e443c4b90b489e51} 
+void normalized\+\_\+pretty\+\_\+print\+\_\+v (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}}}]{values}{\mbox{[}\+K\mbox{]}\mbox{[}\+N-\/\+K\mbox{]}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{test__helpers_8c_a93cccfadd912c7adaae13d4eaf5d7beb}\index{test\_helpers.c@{test\_helpers.c}!normalized\_rng@{normalized\_rng}}
+\index{normalized\_rng@{normalized\_rng}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{normalized\_rng()}{normalized\_rng()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a93cccfadd912c7adaae13d4eaf5d7beb} 
+void normalized\+\_\+rng (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{V}{}\end{DoxyParamCaption})}
+
+
+
+Normalized ///. 
+
+NOTE\+: only for testing Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a93cccfadd912c7adaae13d4eaf5d7beb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a2eda987cf1202ced92c5ef9e6ac3c19d}\index{test\_helpers.c@{test\_helpers.c}!normalized\_sf@{normalized\_sf}}
+\index{normalized\_sf@{normalized\_sf}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{normalized\_sf()}{normalized\_sf()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a2eda987cf1202ced92c5ef9e6ac3c19d} 
+void normalized\+\_\+sf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{V}{}\end{DoxyParamCaption})}
+
+generates a 
+\begin{DoxyParams}{Parameters}
+{\em V} & \mbox{[}in/out\mbox{]} \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{test__helpers_8c_a2eda987cf1202ced92c5ef9e6ac3c19d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{test__helpers_8c_a2eda987cf1202ced92c5ef9e6ac3c19d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a5e2d3ae8eebdc7bf8afc2dcb0f3dc50b}\index{test\_helpers.c@{test\_helpers.c}!p\_fs\_tree@{p\_fs\_tree}}
+\index{p\_fs\_tree@{p\_fs\_tree}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{p\_fs\_tree()}{p\_fs\_tree()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a5e2d3ae8eebdc7bf8afc2dcb0f3dc50b} 
+void p\+\_\+fs\+\_\+tree (\begin{DoxyParamCaption}\item[{unsigned char}]{seed\+\_\+tree}{\mbox{[}\+NUM\+\_\+\+NODES\+\_\+\+SEED\+\_\+\+TREE \texorpdfstring{$\ast$}{*}\+SEED\+\_\+\+LENGTH\+\_\+\+BYTES\mbox{]}, }\item[{unsigned char}]{flag\+\_\+tree}{\mbox{[}\+NUM\+\_\+\+NODES\+\_\+\+SEED\+\_\+\+TREE\mbox{]}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{test__helpers_8c_a5e2d3ae8eebdc7bf8afc2dcb0f3dc50b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_abfc28b32efea750ce4de052f29c299ed}\index{test\_helpers.c@{test\_helpers.c}!permutation\_apply\_col@{permutation\_apply\_col}}
+\index{permutation\_apply\_col@{permutation\_apply\_col}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{permutation\_apply\_col()}{permutation\_apply\_col()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_abfc28b32efea750ce4de052f29c299ed} 
+void permutation\+\_\+apply\+\_\+col (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G}{, }\item[{const \mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{P}{}\end{DoxyParamCaption})}
+
+
+
+Permutation ///. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em G\mbox{[}in/out\mbox{]};} & \\
+\hline
+{\em P\mbox{[}in\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{test__helpers_8c_abfc28b32efea750ce4de052f29c299ed_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_ab453f1e0adc611a9bdf51a0cd247e0a9}\index{test\_helpers.c@{test\_helpers.c}!permutation\_apply\_row@{permutation\_apply\_row}}
+\index{permutation\_apply\_row@{permutation\_apply\_row}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{permutation\_apply\_row()}{permutation\_apply\_row()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_ab453f1e0adc611a9bdf51a0cd247e0a9} 
+void permutation\+\_\+apply\+\_\+row (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{P}{, }\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em P\mbox{[}in\mbox{]}} & \\
+\hline
+{\em G\mbox{[}in/out\mbox{]};} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{test__helpers_8c_ab453f1e0adc611a9bdf51a0cd247e0a9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a3975d383b5574eabcc2e716869febbff}\index{test\_helpers.c@{test\_helpers.c}!permutation\_cswap@{permutation\_cswap}}
+\index{permutation\_cswap@{permutation\_cswap}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{permutation\_cswap()}{permutation\_cswap()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a3975d383b5574eabcc2e716869febbff} 
+void permutation\+\_\+cswap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{P}{, }\item[{const uint32\+\_\+t}]{i}{, }\item[{const uint32\+\_\+t}]{j}{, }\item[{const uintptr\+\_\+t}]{mask}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \\
+\hline
+{\em i} & \\
+\hline
+{\em j} & \\
+\hline
+{\em mask} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{test__helpers_8c_a9a83261259171135d5cc3642f3b0d33d}\index{test\_helpers.c@{test\_helpers.c}!permutation\_mat\_id@{permutation\_mat\_id}}
+\index{permutation\_mat\_id@{permutation\_mat\_id}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{permutation\_mat\_id()}{permutation\_mat\_id()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a9a83261259171135d5cc3642f3b0d33d} 
+void permutation\+\_\+mat\+\_\+id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{P}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{test__helpers_8c_a9a83261259171135d5cc3642f3b0d33d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a78f7cec3d4c4b96ab6b24f79a31f554b}\index{test\_helpers.c@{test\_helpers.c}!permutation\_mat\_id\_v2@{permutation\_mat\_id\_v2}}
+\index{permutation\_mat\_id\_v2@{permutation\_mat\_id\_v2}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{permutation\_mat\_id\_v2()}{permutation\_mat\_id\_v2()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a78f7cec3d4c4b96ab6b24f79a31f554b} 
+void permutation\+\_\+mat\+\_\+id\+\_\+v2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{P}{, }\item[{const uint32\+\_\+t}]{max}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a78f7cec3d4c4b96ab6b24f79a31f554b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_afba412680ecd1b40eb67c2b789888c84}\index{test\_helpers.c@{test\_helpers.c}!permutation\_mat\_rng@{permutation\_mat\_rng}}
+\index{permutation\_mat\_rng@{permutation\_mat\_rng}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{permutation\_mat\_rng()}{permutation\_mat\_rng()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_afba412680ecd1b40eb67c2b789888c84} 
+void permutation\+\_\+mat\+\_\+rng (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{P}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_afba412680ecd1b40eb67c2b789888c84_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a173176a2ff7d246e91e344e93d1b2f2c}\index{test\_helpers.c@{test\_helpers.c}!permutation\_mat\_rng\_v2@{permutation\_mat\_rng\_v2}}
+\index{permutation\_mat\_rng\_v2@{permutation\_mat\_rng\_v2}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{permutation\_mat\_rng\_v2()}{permutation\_mat\_rng\_v2()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a173176a2ff7d246e91e344e93d1b2f2c} 
+void permutation\+\_\+mat\+\_\+rng\+\_\+v2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{P}{, }\item[{const uint32\+\_\+t}]{max}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a173176a2ff7d246e91e344e93d1b2f2c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a9e4d9c4b76ca07d4e448f47def6c3f09}\index{test\_helpers.c@{test\_helpers.c}!permutation\_pretty\_print@{permutation\_pretty\_print}}
+\index{permutation\_pretty\_print@{permutation\_pretty\_print}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{permutation\_pretty\_print()}{permutation\_pretty\_print()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a9e4d9c4b76ca07d4e448f47def6c3f09} 
+void permutation\+\_\+pretty\+\_\+print (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}const}]{P}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{test__helpers_8c_a65ef8186473ebd33af527bd1debc745e}\index{test\_helpers.c@{test\_helpers.c}!permutation\_swap@{permutation\_swap}}
+\index{permutation\_swap@{permutation\_swap}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{permutation\_swap()}{permutation\_swap()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a65ef8186473ebd33af527bd1debc745e} 
+void permutation\+\_\+swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpermutation__t}{permutation\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{P}{, }\item[{const uint32\+\_\+t}]{i}{, }\item[{const uint32\+\_\+t}]{j}{}\end{DoxyParamCaption})}
+
+
+
+Permutation ///. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \\
+\hline
+{\em i} & \\
+\hline
+{\em j} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{test__helpers_8c_a800aa7f063d87075743acdb650b666c4}\index{test\_helpers.c@{test\_helpers.c}!psalt@{psalt}}
+\index{psalt@{psalt}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{psalt()}{psalt()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a800aa7f063d87075743acdb650b666c4} 
+void psalt (\begin{DoxyParamCaption}\item[{unsigned char}]{salt}{\mbox{[}\+SALT\+\_\+\+LENGTH\+\_\+\+BYTES\mbox{]}}\end{DoxyParamCaption})}
+
+\Hypertarget{test__helpers_8c_a83c68ba10590c5ad51bacd4b64c04b16}\index{test\_helpers.c@{test\_helpers.c}!pseed@{pseed}}
+\index{pseed@{pseed}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{pseed()}{pseed()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a83c68ba10590c5ad51bacd4b64c04b16} 
+void pseed (\begin{DoxyParamCaption}\item[{unsigned char}]{seed}{\mbox{[}\+SEED\+\_\+\+LENGTH\+\_\+\+BYTES\mbox{]}}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{test__helpers_8c_a83c68ba10590c5ad51bacd4b64c04b16_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_abe93b07bb83a1324ba9c29e7ac81a1ee}\index{test\_helpers.c@{test\_helpers.c}!ptree@{ptree}}
+\index{ptree@{ptree}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{ptree()}{ptree()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_abe93b07bb83a1324ba9c29e7ac81a1ee} 
+void ptree (\begin{DoxyParamCaption}\item[{unsigned char}]{seed\+\_\+tree}{\mbox{[}\+NUM\+\_\+\+NODES\+\_\+\+SEED\+\_\+\+TREE \texorpdfstring{$\ast$}{*}\+SEED\+\_\+\+LENGTH\+\_\+\+BYTES\mbox{]}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{test__helpers_8c_abe93b07bb83a1324ba9c29e7ac81a1ee_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a04da49e9592a82928c0e1ba3c7116b43}\index{test\_helpers.c@{test\_helpers.c}!row\_bitonic\_sort@{row\_bitonic\_sort}}
+\index{row\_bitonic\_sort@{row\_bitonic\_sort}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{row\_bitonic\_sort()}{row\_bitonic\_sort()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a04da49e9592a82928c0e1ba3c7116b43} 
+int row\+\_\+bitonic\+\_\+sort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G}{}\end{DoxyParamCaption})}
+
+NOTE\+: operates on pointers \textbackslash{}input G\mbox{[}in/out\mbox{]}\+: normalised non IS part of a generator matrix \begin{DoxyReturn}{Returns}
+the sorting algorithm works only inplace for the sorting of the columns 0 on failure\+: row\+\_\+i and row\+\_\+j generate the same multiset 1 on success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{test__helpers_8c_a04da49e9592a82928c0e1ba3c7116b43_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a578a305a671568f35ac9ed6097630ce8}\index{test\_helpers.c@{test\_helpers.c}!row\_quick\_sort\_internal\_hoare\_partition\_without\_histogram@{row\_quick\_sort\_internal\_hoare\_partition\_without\_histogram}}
+\index{row\_quick\_sort\_internal\_hoare\_partition\_without\_histogram@{row\_quick\_sort\_internal\_hoare\_partition\_without\_histogram}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{row\_quick\_sort\_internal\_hoare\_partition\_without\_histogram()}{row\_quick\_sort\_internal\_hoare\_partition\_without\_histogram()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a578a305a671568f35ac9ed6097630ce8} 
+uint32\+\_\+t row\+\_\+quick\+\_\+sort\+\_\+internal\+\_\+hoare\+\_\+partition\+\_\+without\+\_\+histogram (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} \texorpdfstring{$\ast$}{*}}]{ptr}{\mbox{[}\+K\mbox{]}, }\item[{uint32\+\_\+t}]{P}{\mbox{[}\+K\mbox{]}, }\item[{const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}}}]{row\+\_\+l}{, }\item[{const \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}}}]{row\+\_\+h}{}\end{DoxyParamCaption})}
+
+unneded function. only for testing 
+\begin{DoxyParams}{Parameters}
+{\em ptr} & \\
+\hline
+{\em P} & permutation\+: to keep track of the sorting \\
+\hline
+{\em row\+\_\+l} & \\
+\hline
+{\em row\+\_\+h} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a578a305a671568f35ac9ed6097630ce8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a578a305a671568f35ac9ed6097630ce8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a8c2d820666146669b4b41b3fb0576362}\index{test\_helpers.c@{test\_helpers.c}!row\_quick\_sort\_recursive@{row\_quick\_sort\_recursive}}
+\index{row\_quick\_sort\_recursive@{row\_quick\_sort\_recursive}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{row\_quick\_sort\_recursive()}{row\_quick\_sort\_recursive()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a8c2d820666146669b4b41b3fb0576362} 
+int row\+\_\+quick\+\_\+sort\+\_\+recursive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnormalized__IS__t}{normalized\+\_\+\+IS\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{G}{, }\item[{const uint32\+\_\+t}]{n}{}\end{DoxyParamCaption})}
+
+NOTE\+: only operates on ptrs NOTE\+: not constant time 
+\begin{DoxyParams}{Parameters}
+{\em G\mbox{[}in/out\mbox{]}} & generator matrix to sort \\
+\hline
+{\em n\mbox{[}in\mbox{]}} & number of elements to sort \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 on success 0 if two rows generate the same multiset 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a8c2d820666146669b4b41b3fb0576362_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{test__helpers_8c_a8c2d820666146669b4b41b3fb0576362_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_ad36c44608592b15ba9cc24d51d852dc6}\index{test\_helpers.c@{test\_helpers.c}!row\_quick\_sort\_recursive\_internal@{row\_quick\_sort\_recursive\_internal}}
+\index{row\_quick\_sort\_recursive\_internal@{row\_quick\_sort\_recursive\_internal}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{row\_quick\_sort\_recursive\_internal()}{row\_quick\_sort\_recursive\_internal()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_ad36c44608592b15ba9cc24d51d852dc6} 
+int row\+\_\+quick\+\_\+sort\+\_\+recursive\+\_\+internal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} \texorpdfstring{$\ast$}{*}}]{ptr}{\mbox{[}\+K\mbox{]}, }\item[{uint32\+\_\+t}]{P}{\mbox{[}\+K\mbox{]}, }\item[{const uint32\+\_\+t}]{start}{, }\item[{const uint32\+\_\+t}]{end}{}\end{DoxyParamCaption})}
+
+unneded function. only for testing 
+\begin{DoxyParams}{Parameters}
+{\em ptr} & \\
+\hline
+{\em P} & permutation\+: to keep track of the sorting \\
+\hline
+{\em row\+\_\+l} & \\
+\hline
+{\em row\+\_\+h} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em ptr\mbox{[}in/out\mbox{]}} & \\
+\hline
+{\em P\mbox{[}in/out\mbox{]}} & a permutation to keep track of the sorting \\
+\hline
+{\em start\mbox{[}in\mbox{]}} & inclusive \\
+\hline
+{\em end\mbox{[}in\mbox{]}} & inclusive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 on success 0 if two rows generate the same multi set 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{test__helpers_8c_ad36c44608592b15ba9cc24d51d852dc6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_ad36c44608592b15ba9cc24d51d852dc6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a43a983cf1cb171c398663d1ee125ba5c}\index{test\_helpers.c@{test\_helpers.c}!row\_quick\_sort\_recursive\_internal\_without\_histogram@{row\_quick\_sort\_recursive\_internal\_without\_histogram}}
+\index{row\_quick\_sort\_recursive\_internal\_without\_histogram@{row\_quick\_sort\_recursive\_internal\_without\_histogram}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{row\_quick\_sort\_recursive\_internal\_without\_histogram()}{row\_quick\_sort\_recursive\_internal\_without\_histogram()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a43a983cf1cb171c398663d1ee125ba5c} 
+uint32\+\_\+t row\+\_\+quick\+\_\+sort\+\_\+recursive\+\_\+internal\+\_\+without\+\_\+histogram (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} \texorpdfstring{$\ast$}{*}}]{ptr}{\mbox{[}\+K\mbox{]}, }\item[{uint32\+\_\+t}]{P}{\mbox{[}\+K\mbox{]}, }\item[{const uint32\+\_\+t}]{start}{, }\item[{const uint32\+\_\+t}]{end}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ptr\mbox{[}in/out\mbox{]}} & \\
+\hline
+{\em P\mbox{[}in/out\mbox{]}} & a permutation to keep track of the sorting \\
+\hline
+{\em start\mbox{[}in\mbox{]}} & inclusive \\
+\hline
+{\em end\mbox{[}in\mbox{]}} & inclusive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 on success 0 if two rows generate the same multi set 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__helpers_8c_a43a983cf1cb171c398663d1ee125ba5c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{test__helpers_8c_a43a983cf1cb171c398663d1ee125ba5c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_a46a14eb363796179eb5aa5a5bdf97694}\index{test\_helpers.c@{test\_helpers.c}!SortRows\_internal2@{SortRows\_internal2}}
+\index{SortRows\_internal2@{SortRows\_internal2}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{SortRows\_internal2()}{SortRows\_internal2()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a46a14eb363796179eb5aa5a5bdf97694} 
+int Sort\+Rows\+\_\+internal2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} \texorpdfstring{$\ast$}{*}}]{ptr}{\mbox{[}\+K\mbox{]}, }\item[{uint32\+\_\+t}]{P}{\mbox{[}\+K\mbox{]}, }\item[{const uint32\+\_\+t}]{n}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{test__helpers_8c_a46a14eb363796179eb5aa5a5bdf97694_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{test__helpers_8c_af3a6096c7ceedbe9d71ced315f853b58}\index{test\_helpers.c@{test\_helpers.c}!SortRows\_internal3@{SortRows\_internal3}}
+\index{SortRows\_internal3@{SortRows\_internal3}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{SortRows\_internal3()}{SortRows\_internal3()}}
+{\footnotesize\ttfamily \label{test__helpers_8c_af3a6096c7ceedbe9d71ced315f853b58} 
+int Sort\+Rows\+\_\+internal3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}} \texorpdfstring{$\ast$}{*}}]{ptr}{\mbox{[}\+K\mbox{]}, }\item[{uint32\+\_\+t}]{P}{\mbox{[}\+K\mbox{]}, }\item[{const uint32\+\_\+t}]{n}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{test__helpers_8c_af3a6096c7ceedbe9d71ced315f853b58_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-var-members}
+\Hypertarget{test__helpers_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{test__helpers_8c_a00b11b032bd186b2eb30c8f35844b77e}\index{test\_helpers.c@{test\_helpers.c}!network@{network}}
+\index{network@{network}!test\_helpers.c@{test\_helpers.c}}
+\doxysubsubsection{\texorpdfstring{network}{network}}
+{\footnotesize\ttfamily \label{test__helpers_8c_a00b11b032bd186b2eb30c8f35844b77e} 
+uint8\+\_\+t network\mbox{[}$\,$\mbox{]} = \{ 0,2,1,3,4,6,5,7,8,10,9,11,12,14,13,15,16,18,17,19,20,22,21,23,24,26,25,27,28,30,29,31,32,34,33,35,36,38,37,39,40,42,41,43,44,46,45,47,48,50,49,51,52,54,53,55,56,58,57,59,60,62,61,63,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,0,52,1,2,3,55,4,48,5,6,7,51,8,60,9,10,11,63,12,56,13,14,15,59,16,32,17,18,19,35,20,24,21,22,23,27,25,26,28,44,29,30,31,47,33,34,36,40,37,38,39,43,41,42,45,46,49,50,53,54,57,58,61,62,0,20,1,53,2,54,3,23,4,28,5,49,6,50,7,31,8,36,9,61,10,62,11,39,12,16,13,57,14,58,15,19,17,33,18,34,21,25,22,26,24,52,27,55,29,45,30,46,32,56,35,59,37,41,38,42,40,60,43,63,44,48,47,51,0,4,1,21,2,22,3,7,5,29,6,30,8,12,9,37,10,38,11,15,13,17,14,18,16,20,19,23,24,32,25,53,26,54,27,35,28,36,31,39,33,57,34,58,40,44,41,61,42,62,43,47,45,49,46,50,48,52,51,55,56,60,59,63,0,8,1,5,2,6,3,11,4,12,7,15,9,13,10,14,16,40,17,21,18,22,19,43,20,44,23,47,24,28,25,33,26,34,27,31,29,37,30,38,32,36,35,39,41,45,42,46,48,56,49,53,50,54,51,59,52,60,55,63,57,61,58,62,1,9,2,10,4,8,5,13,6,14,7,11,12,48,15,51,16,24,17,41,18,42,19,27,20,28,21,45,22,46,23,31,25,29,26,30,32,40,33,37,34,38,35,43,36,44,39,47,49,57,50,58,52,56,53,61,54,62,55,59,4,16,5,9,6,10,7,19,8,24,11,27,13,49,14,50,17,25,18,26,20,32,21,29,22,30,23,35,28,40,31,43,33,41,34,42,36,52,37,45,38,46,39,55,44,56,47,59,53,57,54,58,1,4,5,17,6,18,8,16,9,25,10,26,11,19,12,24,15,27,21,33,22,34,29,41,30,42,36,48,37,53,38,54,39,51,44,52,45,57,46,58,47,55,59,62,2,8,9,17,10,18,12,20,13,25,14,26,15,23,24,32,27,35,28,36,31,39,37,49,38,50,40,48,43,51,45,53,46,54,55,61,2,4,12,16,13,21,14,22,15,19,20,24,23,27,25,33,26,34,28,32,29,37,30,38,31,35,36,40,39,43,41,49,42,50,44,48,47,51,59,61,4,16,5,20,10,40,13,17,14,18,21,25,22,26,23,53,24,28,27,31,29,33,30,34,32,36,35,39,37,41,38,42,43,58,45,49,46,50,47,59,3,17,6,36,7,21,8,32,9,24,11,41,13,28,14,44,15,45,18,48,19,49,22,52,25,29,26,30,27,57,31,55,33,37,34,38,35,50,39,54,42,56,46,60,6,20,8,16,10,24,11,25,14,28,15,29,17,33,18,32,21,37,22,36,26,42,27,41,30,46,31,45,34,48,35,49,38,52,39,53,43,57,47,55,3,18,5,8,6,12,7,22,15,21,17,32,19,33,23,37,26,40,30,44,31,46,41,56,42,48,45,60,51,57,55,58,3,16,7,20,11,26,18,24,19,25,22,28,23,29,27,33,30,36,34,40,35,41,37,52,38,44,39,45,43,56,47,60,3,9,7,13,10,16,11,17,14,20,15,30,19,34,21,36,23,38,25,40,26,32,27,42,29,44,31,37,33,48,43,49,46,52,47,53,50,56,54,60,3,8,7,10,9,12,11,18,13,14,15,24,17,22,19,28,21,26,23,25,27,34,29,36,30,32,31,33,35,44,37,42,38,40,39,48,41,46,45,52,49,50,51,54,53,56,55,60,3,6,7,12,11,16,15,17,18,20,19,24,21,22,23,30,25,32,26,28,27,29,31,38,33,40,34,36,35,37,39,44,41,42,43,45,46,48,47,52,51,56,57,60,3,5,6,8,7,9,10,12,11,13,14,16,15,18,17,20,19,21,22,24,23,26,25,28,27,30,29,32,31,34,33,36,35,38,37,40,39,41,42,44,43,46,45,48,47,49,50,52,51,53,54,56,55,57,58,60,3,4,7,8,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,55,56,59,60\}}
+

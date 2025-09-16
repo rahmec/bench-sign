@@ -1,0 +1,366 @@
+\doxysection{/home/raximus/repos/work/speck/implementation/\+SPECK/repo/optimized/include/parameters.h File Reference}
+\hypertarget{parameters_8h}{}\label{parameters_8h}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/include/parameters.h@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/include/parameters.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for parameters.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{parameters_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{parameters_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{parameters_8h_acbcee443d6d55cb8600b3f240f5cf907}{Q}}~(127)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_ace5af391647de49974c7e583bbf4a04f}{Qm1}}~(\mbox{\hyperlink{parameters_8h_acbcee443d6d55cb8600b3f240f5cf907}{Q}}-\/1)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}{FQ\+\_\+\+ELEM}}~uint8\+\_\+t
+\item 
+\#define \mbox{\hyperlink{parameters_8h_ad17e718fd5bbb53995cb61e78a3c8cf5}{FQ\+\_\+\+DOUBLEPREC}}~uint16\+\_\+t
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}{POSITION\+\_\+T}}~uint8\+\_\+t
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}~(252)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}~(126)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a3151af823089af45401931e9f2ea363b}{NUM\+\_\+\+KEYPAIRS}}~(2)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}}~(16)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a0b67420f2cf7d72d630191de6ae6a41f}{SIGN\+\_\+\+PIVOT\+\_\+\+REUSE\+\_\+\+LIMIT}}~(25)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_abe5b7275cdf02ff3c00ca12bb5d2f60f}{VERIFY\+\_\+\+PIVOT\+\_\+\+REUSE\+\_\+\+LIMIT}}~\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a66a8e71a3df40b69d3a5483c3cd972e0}{K8}}~((\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}+7u)/8u)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_aae30e2de203d703d9ab68f0489f6b2d7}{N8}}~((\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}+7u)/8u)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_ae8386fbe605fa1a87e602172491a6d31}{NEXT\+\_\+\+MULTIPLE}}(x,  n)
+\begin{DoxyCompactList}\small\item\em rounds x to the next multiple of n \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{parameters_8h_a269002a629e1240a3067e720ccc342fc}{N\+\_\+\+K\+\_\+pad}}~(\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}-\/\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}})
+\begin{DoxyCompactList}\small\item\em in case of the reference implementation, we do not need this behaviour. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{parameters_8h_a682dbd094a55f6040c26436e6047ede1}{N\+\_\+pad}}~\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a8a235765808af91d455a7c81c469ddef}{K\+\_\+pad}}~\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}
+\item 
+\#define \mbox{\hyperlink{parameters_8h_ac6693a0a33c6d0558747aa0132821b5a}{Q\+\_\+pad}}~\mbox{\hyperlink{parameters_8h_ae8386fbe605fa1a87e602172491a6d31}{NEXT\+\_\+\+MULTIPLE}}(\mbox{\hyperlink{parameters_8h_acbcee443d6d55cb8600b3f240f5cf907}{Q}}, 8)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a4f084f0537806da54ffa64182398f6af}{HASH\+\_\+\+DIGEST\+\_\+\+LENGTH}}~(2\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}})
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a23438446fea87b735bec6d115ef09910}{SALT\+\_\+\+LENGTH\+\_\+\+BYTES}}~\mbox{\hyperlink{parameters_8h_a4f084f0537806da54ffa64182398f6af}{HASH\+\_\+\+DIGEST\+\_\+\+LENGTH}}
+\item 
+\#define \mbox{\hyperlink{parameters_8h_ac23fa7ed851db8ac69cc6e869e700187}{PRIVATE\+\_\+\+KEY\+\_\+\+SEED\+\_\+\+LENGTH\+\_\+\+BYTES}}~(2\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}})
+\item 
+\#define \mbox{\hyperlink{parameters_8h_ad0045f3156b72ccc3e69944c0ee95eca}{MASK\+\_\+Q}}~((1 $<$$<$ \mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(\mbox{\hyperlink{parameters_8h_acbcee443d6d55cb8600b3f240f5cf907}{Q}})) -\/ 1)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_afa805b01454592322050608844e1617f}{MASK\+\_\+N}}~((1 $<$$<$ \mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})) -\/ 1)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\+\_\+\+REPRESENTABLE\+\_\+\+IN\+\_\+\+D\+\_\+\+BITS}}(D,  \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a2797c0b8f06f36fa1b2d6b516b74f8c0}{LOG2}}(L)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a998044011d1a0552a60434f3403177af}{NUM\+\_\+\+LEAVES\+\_\+\+SEED\+\_\+\+TREE}}~(T)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_aa6675740065d584d56ec4d913fc892b9}{NUM\+\_\+\+NODES\+\_\+\+SEED\+\_\+\+TREE}}~((2\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_a998044011d1a0552a60434f3403177af}{NUM\+\_\+\+LEAVES\+\_\+\+SEED\+\_\+\+TREE}}) -\/ 1)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a9273d516ce6b85d386a0267e4c38534c}{RREF\+\_\+\+MAT\+\_\+\+PACKEDBYTES}}~((\mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(\mbox{\hyperlink{parameters_8h_acbcee443d6d55cb8600b3f240f5cf907}{Q}})\texorpdfstring{$\ast$}{*}(\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}-\/\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}})\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}} + 7)/8 + (\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}} + 7)/8)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a57e8e1ea3d17704ed5ac32e4bd2df8e9}{SPECK\+\_\+\+RREF\+\_\+\+MAT\+\_\+\+PACKEDBYTES}}~((\mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(\mbox{\hyperlink{parameters_8h_acbcee443d6d55cb8600b3f240f5cf907}{Q}})\texorpdfstring{$\ast$}{*}(\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}-\/\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}})\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}} + 7)/8)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_ab24d8ee301b4339ca85e03a14bb950ee}{SPECK\+\_\+\+C1\+S\+\_\+\+PACKEDBYTES}}~((\mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(\mbox{\hyperlink{parameters_8h_acbcee443d6d55cb8600b3f240f5cf907}{Q}})\texorpdfstring{$\ast$}{*}(\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}-\/\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}})\texorpdfstring{$\ast$}{*}W + 7)/8)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a0e4b941a88b4e9357701b39342d7b90e}{SEED\+\_\+\+TREE\+\_\+\+MAX\+\_\+\+PUBLISHED\+\_\+\+BYTES}}~(MAX\+\_\+\+PUBLISHED\+\_\+\+SEEDS\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}} + 1)
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a91cbf652a0cad30f51446f7b6083bd60}{SPECK\+\_\+\+FULL\+\_\+G}}
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a39e7e660b48224aee1f4197e3b738969}{SPECK\+\_\+\+COMPRESS\+\_\+\+GP}}
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a2137f3adb75a5312e3e323fdd57d0bd2}{SPECK\+\_\+\+COMPRESS\+\_\+\+C1S}}
+\item 
+\#define \mbox{\hyperlink{parameters_8h_a4a8c3e88d0225dda434f49a2b9987028}{SPECK\+\_\+\+SIGNATURE\+\_\+\+SIZE}}(NR\+\_\+\+LEAVES)
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{parameters_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}\index{parameters.h@{parameters.h}!BITS\_TO\_REPRESENT@{BITS\_TO\_REPRESENT}}
+\index{BITS\_TO\_REPRESENT@{BITS\_TO\_REPRESENT}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{BITS\_TO\_REPRESENT}{BITS\_TO\_REPRESENT}}
+{\footnotesize\ttfamily \label{parameters_8h_a10bcd56728c7fab03faf79ece650b74c} 
+\#define BITS\+\_\+\+TO\+\_\+\+REPRESENT(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ (\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}\ ==\ 0\ ?\ 1\ :\ (15\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\_REPRESENTABLE\_IN\_D\_BITS}}(\ 1,\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\_REPRESENTABLE\_IN\_D\_BITS}}(\ 2,\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\_REPRESENTABLE\_IN\_D\_BITS}}(\ 3,\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\_REPRESENTABLE\_IN\_D\_BITS}}(\ 4,\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\_REPRESENTABLE\_IN\_D\_BITS}}(\ 5,\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\_REPRESENTABLE\_IN\_D\_BITS}}(\ 6,\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\_REPRESENTABLE\_IN\_D\_BITS}}(\ 7,\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\_REPRESENTABLE\_IN\_D\_BITS}}(\ 8,\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\_REPRESENTABLE\_IN\_D\_BITS}}(\ 9,\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\_REPRESENTABLE\_IN\_D\_BITS}}(10,\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\_REPRESENTABLE\_IN\_D\_BITS}}(11,\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\_REPRESENTABLE\_IN\_D\_BITS}}(12,\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\_REPRESENTABLE\_IN\_D\_BITS}}(13,\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\_REPRESENTABLE\_IN\_D\_BITS}}(14,\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\_REPRESENTABLE\_IN\_D\_BITS}}(15,\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \mbox{\hyperlink{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}{IS\_REPRESENTABLE\_IN\_D\_BITS}}(16,\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{parameters_8h_ad17e718fd5bbb53995cb61e78a3c8cf5}\index{parameters.h@{parameters.h}!FQ\_DOUBLEPREC@{FQ\_DOUBLEPREC}}
+\index{FQ\_DOUBLEPREC@{FQ\_DOUBLEPREC}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{FQ\_DOUBLEPREC}{FQ\_DOUBLEPREC}}
+{\footnotesize\ttfamily \label{parameters_8h_ad17e718fd5bbb53995cb61e78a3c8cf5} 
+\#define FQ\+\_\+\+DOUBLEPREC~uint16\+\_\+t}
+
+\Hypertarget{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25}\index{parameters.h@{parameters.h}!FQ\_ELEM@{FQ\_ELEM}}
+\index{FQ\_ELEM@{FQ\_ELEM}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{FQ\_ELEM}{FQ\_ELEM}}
+{\footnotesize\ttfamily \label{parameters_8h_a4cbaabe2c5bbfe1af49952e6e3140b25} 
+\#define FQ\+\_\+\+ELEM~uint8\+\_\+t}
+
+\Hypertarget{parameters_8h_a4f084f0537806da54ffa64182398f6af}\index{parameters.h@{parameters.h}!HASH\_DIGEST\_LENGTH@{HASH\_DIGEST\_LENGTH}}
+\index{HASH\_DIGEST\_LENGTH@{HASH\_DIGEST\_LENGTH}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{HASH\_DIGEST\_LENGTH}{HASH\_DIGEST\_LENGTH}}
+{\footnotesize\ttfamily \label{parameters_8h_a4f084f0537806da54ffa64182398f6af} 
+\#define HASH\+\_\+\+DIGEST\+\_\+\+LENGTH~(2\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}})}
+
+\Hypertarget{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0}\index{parameters.h@{parameters.h}!IS\_REPRESENTABLE\_IN\_D\_BITS@{IS\_REPRESENTABLE\_IN\_D\_BITS}}
+\index{IS\_REPRESENTABLE\_IN\_D\_BITS@{IS\_REPRESENTABLE\_IN\_D\_BITS}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{IS\_REPRESENTABLE\_IN\_D\_BITS}{IS\_REPRESENTABLE\_IN\_D\_BITS}}
+{\footnotesize\ttfamily \label{parameters_8h_a6423c3cd28762f0fa68e73b8c4550dd0} 
+\#define IS\+\_\+\+REPRESENTABLE\+\_\+\+IN\+\_\+\+D\+\_\+\+BITS(\begin{DoxyParamCaption}\item[{}]{D}{, }\item[{}]{\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ (((\textcolor{keywordtype}{unsigned}\ long)\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}>=(1UL\ <<\ (D-\/1))\ \&\&\ (\textcolor{keywordtype}{unsigned}\ long)\ \mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}<(1UL\ <<\ D))\ ?\ D\ :\ -\/1)}
+
+\end{DoxyCode}
+\Hypertarget{parameters_8h_a97d832ae23af4f215e801e37e4f94254}\index{parameters.h@{parameters.h}!K@{K}}
+\index{K@{K}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{K}{K}}
+{\footnotesize\ttfamily \label{parameters_8h_a97d832ae23af4f215e801e37e4f94254} 
+\#define K~(126)}
+
+\Hypertarget{parameters_8h_a66a8e71a3df40b69d3a5483c3cd972e0}\index{parameters.h@{parameters.h}!K8@{K8}}
+\index{K8@{K8}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{K8}{K8}}
+{\footnotesize\ttfamily \label{parameters_8h_a66a8e71a3df40b69d3a5483c3cd972e0} 
+\#define K8~((\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}+7u)/8u)}
+
+\Hypertarget{parameters_8h_a8a235765808af91d455a7c81c469ddef}\index{parameters.h@{parameters.h}!K\_pad@{K\_pad}}
+\index{K\_pad@{K\_pad}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{K\_pad}{K\_pad}}
+{\footnotesize\ttfamily \label{parameters_8h_a8a235765808af91d455a7c81c469ddef} 
+\#define K\+\_\+pad~\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}}
+
+\Hypertarget{parameters_8h_a2797c0b8f06f36fa1b2d6b516b74f8c0}\index{parameters.h@{parameters.h}!LOG2@{LOG2}}
+\index{LOG2@{LOG2}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{LOG2}{LOG2}}
+{\footnotesize\ttfamily \label{parameters_8h_a2797c0b8f06f36fa1b2d6b516b74f8c0} 
+\#define LOG2(\begin{DoxyParamCaption}\item[{}]{L}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\ (\mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\_TO\_REPRESENT}}(L)\ >\ \mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\_TO\_REPRESENT}}(L-\/1))\ ?\ (\mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\_TO\_REPRESENT}}(L-\/1))\ :\ (\mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\_TO\_REPRESENT}}(L))\ )}
+
+\end{DoxyCode}
+\Hypertarget{parameters_8h_afa805b01454592322050608844e1617f}\index{parameters.h@{parameters.h}!MASK\_N@{MASK\_N}}
+\index{MASK\_N@{MASK\_N}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{MASK\_N}{MASK\_N}}
+{\footnotesize\ttfamily \label{parameters_8h_afa805b01454592322050608844e1617f} 
+\#define MASK\+\_\+N~((1 $<$$<$ \mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}})) -\/ 1)}
+
+\Hypertarget{parameters_8h_ad0045f3156b72ccc3e69944c0ee95eca}\index{parameters.h@{parameters.h}!MASK\_Q@{MASK\_Q}}
+\index{MASK\_Q@{MASK\_Q}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{MASK\_Q}{MASK\_Q}}
+{\footnotesize\ttfamily \label{parameters_8h_ad0045f3156b72ccc3e69944c0ee95eca} 
+\#define MASK\+\_\+Q~((1 $<$$<$ \mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(\mbox{\hyperlink{parameters_8h_acbcee443d6d55cb8600b3f240f5cf907}{Q}})) -\/ 1)}
+
+\Hypertarget{parameters_8h_a0240ac851181b84ac374872dc5434ee4}\index{parameters.h@{parameters.h}!N@{N}}
+\index{N@{N}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{N}{N}}
+{\footnotesize\ttfamily \label{parameters_8h_a0240ac851181b84ac374872dc5434ee4} 
+\#define N~(252)}
+
+\Hypertarget{parameters_8h_aae30e2de203d703d9ab68f0489f6b2d7}\index{parameters.h@{parameters.h}!N8@{N8}}
+\index{N8@{N8}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{N8}{N8}}
+{\footnotesize\ttfamily \label{parameters_8h_aae30e2de203d703d9ab68f0489f6b2d7} 
+\#define N8~((\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}+7u)/8u)}
+
+\Hypertarget{parameters_8h_a269002a629e1240a3067e720ccc342fc}\index{parameters.h@{parameters.h}!N\_K\_pad@{N\_K\_pad}}
+\index{N\_K\_pad@{N\_K\_pad}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{N\_K\_pad}{N\_K\_pad}}
+{\footnotesize\ttfamily \label{parameters_8h_a269002a629e1240a3067e720ccc342fc} 
+\#define N\+\_\+\+K\+\_\+pad~(\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}-\/\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}})}
+
+
+
+in case of the reference implementation, we do not need this behaviour. 
+
+\Hypertarget{parameters_8h_a682dbd094a55f6040c26436e6047ede1}\index{parameters.h@{parameters.h}!N\_pad@{N\_pad}}
+\index{N\_pad@{N\_pad}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{N\_pad}{N\_pad}}
+{\footnotesize\ttfamily \label{parameters_8h_a682dbd094a55f6040c26436e6047ede1} 
+\#define N\+\_\+pad~\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}}
+
+\Hypertarget{parameters_8h_ae8386fbe605fa1a87e602172491a6d31}\index{parameters.h@{parameters.h}!NEXT\_MULTIPLE@{NEXT\_MULTIPLE}}
+\index{NEXT\_MULTIPLE@{NEXT\_MULTIPLE}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{NEXT\_MULTIPLE}{NEXT\_MULTIPLE}}
+{\footnotesize\ttfamily \label{parameters_8h_ae8386fbe605fa1a87e602172491a6d31} 
+\#define NEXT\+\_\+\+MULTIPLE(\begin{DoxyParamCaption}\item[{}]{x}{, }\item[{}]{n}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((((x)+((n)-\/1u))/(n))*(n))}
+
+\end{DoxyCode}
+
+
+rounds x to the next multiple of n 
+
+\Hypertarget{parameters_8h_a3151af823089af45401931e9f2ea363b}\index{parameters.h@{parameters.h}!NUM\_KEYPAIRS@{NUM\_KEYPAIRS}}
+\index{NUM\_KEYPAIRS@{NUM\_KEYPAIRS}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{NUM\_KEYPAIRS}{NUM\_KEYPAIRS}}
+{\footnotesize\ttfamily \label{parameters_8h_a3151af823089af45401931e9f2ea363b} 
+\#define NUM\+\_\+\+KEYPAIRS~(2)}
+
+\Hypertarget{parameters_8h_a998044011d1a0552a60434f3403177af}\index{parameters.h@{parameters.h}!NUM\_LEAVES\_SEED\_TREE@{NUM\_LEAVES\_SEED\_TREE}}
+\index{NUM\_LEAVES\_SEED\_TREE@{NUM\_LEAVES\_SEED\_TREE}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{NUM\_LEAVES\_SEED\_TREE}{NUM\_LEAVES\_SEED\_TREE}}
+{\footnotesize\ttfamily \label{parameters_8h_a998044011d1a0552a60434f3403177af} 
+\#define NUM\+\_\+\+LEAVES\+\_\+\+SEED\+\_\+\+TREE~(T)}
+
+\Hypertarget{parameters_8h_aa6675740065d584d56ec4d913fc892b9}\index{parameters.h@{parameters.h}!NUM\_NODES\_SEED\_TREE@{NUM\_NODES\_SEED\_TREE}}
+\index{NUM\_NODES\_SEED\_TREE@{NUM\_NODES\_SEED\_TREE}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{NUM\_NODES\_SEED\_TREE}{NUM\_NODES\_SEED\_TREE}}
+{\footnotesize\ttfamily \label{parameters_8h_aa6675740065d584d56ec4d913fc892b9} 
+\#define NUM\+\_\+\+NODES\+\_\+\+SEED\+\_\+\+TREE~((2\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_a998044011d1a0552a60434f3403177af}{NUM\+\_\+\+LEAVES\+\_\+\+SEED\+\_\+\+TREE}}) -\/ 1)}
+
+\Hypertarget{parameters_8h_a4e4de5a3e79340f35def286ea311e65f}\index{parameters.h@{parameters.h}!POSITION\_T@{POSITION\_T}}
+\index{POSITION\_T@{POSITION\_T}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{POSITION\_T}{POSITION\_T}}
+{\footnotesize\ttfamily \label{parameters_8h_a4e4de5a3e79340f35def286ea311e65f} 
+\#define POSITION\+\_\+T~uint8\+\_\+t}
+
+\Hypertarget{parameters_8h_ac23fa7ed851db8ac69cc6e869e700187}\index{parameters.h@{parameters.h}!PRIVATE\_KEY\_SEED\_LENGTH\_BYTES@{PRIVATE\_KEY\_SEED\_LENGTH\_BYTES}}
+\index{PRIVATE\_KEY\_SEED\_LENGTH\_BYTES@{PRIVATE\_KEY\_SEED\_LENGTH\_BYTES}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{PRIVATE\_KEY\_SEED\_LENGTH\_BYTES}{PRIVATE\_KEY\_SEED\_LENGTH\_BYTES}}
+{\footnotesize\ttfamily \label{parameters_8h_ac23fa7ed851db8ac69cc6e869e700187} 
+\#define PRIVATE\+\_\+\+KEY\+\_\+\+SEED\+\_\+\+LENGTH\+\_\+\+BYTES~(2\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}})}
+
+\Hypertarget{parameters_8h_acbcee443d6d55cb8600b3f240f5cf907}\index{parameters.h@{parameters.h}!Q@{Q}}
+\index{Q@{Q}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{Q}{Q}}
+{\footnotesize\ttfamily \label{parameters_8h_acbcee443d6d55cb8600b3f240f5cf907} 
+\#define Q~(127)}
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHORS \textquotesingle{}\textquotesingle{}AS IS\textquotesingle{}\textquotesingle{} AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. \Hypertarget{parameters_8h_ac6693a0a33c6d0558747aa0132821b5a}\index{parameters.h@{parameters.h}!Q\_pad@{Q\_pad}}
+\index{Q\_pad@{Q\_pad}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{Q\_pad}{Q\_pad}}
+{\footnotesize\ttfamily \label{parameters_8h_ac6693a0a33c6d0558747aa0132821b5a} 
+\#define Q\+\_\+pad~\mbox{\hyperlink{parameters_8h_ae8386fbe605fa1a87e602172491a6d31}{NEXT\+\_\+\+MULTIPLE}}(\mbox{\hyperlink{parameters_8h_acbcee443d6d55cb8600b3f240f5cf907}{Q}}, 8)}
+
+\Hypertarget{parameters_8h_ace5af391647de49974c7e583bbf4a04f}\index{parameters.h@{parameters.h}!Qm1@{Qm1}}
+\index{Qm1@{Qm1}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{Qm1}{Qm1}}
+{\footnotesize\ttfamily \label{parameters_8h_ace5af391647de49974c7e583bbf4a04f} 
+\#define Qm1~(\mbox{\hyperlink{parameters_8h_acbcee443d6d55cb8600b3f240f5cf907}{Q}}-\/1)}
+
+\Hypertarget{parameters_8h_a9273d516ce6b85d386a0267e4c38534c}\index{parameters.h@{parameters.h}!RREF\_MAT\_PACKEDBYTES@{RREF\_MAT\_PACKEDBYTES}}
+\index{RREF\_MAT\_PACKEDBYTES@{RREF\_MAT\_PACKEDBYTES}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{RREF\_MAT\_PACKEDBYTES}{RREF\_MAT\_PACKEDBYTES}}
+{\footnotesize\ttfamily \label{parameters_8h_a9273d516ce6b85d386a0267e4c38534c} 
+\#define RREF\+\_\+\+MAT\+\_\+\+PACKEDBYTES~((\mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(\mbox{\hyperlink{parameters_8h_acbcee443d6d55cb8600b3f240f5cf907}{Q}})\texorpdfstring{$\ast$}{*}(\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}-\/\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}})\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}} + 7)/8 + (\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}} + 7)/8)}
+
+\Hypertarget{parameters_8h_a23438446fea87b735bec6d115ef09910}\index{parameters.h@{parameters.h}!SALT\_LENGTH\_BYTES@{SALT\_LENGTH\_BYTES}}
+\index{SALT\_LENGTH\_BYTES@{SALT\_LENGTH\_BYTES}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{SALT\_LENGTH\_BYTES}{SALT\_LENGTH\_BYTES}}
+{\footnotesize\ttfamily \label{parameters_8h_a23438446fea87b735bec6d115ef09910} 
+\#define SALT\+\_\+\+LENGTH\+\_\+\+BYTES~\mbox{\hyperlink{parameters_8h_a4f084f0537806da54ffa64182398f6af}{HASH\+\_\+\+DIGEST\+\_\+\+LENGTH}}}
+
+\Hypertarget{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}\index{parameters.h@{parameters.h}!SEED\_LENGTH\_BYTES@{SEED\_LENGTH\_BYTES}}
+\index{SEED\_LENGTH\_BYTES@{SEED\_LENGTH\_BYTES}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{SEED\_LENGTH\_BYTES}{SEED\_LENGTH\_BYTES}}
+{\footnotesize\ttfamily \label{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83} 
+\#define SEED\+\_\+\+LENGTH\+\_\+\+BYTES~(16)}
+
+\Hypertarget{parameters_8h_a0e4b941a88b4e9357701b39342d7b90e}\index{parameters.h@{parameters.h}!SEED\_TREE\_MAX\_PUBLISHED\_BYTES@{SEED\_TREE\_MAX\_PUBLISHED\_BYTES}}
+\index{SEED\_TREE\_MAX\_PUBLISHED\_BYTES@{SEED\_TREE\_MAX\_PUBLISHED\_BYTES}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{SEED\_TREE\_MAX\_PUBLISHED\_BYTES}{SEED\_TREE\_MAX\_PUBLISHED\_BYTES}}
+{\footnotesize\ttfamily \label{parameters_8h_a0e4b941a88b4e9357701b39342d7b90e} 
+\#define SEED\+\_\+\+TREE\+\_\+\+MAX\+\_\+\+PUBLISHED\+\_\+\+BYTES~(MAX\+\_\+\+PUBLISHED\+\_\+\+SEEDS\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}} + 1)}
+
+\Hypertarget{parameters_8h_a0b67420f2cf7d72d630191de6ae6a41f}\index{parameters.h@{parameters.h}!SIGN\_PIVOT\_REUSE\_LIMIT@{SIGN\_PIVOT\_REUSE\_LIMIT}}
+\index{SIGN\_PIVOT\_REUSE\_LIMIT@{SIGN\_PIVOT\_REUSE\_LIMIT}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{SIGN\_PIVOT\_REUSE\_LIMIT}{SIGN\_PIVOT\_REUSE\_LIMIT}}
+{\footnotesize\ttfamily \label{parameters_8h_a0b67420f2cf7d72d630191de6ae6a41f} 
+\#define SIGN\+\_\+\+PIVOT\+\_\+\+REUSE\+\_\+\+LIMIT~(25)}
+
+\Hypertarget{parameters_8h_ab24d8ee301b4339ca85e03a14bb950ee}\index{parameters.h@{parameters.h}!SPECK\_C1S\_PACKEDBYTES@{SPECK\_C1S\_PACKEDBYTES}}
+\index{SPECK\_C1S\_PACKEDBYTES@{SPECK\_C1S\_PACKEDBYTES}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{SPECK\_C1S\_PACKEDBYTES}{SPECK\_C1S\_PACKEDBYTES}}
+{\footnotesize\ttfamily \label{parameters_8h_ab24d8ee301b4339ca85e03a14bb950ee} 
+\#define SPECK\+\_\+\+C1\+S\+\_\+\+PACKEDBYTES~((\mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(\mbox{\hyperlink{parameters_8h_acbcee443d6d55cb8600b3f240f5cf907}{Q}})\texorpdfstring{$\ast$}{*}(\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}-\/\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}})\texorpdfstring{$\ast$}{*}W + 7)/8)}
+
+\Hypertarget{parameters_8h_a2137f3adb75a5312e3e323fdd57d0bd2}\index{parameters.h@{parameters.h}!SPECK\_COMPRESS\_C1S@{SPECK\_COMPRESS\_C1S}}
+\index{SPECK\_COMPRESS\_C1S@{SPECK\_COMPRESS\_C1S}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{SPECK\_COMPRESS\_C1S}{SPECK\_COMPRESS\_C1S}}
+{\footnotesize\ttfamily \label{parameters_8h_a2137f3adb75a5312e3e323fdd57d0bd2} 
+\#define SPECK\+\_\+\+COMPRESS\+\_\+\+C1S}
+
+\Hypertarget{parameters_8h_a39e7e660b48224aee1f4197e3b738969}\index{parameters.h@{parameters.h}!SPECK\_COMPRESS\_GP@{SPECK\_COMPRESS\_GP}}
+\index{SPECK\_COMPRESS\_GP@{SPECK\_COMPRESS\_GP}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{SPECK\_COMPRESS\_GP}{SPECK\_COMPRESS\_GP}}
+{\footnotesize\ttfamily \label{parameters_8h_a39e7e660b48224aee1f4197e3b738969} 
+\#define SPECK\+\_\+\+COMPRESS\+\_\+\+GP}
+
+\Hypertarget{parameters_8h_a91cbf652a0cad30f51446f7b6083bd60}\index{parameters.h@{parameters.h}!SPECK\_FULL\_G@{SPECK\_FULL\_G}}
+\index{SPECK\_FULL\_G@{SPECK\_FULL\_G}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{SPECK\_FULL\_G}{SPECK\_FULL\_G}}
+{\footnotesize\ttfamily \label{parameters_8h_a91cbf652a0cad30f51446f7b6083bd60} 
+\#define SPECK\+\_\+\+FULL\+\_\+G}
+
+\Hypertarget{parameters_8h_a57e8e1ea3d17704ed5ac32e4bd2df8e9}\index{parameters.h@{parameters.h}!SPECK\_RREF\_MAT\_PACKEDBYTES@{SPECK\_RREF\_MAT\_PACKEDBYTES}}
+\index{SPECK\_RREF\_MAT\_PACKEDBYTES@{SPECK\_RREF\_MAT\_PACKEDBYTES}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{SPECK\_RREF\_MAT\_PACKEDBYTES}{SPECK\_RREF\_MAT\_PACKEDBYTES}}
+{\footnotesize\ttfamily \label{parameters_8h_a57e8e1ea3d17704ed5ac32e4bd2df8e9} 
+\#define SPECK\+\_\+\+RREF\+\_\+\+MAT\+\_\+\+PACKEDBYTES~((\mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(\mbox{\hyperlink{parameters_8h_acbcee443d6d55cb8600b3f240f5cf907}{Q}})\texorpdfstring{$\ast$}{*}(\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}-\/\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}})\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}} + 7)/8)}
+
+\Hypertarget{parameters_8h_a4a8c3e88d0225dda434f49a2b9987028}\index{parameters.h@{parameters.h}!SPECK\_SIGNATURE\_SIZE@{SPECK\_SIGNATURE\_SIZE}}
+\index{SPECK\_SIGNATURE\_SIZE@{SPECK\_SIGNATURE\_SIZE}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{SPECK\_SIGNATURE\_SIZE}{SPECK\_SIGNATURE\_SIZE}}
+{\footnotesize\ttfamily \label{parameters_8h_a4a8c3e88d0225dda434f49a2b9987028} 
+\#define SPECK\+\_\+\+SIGNATURE\+\_\+\+SIZE(\begin{DoxyParamCaption}\item[{}]{NR\+\_\+\+LEAVES}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\mbox{\hyperlink{parameters_8h_a4f084f0537806da54ffa64182398f6af}{HASH\_DIGEST\_LENGTH}}*2\ +\ \mbox{\hyperlink{parameters_8h_ab24d8ee301b4339ca85e03a14bb950ee}{SPECK\_C1S\_PACKEDBYTES}}\ +\ NR\_LEAVES*\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\_LENGTH\_BYTES}}\ +\ 1)}
+
+\end{DoxyCode}
+\Hypertarget{parameters_8h_abe5b7275cdf02ff3c00ca12bb5d2f60f}\index{parameters.h@{parameters.h}!VERIFY\_PIVOT\_REUSE\_LIMIT@{VERIFY\_PIVOT\_REUSE\_LIMIT}}
+\index{VERIFY\_PIVOT\_REUSE\_LIMIT@{VERIFY\_PIVOT\_REUSE\_LIMIT}!parameters.h@{parameters.h}}
+\doxysubsubsection{\texorpdfstring{VERIFY\_PIVOT\_REUSE\_LIMIT}{VERIFY\_PIVOT\_REUSE\_LIMIT}}
+{\footnotesize\ttfamily \label{parameters_8h_abe5b7275cdf02ff3c00ca12bb5d2f60f} 
+\#define VERIFY\+\_\+\+PIVOT\+\_\+\+REUSE\+\_\+\+LIMIT~\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}}
+

@@ -1,0 +1,96 @@
+\doxysection{/home/raximus/repos/work/speck/implementation/\+SPECK/repo/optimized/lib/keccakf1600.c File Reference}
+\hypertarget{keccakf1600_8c}{}\label{keccakf1600_8c}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/keccakf1600.c@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/keccakf1600.c}}
+{\ttfamily \#include "{}keccakf1600.\+h"{}}\newline
+Include dependency graph for keccakf1600.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{keccakf1600_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{keccakf1600_8c_a92a76bc85ae6b57d8257f168e3927a29}{NROUNDS}}~24
+\item 
+\#define \mbox{\hyperlink{keccakf1600_8c_aec7a6f8049659733c0c5aac28df4abe2}{ROL}}(a,  offset)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{keccakf1600_8c_a3598f8be46b17fbcfe8dbead47c1241f}{Keccak\+F1600\+\_\+\+State\+Extract\+Bytes}} (uint64\+\_\+t \texorpdfstring{$\ast$}{*}state, unsigned char \texorpdfstring{$\ast$}{*}data, unsigned int offset, unsigned int length)
+\item 
+void \mbox{\hyperlink{keccakf1600_8c_a4735103b0eca9295f0edf46d23fc8612}{Keccak\+F1600\+\_\+\+State\+XORBytes}} (uint64\+\_\+t \texorpdfstring{$\ast$}{*}state, const unsigned char \texorpdfstring{$\ast$}{*}data, unsigned int offset, unsigned int length)
+\item 
+void \mbox{\hyperlink{keccakf1600_8c_a9384b0f51bc5e9548b61dce9a28430bf}{Keccak\+F1600\+\_\+\+State\+Permute}} (uint64\+\_\+t \texorpdfstring{$\ast$}{*}state)
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{keccakf1600_8c_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{keccakf1600_8c_a92a76bc85ae6b57d8257f168e3927a29}\index{keccakf1600.c@{keccakf1600.c}!NROUNDS@{NROUNDS}}
+\index{NROUNDS@{NROUNDS}!keccakf1600.c@{keccakf1600.c}}
+\doxysubsubsection{\texorpdfstring{NROUNDS}{NROUNDS}}
+{\footnotesize\ttfamily \label{keccakf1600_8c_a92a76bc85ae6b57d8257f168e3927a29} 
+\#define NROUNDS~24}
+
+\Hypertarget{keccakf1600_8c_aec7a6f8049659733c0c5aac28df4abe2}\index{keccakf1600.c@{keccakf1600.c}!ROL@{ROL}}
+\index{ROL@{ROL}!keccakf1600.c@{keccakf1600.c}}
+\doxysubsubsection{\texorpdfstring{ROL}{ROL}}
+{\footnotesize\ttfamily \label{keccakf1600_8c_aec7a6f8049659733c0c5aac28df4abe2} 
+\#define ROL(\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{offset}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((a\ <<\ offset)\ \string^\ (a\ >>\ (64-\/offset)))}
+
+\end{DoxyCode}
+
+
+\label{doc-func-members}
+\Hypertarget{keccakf1600_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{keccakf1600_8c_a3598f8be46b17fbcfe8dbead47c1241f}\index{keccakf1600.c@{keccakf1600.c}!KeccakF1600\_StateExtractBytes@{KeccakF1600\_StateExtractBytes}}
+\index{KeccakF1600\_StateExtractBytes@{KeccakF1600\_StateExtractBytes}!keccakf1600.c@{keccakf1600.c}}
+\doxysubsubsection{\texorpdfstring{KeccakF1600\_StateExtractBytes()}{KeccakF1600\_StateExtractBytes()}}
+{\footnotesize\ttfamily \label{keccakf1600_8c_a3598f8be46b17fbcfe8dbead47c1241f} 
+void Keccak\+F1600\+\_\+\+State\+Extract\+Bytes (\begin{DoxyParamCaption}\item[{uint64\+\_\+t \texorpdfstring{$\ast$}{*}}]{state}{, }\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{unsigned int}]{offset}{, }\item[{unsigned int}]{length}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keccakf1600_8c_a3598f8be46b17fbcfe8dbead47c1241f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{keccakf1600_8c_a9384b0f51bc5e9548b61dce9a28430bf}\index{keccakf1600.c@{keccakf1600.c}!KeccakF1600\_StatePermute@{KeccakF1600\_StatePermute}}
+\index{KeccakF1600\_StatePermute@{KeccakF1600\_StatePermute}!keccakf1600.c@{keccakf1600.c}}
+\doxysubsubsection{\texorpdfstring{KeccakF1600\_StatePermute()}{KeccakF1600\_StatePermute()}}
+{\footnotesize\ttfamily \label{keccakf1600_8c_a9384b0f51bc5e9548b61dce9a28430bf} 
+void Keccak\+F1600\+\_\+\+State\+Permute (\begin{DoxyParamCaption}\item[{uint64\+\_\+t \texorpdfstring{$\ast$}{*}}]{state}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keccakf1600_8c_a9384b0f51bc5e9548b61dce9a28430bf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{keccakf1600_8c_a4735103b0eca9295f0edf46d23fc8612}\index{keccakf1600.c@{keccakf1600.c}!KeccakF1600\_StateXORBytes@{KeccakF1600\_StateXORBytes}}
+\index{KeccakF1600\_StateXORBytes@{KeccakF1600\_StateXORBytes}!keccakf1600.c@{keccakf1600.c}}
+\doxysubsubsection{\texorpdfstring{KeccakF1600\_StateXORBytes()}{KeccakF1600\_StateXORBytes()}}
+{\footnotesize\ttfamily \label{keccakf1600_8c_a4735103b0eca9295f0edf46d23fc8612} 
+void Keccak\+F1600\+\_\+\+State\+XORBytes (\begin{DoxyParamCaption}\item[{uint64\+\_\+t \texorpdfstring{$\ast$}{*}}]{state}{, }\item[{const unsigned char \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{unsigned int}]{offset}{, }\item[{unsigned int}]{length}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keccakf1600_8c_a4735103b0eca9295f0edf46d23fc8612_icgraph}
+\end{center}
+\end{figure}

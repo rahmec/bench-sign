@@ -1,0 +1,27 @@
+\doxysection{utils.\+h}
+\hypertarget{utils_8h_source}{}\label{utils_8h_source}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/include/utils.h@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/include/utils.h}}
+\mbox{\hyperlink{utils_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{parameters_8h}{parameters.h}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{codes_8h}{codes.h}}"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <stddef.h>}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ SWAP(a,\ b)\ \{\ (a)\string^=(b);\ (b)\string^=(a);\ (a)\string^=(b);\ \}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ MASKED\_SWAP(a,b,m)\ \{\ a\string^=(m\&b);\ b\string^=(m\&a);\ a\string^=(m\&b);\ \}}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{utils_8h_a4c9b4ff782867b06aa8969ae7896318a}{cswap}}(uintptr\_t\ *a,}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ uintptr\_t\ *b,}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ uintptr\_t\ mask);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{utils_8h_a9ac76c8bbd6df8f1bfab8dce9111e423}{SampleChallenge}}(uint8\_t\ fixed\_weight\_string[T],}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ digest[\mbox{\hyperlink{parameters_8h_a4f084f0537806da54ffa64182398f6af}{HASH\_DIGEST\_LENGTH}}]);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{utils_8h_a2cabe96c6d3148d71f1bc8f760666064}{verify}}(\textcolor{keyword}{const}\ uint8\_t\ *a,}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ *b,}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{size\_t}\ len);}
+
+\end{DoxyCode}

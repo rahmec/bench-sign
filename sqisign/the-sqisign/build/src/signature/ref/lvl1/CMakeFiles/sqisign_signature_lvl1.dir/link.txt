@@ -1,0 +1,2 @@
+"/usr/bin/gcc-ar" qc libsqisign_signature_lvl1.a CMakeFiles/sqisign_signature_lvl1.dir/__/lvlx/encode_signature.c.o CMakeFiles/sqisign_signature_lvl1.dir/__/lvlx/keygen.c.o CMakeFiles/sqisign_signature_lvl1.dir/__/lvlx/sign.c.o
+"/usr/bin/gcc-ranlib" libsqisign_signature_lvl1.a

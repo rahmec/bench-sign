@@ -1,0 +1,186 @@
+\doxysection{/home/raximus/repos/work/speck/implementation/\+SPECK/repo/optimized/lib/seedtree.c File Reference}
+\hypertarget{seedtree_8c}{}\label{seedtree_8c}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/seedtree.c@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/seedtree.c}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include "{}parameters.\+h"{}}\newline
+{\ttfamily \#include "{}seedtree.\+h"{}}\newline
+{\ttfamily \#include "{}sha3.\+h"{}}\newline
+{\ttfamily \#include "{}rng.\+h"{}}\newline
+Include dependency graph for seedtree.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{seedtree_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{seedtree_8c_ad321293d0b91dc8b7164a02840f08d7e}{LEFT\+\_\+\+CHILD}}(i)
+\item 
+\#define \mbox{\hyperlink{seedtree_8c_a66b32ea81d7d424e3e11216aa86b2727}{RIGHT\+\_\+\+CHILD}}(i)
+\item 
+\#define \mbox{\hyperlink{seedtree_8c_a91004761621b8ef1c66f3601988fde7c}{PARENT}}(i)
+\item 
+\#define \mbox{\hyperlink{seedtree_8c_a2b0ffefcf249b714073dcaf6cb80c03d}{SIBLING}}(i)
+\item 
+\#define \mbox{\hyperlink{seedtree_8c_a8c5c18d786480b4e37adbfeceb3f0c48}{TO\+\_\+\+PUBLISH}}~0
+\item 
+\#define \mbox{\hyperlink{seedtree_8c_ac7c2829debe1a71829f620ca54338d71}{NOT\+\_\+\+TO\+\_\+\+PUBLISH}}~1
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{seedtree_8c_a58d694cc064373d8b75bdbab48dbefff}{Build\+GGM}} (unsigned char seed\+\_\+tree\mbox{[}\mbox{\hyperlink{parameters_8h_aa6675740065d584d56ec4d913fc892b9}{NUM\+\_\+\+NODES\+\_\+\+SEED\+\_\+\+TREE}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}}\mbox{]}, const unsigned char root\+\_\+seed\mbox{[}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}}\mbox{]}, const unsigned char salt\mbox{[}\mbox{\hyperlink{parameters_8h_a4f084f0537806da54ffa64182398f6af}{HASH\+\_\+\+DIGEST\+\_\+\+LENGTH}}\mbox{]})
+\item 
+uint32\+\_\+t \mbox{\hyperlink{seedtree_8c_a0ed1ad1226e7d6c199a9db55c371e103}{GGMPath}} (const unsigned char seed\+\_\+tree\mbox{[}\mbox{\hyperlink{parameters_8h_aa6675740065d584d56ec4d913fc892b9}{NUM\+\_\+\+NODES\+\_\+\+SEED\+\_\+\+TREE}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}}\mbox{]}, const unsigned char indices\+\_\+to\+\_\+publish\mbox{[}T\mbox{]}, unsigned char \texorpdfstring{$\ast$}{*}seed\+\_\+storage)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{seedtree_8c_a94ffc7c23b2c614bfcb35d6c1ea2de10}{Rebuild\+GGM}} (unsigned char seed\+\_\+tree\mbox{[}\mbox{\hyperlink{parameters_8h_aa6675740065d584d56ec4d913fc892b9}{NUM\+\_\+\+NODES\+\_\+\+SEED\+\_\+\+TREE}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}}\mbox{]}, const unsigned char indices\+\_\+to\+\_\+publish\mbox{[}T\mbox{]}, const unsigned char \texorpdfstring{$\ast$}{*}stored\+\_\+seeds, const unsigned char salt\mbox{[}\mbox{\hyperlink{parameters_8h_a4f084f0537806da54ffa64182398f6af}{HASH\+\_\+\+DIGEST\+\_\+\+LENGTH}}\mbox{]})
+\item 
+void \mbox{\hyperlink{seedtree_8c_af952d76cc060ee812fa2394f3669afe9}{seed\+\_\+leaves}} (unsigned char rounds\+\_\+seeds\mbox{[}T \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}}\mbox{]}, unsigned char seed\+\_\+tree\mbox{[}\mbox{\hyperlink{parameters_8h_aa6675740065d584d56ec4d913fc892b9}{NUM\+\_\+\+NODES\+\_\+\+SEED\+\_\+\+TREE}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\+\_\+\+LENGTH\+\_\+\+BYTES}}\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{seedtree_8c_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{seedtree_8c_ad321293d0b91dc8b7164a02840f08d7e}\index{seedtree.c@{seedtree.c}!LEFT\_CHILD@{LEFT\_CHILD}}
+\index{LEFT\_CHILD@{LEFT\_CHILD}!seedtree.c@{seedtree.c}}
+\doxysubsubsection{\texorpdfstring{LEFT\_CHILD}{LEFT\_CHILD}}
+{\footnotesize\ttfamily \label{seedtree_8c_ad321293d0b91dc8b7164a02840f08d7e} 
+\#define LEFT\+\_\+\+CHILD(\begin{DoxyParamCaption}\item[{}]{i}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(2*(i)+1)}
+
+\end{DoxyCode}
+THIS SOFTWARE IS PROVIDED BY THE AUTHORS \textquotesingle{}\textquotesingle{}AS IS\textquotesingle{}\textquotesingle{} AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. \Hypertarget{seedtree_8c_ac7c2829debe1a71829f620ca54338d71}\index{seedtree.c@{seedtree.c}!NOT\_TO\_PUBLISH@{NOT\_TO\_PUBLISH}}
+\index{NOT\_TO\_PUBLISH@{NOT\_TO\_PUBLISH}!seedtree.c@{seedtree.c}}
+\doxysubsubsection{\texorpdfstring{NOT\_TO\_PUBLISH}{NOT\_TO\_PUBLISH}}
+{\footnotesize\ttfamily \label{seedtree_8c_ac7c2829debe1a71829f620ca54338d71} 
+\#define NOT\+\_\+\+TO\+\_\+\+PUBLISH~1}
+
+\Hypertarget{seedtree_8c_a91004761621b8ef1c66f3601988fde7c}\index{seedtree.c@{seedtree.c}!PARENT@{PARENT}}
+\index{PARENT@{PARENT}!seedtree.c@{seedtree.c}}
+\doxysubsubsection{\texorpdfstring{PARENT}{PARENT}}
+{\footnotesize\ttfamily \label{seedtree_8c_a91004761621b8ef1c66f3601988fde7c} 
+\#define PARENT(\begin{DoxyParamCaption}\item[{}]{i}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\ ((i)\%2)\ ?\ (((i)-\/1)/2)\ :\ (((i)-\/2)/2)\ )}
+
+\end{DoxyCode}
+\Hypertarget{seedtree_8c_a66b32ea81d7d424e3e11216aa86b2727}\index{seedtree.c@{seedtree.c}!RIGHT\_CHILD@{RIGHT\_CHILD}}
+\index{RIGHT\_CHILD@{RIGHT\_CHILD}!seedtree.c@{seedtree.c}}
+\doxysubsubsection{\texorpdfstring{RIGHT\_CHILD}{RIGHT\_CHILD}}
+{\footnotesize\ttfamily \label{seedtree_8c_a66b32ea81d7d424e3e11216aa86b2727} 
+\#define RIGHT\+\_\+\+CHILD(\begin{DoxyParamCaption}\item[{}]{i}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(2*(i)+2)}
+
+\end{DoxyCode}
+\Hypertarget{seedtree_8c_a2b0ffefcf249b714073dcaf6cb80c03d}\index{seedtree.c@{seedtree.c}!SIBLING@{SIBLING}}
+\index{SIBLING@{SIBLING}!seedtree.c@{seedtree.c}}
+\doxysubsubsection{\texorpdfstring{SIBLING}{SIBLING}}
+{\footnotesize\ttfamily \label{seedtree_8c_a2b0ffefcf249b714073dcaf6cb80c03d} 
+\#define SIBLING(\begin{DoxyParamCaption}\item[{}]{i}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\ ((i)\%2)\ ?\ (i)+1\ :\ (i)-\/1\ )}
+
+\end{DoxyCode}
+\Hypertarget{seedtree_8c_a8c5c18d786480b4e37adbfeceb3f0c48}\index{seedtree.c@{seedtree.c}!TO\_PUBLISH@{TO\_PUBLISH}}
+\index{TO\_PUBLISH@{TO\_PUBLISH}!seedtree.c@{seedtree.c}}
+\doxysubsubsection{\texorpdfstring{TO\_PUBLISH}{TO\_PUBLISH}}
+{\footnotesize\ttfamily \label{seedtree_8c_a8c5c18d786480b4e37adbfeceb3f0c48} 
+\#define TO\+\_\+\+PUBLISH~0}
+
+const unsigned char \texorpdfstring{$\ast$}{*}indices\+: input parameter denoting an array with a number of binary cells equal to "{}leaves"{} representing the labels of the nodes identified as leaves of the tree\mbox{[}...\mbox{]} passed as second parameter. A label = 0 means that the byteseed of the node having the same index has to be released; = 1, otherwise.
+
+unsigned char \texorpdfstring{$\ast$}{*}tree\+: input/output parameter denoting an array with a number of binary cells equal to "{}2\texorpdfstring{$\ast$}{*}leaves-\/1"{}; the first "{}leaves"{} cells (i.\+e., the ones with positions from 0 to leaves-\/1) are the ones that will be modified by the current subroutine, the last "{}leaves"{} cells will be a copy of the input array passed as first parameter.
+
+uint64\+\_\+t leaves\+: input parameter; 
+
+\label{doc-func-members}
+\Hypertarget{seedtree_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{seedtree_8c_a58d694cc064373d8b75bdbab48dbefff}\index{seedtree.c@{seedtree.c}!BuildGGM@{BuildGGM}}
+\index{BuildGGM@{BuildGGM}!seedtree.c@{seedtree.c}}
+\doxysubsubsection{\texorpdfstring{BuildGGM()}{BuildGGM()}}
+{\footnotesize\ttfamily \label{seedtree_8c_a58d694cc064373d8b75bdbab48dbefff} 
+void Build\+GGM (\begin{DoxyParamCaption}\item[{unsigned char}]{seed\+\_\+tree}{\mbox{[}\+NUM\+\_\+\+NODES\+\_\+\+SEED\+\_\+\+TREE \texorpdfstring{$\ast$}{*}\+SEED\+\_\+\+LENGTH\+\_\+\+BYTES\mbox{]}, }\item[{const unsigned char}]{root\+\_\+seed}{\mbox{[}\+SEED\+\_\+\+LENGTH\+\_\+\+BYTES\mbox{]}, }\item[{const unsigned char}]{salt}{\mbox{[}\+HASH\+\_\+\+DIGEST\+\_\+\+LENGTH\mbox{]}}\end{DoxyParamCaption})}
+
+unsigned char \texorpdfstring{$\ast$}{*}seed\+\_\+tree\+: it is intended as an output parameter; it is an array of uchars that is going to store a sequence of SEED\+\_\+\+LENGTH\+\_\+\+BYTES, with length\+: 2\texorpdfstring{$\ast$}{*}leaves-\/1.
+
+The root seed is taken as a parameter. The seed of its TWO children are computed expanding (i.\+e., shake128...) the entropy in "{}salt"{} + "{}seed\+Bytes of the parent"{} associated to each node from roots to leaves layer-\/by-\/layer from left to right, counting from 0 (the integer bound with the root node)"{} Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{seedtree_8c_a58d694cc064373d8b75bdbab48dbefff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{seedtree_8c_a58d694cc064373d8b75bdbab48dbefff_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{seedtree_8c_a0ed1ad1226e7d6c199a9db55c371e103}\index{seedtree.c@{seedtree.c}!GGMPath@{GGMPath}}
+\index{GGMPath@{GGMPath}!seedtree.c@{seedtree.c}}
+\doxysubsubsection{\texorpdfstring{GGMPath()}{GGMPath()}}
+{\footnotesize\ttfamily \label{seedtree_8c_a0ed1ad1226e7d6c199a9db55c371e103} 
+uint32\+\_\+t GGMPath (\begin{DoxyParamCaption}\item[{const unsigned char}]{seed\+\_\+tree}{\mbox{[}\+NUM\+\_\+\+NODES\+\_\+\+SEED\+\_\+\+TREE \texorpdfstring{$\ast$}{*}\+SEED\+\_\+\+LENGTH\+\_\+\+BYTES\mbox{]}, }\item[{const unsigned char}]{indices\+\_\+to\+\_\+publish}{\mbox{[}\+T\mbox{]}, }\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{seed\+\_\+storage}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{seedtree_8c_a0ed1ad1226e7d6c199a9db55c371e103_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{seedtree_8c_a94ffc7c23b2c614bfcb35d6c1ea2de10}\index{seedtree.c@{seedtree.c}!RebuildGGM@{RebuildGGM}}
+\index{RebuildGGM@{RebuildGGM}!seedtree.c@{seedtree.c}}
+\doxysubsubsection{\texorpdfstring{RebuildGGM()}{RebuildGGM()}}
+{\footnotesize\ttfamily \label{seedtree_8c_a94ffc7c23b2c614bfcb35d6c1ea2de10} 
+uint32\+\_\+t Rebuild\+GGM (\begin{DoxyParamCaption}\item[{unsigned char}]{seed\+\_\+tree}{\mbox{[}\+NUM\+\_\+\+NODES\+\_\+\+SEED\+\_\+\+TREE \texorpdfstring{$\ast$}{*}\+SEED\+\_\+\+LENGTH\+\_\+\+BYTES\mbox{]}, }\item[{const unsigned char}]{indices\+\_\+to\+\_\+publish}{\mbox{[}\+T\mbox{]}, }\item[{const unsigned char \texorpdfstring{$\ast$}{*}}]{stored\+\_\+seeds}{, }\item[{const unsigned char}]{salt}{\mbox{[}\+HASH\+\_\+\+DIGEST\+\_\+\+LENGTH\mbox{]}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{seedtree_8c_a94ffc7c23b2c614bfcb35d6c1ea2de10_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{seedtree_8c_a94ffc7c23b2c614bfcb35d6c1ea2de10_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{seedtree_8c_af952d76cc060ee812fa2394f3669afe9}\index{seedtree.c@{seedtree.c}!seed\_leaves@{seed\_leaves}}
+\index{seed\_leaves@{seed\_leaves}!seedtree.c@{seedtree.c}}
+\doxysubsubsection{\texorpdfstring{seed\_leaves()}{seed\_leaves()}}
+{\footnotesize\ttfamily \label{seedtree_8c_af952d76cc060ee812fa2394f3669afe9} 
+void seed\+\_\+leaves (\begin{DoxyParamCaption}\item[{unsigned char}]{rounds\+\_\+seeds}{\mbox{[}\+T \texorpdfstring{$\ast$}{*}\+SEED\+\_\+\+LENGTH\+\_\+\+BYTES\mbox{]}, }\item[{unsigned char}]{seed\+\_\+tree}{\mbox{[}\+NUM\+\_\+\+NODES\+\_\+\+SEED\+\_\+\+TREE \texorpdfstring{$\ast$}{*}\+SEED\+\_\+\+LENGTH\+\_\+\+BYTES\mbox{]}}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{seedtree_8c_af952d76cc060ee812fa2394f3669afe9_icgraph}
+\end{center}
+\end{figure}

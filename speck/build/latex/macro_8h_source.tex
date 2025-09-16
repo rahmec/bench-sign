@@ -1,0 +1,187 @@
+\doxysection{macro.\+h}
+\hypertarget{macro_8h_source}{}\label{macro_8h_source}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/include/macro.h@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/include/macro.h}}
+\mbox{\hyperlink{macro_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ <immintrin.h>}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{fq__arith_8h}{fq\_arith.h}}"{}}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{typedef}\ \_\_m256i\ \mbox{\hyperlink{macro_8h_a219f01de63ecc7c1083957db41c55cc8}{vec256\_t}};}
+\DoxyCodeLine{00034\ \textcolor{keyword}{typedef}\ \_\_m128i\ \mbox{\hyperlink{macro_8h_a61e44d3d7ed1f1b32298f10f8f0a493c}{vec128\_t}};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ LESS\_WSZ\ 32u}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{comment}{//\ number\ of\ vector\ register\ for\ N\ bytes}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ NW\ ((NEXT\_MULTIPLE(N,\ LESS\_WSZ))/LESS\_WSZ)}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{comment}{//\ c\ <-\/\ src}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ vload256(c,\ src)\ c\ =\ \_mm256\_loadu\_si256(src);}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ vload128(c,\ src)\ c\ =\ \_mm\_loadu\_si128(src);}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{comment}{//\ src\ <-\/\ c}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#define\ vstore256(src,\ c)\ \_mm256\_storeu\_si256(src,\ c);}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ vstore128(src,\ c)\ \_mm\_storeu\_si128(src,\ c);}}
+\DoxyCodeLine{00051\ \textcolor{comment}{//\ \#define\ vstore(src,\ c)\ \_mm256\_store\_si256(src,\ c);}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{comment}{//\ c\ =\ a\ +\ b}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ vadd8(c,\ a,\ b)\ \ c\ =\ \_mm256\_add\_epi8(a,\ b);}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#define\ vadd16(c,\ a,\ b)\ c\ =\ \_mm256\_add\_epi16(a,\ b);}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#define\ vadd64(c,\ a,\ b)\ c\ =\ \_mm256\_add\_epi64(a,\ b);}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{comment}{//\ c\ =\ a\ -\/\ b}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#define\ vsub8(c,\ a,\ b)\ c\ =\ \_mm256\_sub\_epi8(a,\ b);}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#define\ vsub16(c,\ a,\ b)\ c\ =\ \_mm256\_sub\_epi16(a,\ b);}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{comment}{//\ c\ =\ a\ *\ b}}
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#define\ vmul\_lo16(c,\ a,\ b)\ c\ =\ \_mm256\_mullo\_epi16(a,\ b);}}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#define\ vmul\_hi16(c,\ a,\ b)\ c\ =\ \_mm256\_mulhi\_epu16(a,\ b);}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{comment}{//\ c\ =\ a\ >>\ n}}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#define\ vsr16(c,\ a,\ n)\ c\ =\ \_mm256\_srai\_epi16(a,\ n);}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#define\ vsr32(c,\ a,\ n)\ c\ =\ \_mm256\_srli\_epi32(a,\ n);}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{comment}{//\ c\ =\ a\ <<\ n}}
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#define\ vsl16(c,\ a,\ n)\ c\ =\ \_mm256\_slli\_epi16(a,\ n);}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{comment}{//\ c\ =\ a\ \&\ b}}
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#define\ vand(c,\ a,\ b)\ c\ =\ \_mm256\_and\_si256(a,\ b);}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{comment}{//\ c\ =\ a\ \string^\ b}}
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#define\ vxor(c,\ a,\ b)\ c\ =\ \_mm256\_xor\_si256(a,\ b);}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{comment}{//\ c\ =\ a\ |\ b}}
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#define\ vor(c,\ a,\ b)\ c\ =\ \_mm256\_or\_si256(a,\ b);}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{comment}{//\ c[0..16]\ =\ n}}
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#define\ vset8(c,\ n)\ c\ =\ \_mm256\_set1\_epi8((char)n);}}
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#define\ vset17(c,\ n)\ c\ =\ \_mm256\_set1\_epi16((short)n);}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{comment}{//\ c\ =\ a\ ==\ b}}
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#define\ vcmp8(c,\ a,\ b)\ c\ =\ \_mm256\_cmpeq\_epi8(a,\ b);}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#define\ vmovemask8(a)\ \_mm256\_movemask\_epi8(a);}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{comment}{//\ Unpack\ 8-\/bit\ low:\ a[0]\ |\ b[0]\ ...\ a[7]\ |\ b[7]}}
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#define\ vunpackl8(c,\ a,\ b)\ c\ =\ \_mm256\_unpacklo\_epi8(a,\ b);}}
+\DoxyCodeLine{00094\ \textcolor{comment}{//\ Unpack\ 8-\/bit\ hi:\ a[8]\ |\ b[8]\ ...\ a[15]\ |\ b[15]}}
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\#define\ vunpackh8(c,\ a,\ b)\ c\ =\ \_mm256\_unpackhi\_epi8(a,\ b);}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{comment}{//\ Extend\ 8-\/bit\ unsigned\ from\ vec128\ to}}
+\DoxyCodeLine{00098\ \textcolor{comment}{//\ 16-\/bit\ unsigned\ from\ vec256}}
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#define\ vextend8\_16(c,\ a)\ c\ =\ \_mm256\_cvtepu8\_epi16(a);}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \textcolor{comment}{//\ Select\ low\ 128-\/bit\ of\ vec256}}
+\DoxyCodeLine{00102\ \textcolor{preprocessor}{\#define\ vget\_lo(c,\ a)\ c\ =\ \_mm256\_extracti128\_si256(a,\ 0);}}
+\DoxyCodeLine{00103\ \textcolor{comment}{//\ Select\ high\ 128-\/bit\ of\ vec256}}
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#define\ vget\_hi(c,\ a)\ c\ =\ \_mm256\_extracti128\_si256(a,\ 1);}}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{comment}{//\ Set\ vector\ to\ 0}}
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#define\ vzero(c)\ c\ =\ \_mm256\_setzero\_si256();}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{comment}{//\ Shuffle\ vector\ a\ according\ to\ vector\ b}}
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#define\ vshuffle8(c,\ a,\ b)\ c\ =\ \_mm256\_shuffle\_epi8(a,\ b);}}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \textcolor{comment}{//\ Permute\ 128-\/bit,\ combine\ 2\ 128-\/bit\ low\ from}}
+\DoxyCodeLine{00113\ \textcolor{comment}{//\ a\ and\ b\ to\ c}}
+\DoxyCodeLine{00114\ \textcolor{comment}{//\ c\ =\ a[0..127]\ |\ b[0..127]}}
+\DoxyCodeLine{00115\ \textcolor{preprocessor}{\#define\ vpermute(c,\ a,\ b)\ c\ =\ \_mm256\_permute2x128\_si256(a,\ b,\ 0x20);}}
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#define\ vpermute2(c,\ a,\ b,\ d)\ c\ =\ \_mm256\_permute2x128\_si256(a,\ b,\ d);}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \textcolor{preprocessor}{\#define\ vpermute\_4x64(c,\ a,\ b)\ c\ =\ \_mm256\_permute4x64\_epi64(a,\ b);}}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00121\ \textcolor{comment}{\ *\ Fix\ width\ 16-\/bit\ Barrett\ modulo\ reduction\ Q\ =\ 127}}
+\DoxyCodeLine{00122\ \textcolor{comment}{\ *\ c\ =\ a\ \%\ q}}
+\DoxyCodeLine{00123\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#define\ barrett\_red16(c,\ a,\ t,\ c127,\ c516,\ c1)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\ \ \ \ t\ =\ \_mm256\_add\_epi16(a,\ c1);\ \ \ \ \ }\textcolor{comment}{/*\ t\ =\ (a\ +\ 1)\ */}\textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00126\ \textcolor{preprocessor}{\ \ \ \ t\ =\ \_mm256\_mulhi\_epu16(t,\ c516);\ }\textcolor{comment}{/*\ t\ =\ (a\ *\ 516)\ >>\ 16\ */}\textcolor{preprocessor}{\ \(\backslash\)}}
+\DoxyCodeLine{00127\ \textcolor{preprocessor}{\ \ \ \ t\ =\ \_mm256\_mullo\_epi16(t,\ c127);\ }\textcolor{comment}{/*\ t\ =\ (t\ *\ Q)\ */}\textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\ \ \ \ a\ =\ \_mm256\_sub\_epi16(a,\ t);\ \ \ \ \ \ }\textcolor{comment}{/*\ a\ =\ (a\ -\/\ t)*/}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00131\ \textcolor{comment}{\ *\ Fix\ width\ 8-\/bit\ Barrett\ modulo\ reduction\ Q\ =\ 127}}
+\DoxyCodeLine{00132\ \textcolor{comment}{\ *\ c\ =\ a\ \%\ q}}
+\DoxyCodeLine{00133\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\#define\ barrett\_red8(a,\ t,\ c127,\ c1)\ \(\backslash\)}}
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\ \ \ \ t\ =\ \_mm256\_srli\_epi16(a,\ 7);\ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00136\ \textcolor{preprocessor}{\ \ \ \ t\ =\ \_mm256\_and\_si256(t,\ c1);\ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\ \ \ \ a\ =\ \_mm256\_add\_epi8(a,\ t);\ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\ \ \ \ a\ =\ \_mm256\_and\_si256(a,\ c127);}}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \textcolor{preprocessor}{\#define\ barrett\_red8\_half(a,\ t,\ c127,\ c1)\ \(\backslash\)}}
+\DoxyCodeLine{00141\ \textcolor{preprocessor}{\ \ \ \ t\ =\ \_mm\_srli\_epi16(a,\ 7);\ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00142\ \textcolor{preprocessor}{\ \ \ \ t\ =\ \_mm\_and\_si128(t,\ c1);\ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00143\ \textcolor{preprocessor}{\ \ \ \ a\ =\ \_mm\_add\_epi8(a,\ t);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00144\ \textcolor{preprocessor}{\ \ \ \ a\ =\ \_mm\_and\_si128(a,\ c127);}}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00147\ \textcolor{comment}{\ *\ t\ =\ tmp\ register}}
+\DoxyCodeLine{00148\ \textcolor{comment}{\ *\ Fix\ width\ 16-\/bit\ Barrett\ multiplication\ Q\ =\ 127}}
+\DoxyCodeLine{00149\ \textcolor{comment}{\ *\ c\ =\ (a\ *\ b)\ \%\ q}}
+\DoxyCodeLine{00150\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00151\ \textcolor{preprocessor}{\#define\ barrett\_mul\_u16(c,\ a,\ b,\ t)\ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00152\ \textcolor{preprocessor}{\ \ \ \ vmul\_lo16(a,\ a,\ b);\ }\textcolor{comment}{/*\ lo\ =\ (a\ *\ b)\ \ */}\textcolor{preprocessor}{\ \ \(\backslash\)}}
+\DoxyCodeLine{00153\ \textcolor{preprocessor}{\ \ \ \ vsr16(t,\ a,\ 7);\ \ \ \ \ }\textcolor{comment}{/*\ hi\ =\ (lo\ >>\ 7)\ */}\textcolor{preprocessor}{\ \(\backslash\)}}
+\DoxyCodeLine{00154\ \textcolor{preprocessor}{\ \ \ \ vadd16(a,\ a,\ t);\ \ \ \ }\textcolor{comment}{/*\ lo\ =\ (lo\ +\ hi)\ */}\textcolor{preprocessor}{\ \(\backslash\)}}
+\DoxyCodeLine{00155\ \textcolor{preprocessor}{\ \ \ \ vsl16(t,\ t,\ 7);\ \ \ \ \ }\textcolor{comment}{/*\ hi\ =\ (hi\ <<\ 7)\ */}\textcolor{preprocessor}{\ \(\backslash\)}}
+\DoxyCodeLine{00156\ \textcolor{preprocessor}{\ \ \ \ vsub16(c,\ a,\ t);\ \ \ \ }\textcolor{comment}{/*\ c\ \ =\ (lo\ -\/\ hi)\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00159\ \textcolor{preprocessor}{\#define\ W\_RED127(x)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00160\ \textcolor{preprocessor}{\ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00161\ \textcolor{preprocessor}{\ \ \ \ t\ =\ \_mm256\_srli\_epi16(x,\ 7);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00162\ \textcolor{preprocessor}{\ \ \ \ t\ =\ \_mm256\_and\_si256(t,\ c01);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\ \ \ \ x\ =\ \_mm256\_add\_epi8(x,\ t);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00164\ \textcolor{preprocessor}{\ \ \ \ x\ =\ \_mm256\_and\_si256(x,\ c7f);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\ \ \}}}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00168\ \textcolor{preprocessor}{\#define\ W\_RED127\_(x)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00169\ \textcolor{preprocessor}{\ \ x\ =\ \_mm256\_and\_si256(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00170\ \textcolor{preprocessor}{\ \ \ \ \ \ \_mm256\_add\_epi8(\_mm256\_and\_si256(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00171\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_mm256\_srli\_epi16(\_mm256\_add\_epi8(x,\ c01),\ 7),\ c01),\ \(\backslash\)}}
+\DoxyCodeLine{00172\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x),\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00173\ \textcolor{preprocessor}{\ \ \ \ \ \ c7f);}}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ \textcolor{comment}{//\ Extend\ from\ 8-\/bit\ to\ 16-\/bit\ type}}
+\DoxyCodeLine{00176\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ uint8\_t\ \mbox{\hyperlink{macro_8h_ae9080ce7d5bd07e4d55ce615630120bc}{shuff\_low\_half}}[32];}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{macro_8h_a8f9a09b29584acfe78a5596bb2bb6800}{print256\_num}}(\mbox{\hyperlink{macro_8h_a219f01de63ecc7c1083957db41c55cc8}{vec256\_t}}\ var,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00181\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ uint8\_t\ vhadd8(\textcolor{keyword}{const}\ \_\_m256i\ in)\ \{}
+\DoxyCodeLine{00182\ \ \ \ \ \mbox{\hyperlink{macro_8h_a219f01de63ecc7c1083957db41c55cc8}{vec256\_t}}\ c01,\ c7f;}
+\DoxyCodeLine{00183\ \ \ \ \ \mbox{\hyperlink{macro_8h_a8f227fe0fd26ef060c5a18674746fb7b}{vset8}}(c01,\ 0x01);}
+\DoxyCodeLine{00184\ \ \ \ \ \mbox{\hyperlink{macro_8h_a8f227fe0fd26ef060c5a18674746fb7b}{vset8}}(c7f,\ 0x7F);}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00186\ \ \ \ \ \_\_m256i\ a\ =\ \_mm256\_srli\_epi16(in,\ 8);}
+\DoxyCodeLine{00187\ \ \ \ \ \_\_m256i\ t\ =\ \_mm256\_add\_epi8(a,\ in);}
+\DoxyCodeLine{00188\ \ \ \ \ \mbox{\hyperlink{macro_8h_a7f089f212c2338e5228233f4728203f3}{W\_RED127\_}}(t)}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ \ \ \ \ a\ =\ \_mm256\_srli\_epi32(t,\ 16);}
+\DoxyCodeLine{00191\ \ \ \ \ t\ =\ \_mm256\_add\_epi8(a,\ t);}
+\DoxyCodeLine{00192\ \ \ \ \ \mbox{\hyperlink{macro_8h_a7f089f212c2338e5228233f4728203f3}{W\_RED127\_}}(t)}
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00194\ \ \ \ \ a\ =\ \_mm256\_srli\_epi64(t,\ 32);}
+\DoxyCodeLine{00195\ \ \ \ \ t\ =\ \_mm256\_add\_epi8(a,\ t);}
+\DoxyCodeLine{00196\ \ \ \ \ \mbox{\hyperlink{macro_8h_a7f089f212c2338e5228233f4728203f3}{W\_RED127\_}}(t)}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00198\ \ \ \ \ a\ =\ \_mm256\_srli\_si256(t,\ 8);}
+\DoxyCodeLine{00199\ \ \ \ \ t\ =\ \_mm256\_add\_epi8(a,\ t);}
+\DoxyCodeLine{00200\ \ \ \ \ \mbox{\hyperlink{macro_8h_a7f089f212c2338e5228233f4728203f3}{W\_RED127\_}}(t)}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \ \ \ \ a\ =\ \_mm256\_permute2x128\_si256(t,\ t,\ 1);}
+\DoxyCodeLine{00203\ \ \ \ \ t\ =\ \_mm256\_add\_epi8(a,\ t);}
+\DoxyCodeLine{00204\ \ \ \ \ \mbox{\hyperlink{macro_8h_a7f089f212c2338e5228233f4728203f3}{W\_RED127\_}}(t)}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordflow}{return}\ \_mm256\_extract\_epi8(t,\ 0);}
+\DoxyCodeLine{00207\ \}}
+
+\end{DoxyCode}

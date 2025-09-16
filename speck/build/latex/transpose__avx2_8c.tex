@@ -1,0 +1,74 @@
+\doxysection{/home/raximus/repos/work/speck/implementation/\+SPECK/repo/optimized/lib/transpose\+\_\+avx2.c File Reference}
+\hypertarget{transpose__avx2_8c}{}\label{transpose__avx2_8c}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/transpose\_avx2.c@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/transpose\_avx2.c}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$immintrin.\+h$>$}\newline
+Include dependency graph for transpose\+\_\+avx2.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{transpose__avx2_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+\_\+m256i \mbox{\hyperlink{transpose__avx2_8c_ab0ce45030e675edb33a62e680de824cd}{LOAD\+\_\+\+TYPE}}
+\item 
+typedef \+\_\+\+\_\+m256i \mbox{\hyperlink{transpose__avx2_8c_a22246ffe08edecdf901eb50168deae15}{STORE\+\_\+\+TYPE}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{transpose__avx2_8c_a73ac377fe76d88109c40f9adea24bcf3}{matrix\+\_\+transpose\+\_\+32x32}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}dst\+\_\+origin, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}src\+\_\+origin, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}prf\+\_\+origin, const size\+\_\+t src\+\_\+stride, const size\+\_\+t dst\+\_\+stride)
+\end{DoxyCompactItemize}
+
+
+\label{doc-typedef-members}
+\Hypertarget{transpose__avx2_8c_doc-typedef-members}
+\doxysubsection{Typedef Documentation}
+\Hypertarget{transpose__avx2_8c_ab0ce45030e675edb33a62e680de824cd}\index{transpose\_avx2.c@{transpose\_avx2.c}!LOAD\_TYPE@{LOAD\_TYPE}}
+\index{LOAD\_TYPE@{LOAD\_TYPE}!transpose\_avx2.c@{transpose\_avx2.c}}
+\doxysubsubsection{\texorpdfstring{LOAD\_TYPE}{LOAD\_TYPE}}
+{\footnotesize\ttfamily \label{transpose__avx2_8c_ab0ce45030e675edb33a62e680de824cd} 
+typedef \+\_\+\+\_\+m256i \mbox{\hyperlink{transpose__avx2_8c_ab0ce45030e675edb33a62e680de824cd}{LOAD\+\_\+\+TYPE}}}
+
+\Hypertarget{transpose__avx2_8c_a22246ffe08edecdf901eb50168deae15}\index{transpose\_avx2.c@{transpose\_avx2.c}!STORE\_TYPE@{STORE\_TYPE}}
+\index{STORE\_TYPE@{STORE\_TYPE}!transpose\_avx2.c@{transpose\_avx2.c}}
+\doxysubsubsection{\texorpdfstring{STORE\_TYPE}{STORE\_TYPE}}
+{\footnotesize\ttfamily \label{transpose__avx2_8c_a22246ffe08edecdf901eb50168deae15} 
+typedef \+\_\+\+\_\+m256i \mbox{\hyperlink{transpose__avx2_8c_a22246ffe08edecdf901eb50168deae15}{STORE\+\_\+\+TYPE}}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{transpose__avx2_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{transpose__avx2_8c_a73ac377fe76d88109c40f9adea24bcf3}\index{transpose\_avx2.c@{transpose\_avx2.c}!matrix\_transpose\_32x32@{matrix\_transpose\_32x32}}
+\index{matrix\_transpose\_32x32@{matrix\_transpose\_32x32}!transpose\_avx2.c@{transpose\_avx2.c}}
+\doxysubsubsection{\texorpdfstring{matrix\_transpose\_32x32()}{matrix\_transpose\_32x32()}}
+{\footnotesize\ttfamily \label{transpose__avx2_8c_a73ac377fe76d88109c40f9adea24bcf3} 
+void matrix\+\_\+transpose\+\_\+32x32 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{dst\+\_\+origin}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{src\+\_\+origin}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{prf\+\_\+origin}{, }\item[{const size\+\_\+t}]{src\+\_\+stride}{, }\item[{const size\+\_\+t}]{dst\+\_\+stride}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst\+\_\+origin\mbox{[}out\mbox{]}} & output matrix \\
+\hline
+{\em src\+\_\+origin\mbox{[}in\mbox{]}} & input matrix \\
+\hline
+{\em prf\+\_\+origin\mbox{[}in\mbox{]}} & lookahead pointer to prefetch it \\
+\hline
+{\em src\+\_\+stride\mbox{[}in\mbox{]}} & \\
+\hline
+{\em dst\+\_\+stride\mbox{[}in\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{transpose__avx2_8c_a73ac377fe76d88109c40f9adea24bcf3_icgraph}
+\end{center}
+\end{figure}

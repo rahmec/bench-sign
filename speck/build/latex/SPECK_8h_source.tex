@@ -1,0 +1,62 @@
+\doxysection{SPECK.\+h}
+\hypertarget{SPECK_8h_source}{}\label{SPECK_8h_source}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/include/SPECK.h@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/include/SPECK.h}}
+\mbox{\hyperlink{SPECK_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{parameters_8h}{parameters.h}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <stddef.h>}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\_\_attribute\_\_((packed))\ \{}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#ifdef\ SPECK\_RESAMPLE\_G}}
+\DoxyCodeLine{00024\ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ G\_0\_seed[\mbox{\hyperlink{parameters_8h_ae88eb9ef49f8d53205a5cd4fe9436a83}{SEED\_LENGTH\_BYTES}}];}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#ifdef\ SPECK\_COMPRESS\_G}}
+\DoxyCodeLine{00027\ \ \ \ uint8\_t\ G\_0\_rref\ [\mbox{\hyperlink{parameters_8h_a57e8e1ea3d17704ed5ac32e4bd2df8e9}{SPECK\_RREF\_MAT\_PACKEDBYTES}}];}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#ifdef\ SPECK\_FULL\_G}}
+\DoxyCodeLine{00030\ \ \ \ uint8\_t\ G\_0\_rref\ [\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}][\mbox{\hyperlink{parameters_8h_a8a235765808af91d455a7c81c469ddef}{K\_pad}}];}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#ifdef\ SPECK\_COMPRESS\_GP}}
+\DoxyCodeLine{00033\ \ \ \ uint8\_t\ SF\_G\ [\mbox{\hyperlink{parameters_8h_a3151af823089af45401931e9f2ea363b}{NUM\_KEYPAIRS}}-\/1][\mbox{\hyperlink{parameters_8h_a57e8e1ea3d17704ed5ac32e4bd2df8e9}{SPECK\_RREF\_MAT\_PACKEDBYTES}}];}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00035\ \ \ \ uint8\_t\ SF\_G\ [\mbox{\hyperlink{parameters_8h_a3151af823089af45401931e9f2ea363b}{NUM\_KEYPAIRS}}-\/1][\mbox{\hyperlink{parameters_8h_a97d832ae23af4f215e801e37e4f94254}{K}}][\mbox{\hyperlink{parameters_8h_a8a235765808af91d455a7c81c469ddef}{K\_pad}}];}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00037\ \}\ \mbox{\hyperlink{SPECK_8h_abfe842a1185160db5aa1a0946dcdd0a8}{speck\_pubkey\_t}};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\_\_attribute\_\_((packed))\ \{}
+\DoxyCodeLine{00040\ \ \ \ uint8\_t\ permutations[\mbox{\hyperlink{parameters_8h_a3151af823089af45401931e9f2ea363b}{NUM\_KEYPAIRS}}-\/1][\mbox{\hyperlink{parameters_8h_a0240ac851181b84ac374872dc5434ee4}{N}}];}
+\DoxyCodeLine{00041\ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ sk\_seed[\mbox{\hyperlink{parameters_8h_ac23fa7ed851db8ac69cc6e869e700187}{PRIVATE\_KEY\_SEED\_LENGTH\_BYTES}}];}
+\DoxyCodeLine{00042\ \}\ \mbox{\hyperlink{SPECK_8h_a26b74a8e38ab9da05b0df752092f8af0}{speck\_prikey\_t}};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\_\_attribute\_\_((packed))\ speck\_sig\_t\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ uint8\_t\ digest[\mbox{\hyperlink{parameters_8h_a4f084f0537806da54ffa64182398f6af}{HASH\_DIGEST\_LENGTH}}];}
+\DoxyCodeLine{00046\ \ \ \ \ uint8\_t\ salt[\mbox{\hyperlink{parameters_8h_a4f084f0537806da54ffa64182398f6af}{HASH\_DIGEST\_LENGTH}}];}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\ \ \ \ \#ifdef\ SPECK\_COMPRESS\_C1S}}
+\DoxyCodeLine{00048\ \ \ \ \ uint8\_t\ c1s[\mbox{\hyperlink{parameters_8h_ab24d8ee301b4339ca85e03a14bb950ee}{SPECK\_C1S\_PACKEDBYTES}}];}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{00050\ \ \ \ \ uint8\_t\ c1s[W][\mbox{\hyperlink{parameters_8h_a8a235765808af91d455a7c81c469ddef}{K\_pad}}];}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00052\ \ \ \ \ uint8\_t\ seed\_storage[\mbox{\hyperlink{parameters_8h_a0e4b941a88b4e9357701b39342d7b90e}{SEED\_TREE\_MAX\_PUBLISHED\_BYTES}}];}
+\DoxyCodeLine{00053\ \}\ \mbox{\hyperlink{SPECK_8h_abb0580e0a9437b8df67aaa8231873fad}{speck\_sign\_t}};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{comment}{/*\ keygen\ cannot\ fail\ */}}
+\DoxyCodeLine{00056\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{SPECK_8h_adaf9aec6a7c7f0be22755f72703e684c}{SPECK\_keygen}}(\mbox{\hyperlink{SPECK_8h_a26b74a8e38ab9da05b0df752092f8af0}{speck\_prikey\_t}}\ *SK,}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{SPECK_8h_abfe842a1185160db5aa1a0946dcdd0a8}{speck\_pubkey\_t}}\ *PK);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{comment}{/*\ sign\ cannot\ fail,\ but\ it\ returns\ the\ number\ of\ opened\ seeds\ */}}
+\DoxyCodeLine{00060\ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{SPECK_8h_af5b5ea41c5c92e085f1a99383746fdc8}{SPECK\_sign}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{SPECK_8h_a26b74a8e38ab9da05b0df752092f8af0}{speck\_prikey\_t}}\ *SK,}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{SPECK_8h_abfe842a1185160db5aa1a0946dcdd0a8}{speck\_pubkey\_t}}\ *PK,}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\textcolor{keyword}{const}\ m,}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ uint64\_t\ mlen,}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{SPECK_8h_abb0580e0a9437b8df67aaa8231873fad}{speck\_sign\_t}}\ *sig);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{comment}{/*\ verify\ returns\ 1\ if\ signature\ is\ ok,\ 0\ otherwise\ */}}
+\DoxyCodeLine{00067\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{SPECK_8h_adf8f0d5db74a791c758782cbe9153016}{SPECK\_verify}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{SPECK_8h_abfe842a1185160db5aa1a0946dcdd0a8}{speck\_pubkey\_t}}\ *\textcolor{keyword}{const}\ PK,}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\textcolor{keyword}{const}\ m,}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ uint64\_t\ mlen,}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{SPECK_8h_abb0580e0a9437b8df67aaa8231873fad}{speck\_sign\_t}}\ *\textcolor{keyword}{const}\ sig);}
+
+\end{DoxyCode}

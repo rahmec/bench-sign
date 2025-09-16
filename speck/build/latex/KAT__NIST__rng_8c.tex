@@ -1,0 +1,171 @@
+\doxysection{/home/raximus/repos/work/speck/implementation/\+SPECK/repo/optimized/lib/nist/\+KAT\+\_\+\+NIST\+\_\+rng.c File Reference}
+\hypertarget{KAT__NIST__rng_8c}{}\label{KAT__NIST__rng_8c}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/nist/KAT\_NIST\_rng.c@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/nist/KAT\_NIST\_rng.c}}
+{\ttfamily \#include "{}KAT\+\_\+\+NIST\+\_\+rng.\+h"{}}\newline
+Include dependency graph for KAT\+\_\+\+NIST\+\_\+rng.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{KAT__NIST__rng_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{KAT__NIST__rng_8c_a969ba5854362559c269fb52fabfde475}{KAT\+\_\+\+NIST\+\_\+\+AES256\+\_\+\+ECB}} (unsigned char \texorpdfstring{$\ast$}{*}key, unsigned char \texorpdfstring{$\ast$}{*}ctr, unsigned char \texorpdfstring{$\ast$}{*}buffer)
+\item 
+int \mbox{\hyperlink{KAT__NIST__rng_8c_aeb724730986daed71ba870b1a68464ae}{KAT\+\_\+\+NIST\+\_\+seedexpander\+\_\+init}} (\mbox{\hyperlink{structKAT__NIST__AES__XOF__struct}{KAT\+\_\+\+NIST\+\_\+\+AES\+\_\+\+XOF\+\_\+struct}} \texorpdfstring{$\ast$}{*}ctx, unsigned char \texorpdfstring{$\ast$}{*}seed, unsigned char \texorpdfstring{$\ast$}{*}diversifier, unsigned long maxlen)
+\item 
+int \mbox{\hyperlink{KAT__NIST__rng_8c_a9e91fbcdffbc2b98c69bc73e872669ee}{KAT\+\_\+\+NIST\+\_\+seedexpander}} (\mbox{\hyperlink{structKAT__NIST__AES__XOF__struct}{KAT\+\_\+\+NIST\+\_\+\+AES\+\_\+\+XOF\+\_\+struct}} \texorpdfstring{$\ast$}{*}ctx, unsigned char \texorpdfstring{$\ast$}{*}x, unsigned long xlen)
+\item 
+void \mbox{\hyperlink{KAT__NIST__rng_8c_a91073e8c23d64eb78b862971885f1ebf}{KAT\+\_\+\+NIST\+\_\+handle\+Errors}} (void)
+\item 
+void \mbox{\hyperlink{KAT__NIST__rng_8c_a0f4bb50b69ea43fc02ac1e14a3c262ec}{KAT\+\_\+\+NIST\+\_\+randombytes\+\_\+init}} (unsigned char \texorpdfstring{$\ast$}{*}entropy\+\_\+input, unsigned char \texorpdfstring{$\ast$}{*}personalization\+\_\+string, int security\+\_\+strength)
+\item 
+int \mbox{\hyperlink{KAT__NIST__rng_8c_a304ba339ac0622e9283add5b32438432}{KAT\+\_\+\+NIST\+\_\+randombytes}} (unsigned char \texorpdfstring{$\ast$}{*}x, unsigned long long xlen)
+\item 
+void \mbox{\hyperlink{KAT__NIST__rng_8c_a7df313310023d88610d44c0757f6fc9b}{KAT\+\_\+\+NIST\+\_\+\+AES256\+\_\+\+CTR\+\_\+\+DRBG\+\_\+\+Update}} (unsigned char \texorpdfstring{$\ast$}{*}provided\+\_\+data, unsigned char \texorpdfstring{$\ast$}{*}Key, unsigned char \texorpdfstring{$\ast$}{*}V)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structKAT__NIST__AES256__CTR__DRBG__struct}{KAT\+\_\+\+NIST\+\_\+\+AES256\+\_\+\+CTR\+\_\+\+DRBG\+\_\+struct}} \mbox{\hyperlink{KAT__NIST__rng_8c_ad3e1b31df403ec1ced6db8e4bc0920d4}{DRBG\+\_\+ctx}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{KAT__NIST__rng_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{KAT__NIST__rng_8c_a7df313310023d88610d44c0757f6fc9b}\index{KAT\_NIST\_rng.c@{KAT\_NIST\_rng.c}!KAT\_NIST\_AES256\_CTR\_DRBG\_Update@{KAT\_NIST\_AES256\_CTR\_DRBG\_Update}}
+\index{KAT\_NIST\_AES256\_CTR\_DRBG\_Update@{KAT\_NIST\_AES256\_CTR\_DRBG\_Update}!KAT\_NIST\_rng.c@{KAT\_NIST\_rng.c}}
+\doxysubsubsection{\texorpdfstring{KAT\_NIST\_AES256\_CTR\_DRBG\_Update()}{KAT\_NIST\_AES256\_CTR\_DRBG\_Update()}}
+{\footnotesize\ttfamily \label{KAT__NIST__rng_8c_a7df313310023d88610d44c0757f6fc9b} 
+void KAT\+\_\+\+NIST\+\_\+\+AES256\+\_\+\+CTR\+\_\+\+DRBG\+\_\+\+Update (\begin{DoxyParamCaption}\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{provided\+\_\+data}{, }\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{Key}{, }\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{V}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{KAT__NIST__rng_8c_a7df313310023d88610d44c0757f6fc9b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{KAT__NIST__rng_8c_a7df313310023d88610d44c0757f6fc9b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{KAT__NIST__rng_8c_a969ba5854362559c269fb52fabfde475}\index{KAT\_NIST\_rng.c@{KAT\_NIST\_rng.c}!KAT\_NIST\_AES256\_ECB@{KAT\_NIST\_AES256\_ECB}}
+\index{KAT\_NIST\_AES256\_ECB@{KAT\_NIST\_AES256\_ECB}!KAT\_NIST\_rng.c@{KAT\_NIST\_rng.c}}
+\doxysubsubsection{\texorpdfstring{KAT\_NIST\_AES256\_ECB()}{KAT\_NIST\_AES256\_ECB()}}
+{\footnotesize\ttfamily \label{KAT__NIST__rng_8c_a969ba5854362559c269fb52fabfde475} 
+void KAT\+\_\+\+NIST\+\_\+\+AES256\+\_\+\+ECB (\begin{DoxyParamCaption}\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{key}{, }\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{ctr}{, }\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{buffer}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{KAT__NIST__rng_8c_a969ba5854362559c269fb52fabfde475_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{KAT__NIST__rng_8c_a969ba5854362559c269fb52fabfde475_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{KAT__NIST__rng_8c_a91073e8c23d64eb78b862971885f1ebf}\index{KAT\_NIST\_rng.c@{KAT\_NIST\_rng.c}!KAT\_NIST\_handleErrors@{KAT\_NIST\_handleErrors}}
+\index{KAT\_NIST\_handleErrors@{KAT\_NIST\_handleErrors}!KAT\_NIST\_rng.c@{KAT\_NIST\_rng.c}}
+\doxysubsubsection{\texorpdfstring{KAT\_NIST\_handleErrors()}{KAT\_NIST\_handleErrors()}}
+{\footnotesize\ttfamily \label{KAT__NIST__rng_8c_a91073e8c23d64eb78b862971885f1ebf} 
+void KAT\+\_\+\+NIST\+\_\+handle\+Errors (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{KAT__NIST__rng_8c_a91073e8c23d64eb78b862971885f1ebf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{KAT__NIST__rng_8c_a304ba339ac0622e9283add5b32438432}\index{KAT\_NIST\_rng.c@{KAT\_NIST\_rng.c}!KAT\_NIST\_randombytes@{KAT\_NIST\_randombytes}}
+\index{KAT\_NIST\_randombytes@{KAT\_NIST\_randombytes}!KAT\_NIST\_rng.c@{KAT\_NIST\_rng.c}}
+\doxysubsubsection{\texorpdfstring{KAT\_NIST\_randombytes()}{KAT\_NIST\_randombytes()}}
+{\footnotesize\ttfamily \label{KAT__NIST__rng_8c_a304ba339ac0622e9283add5b32438432} 
+int KAT\+\_\+\+NIST\+\_\+randombytes (\begin{DoxyParamCaption}\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{x}{, }\item[{unsigned long long}]{xlen}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{KAT__NIST__rng_8c_a304ba339ac0622e9283add5b32438432_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{KAT__NIST__rng_8c_a304ba339ac0622e9283add5b32438432_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{KAT__NIST__rng_8c_a0f4bb50b69ea43fc02ac1e14a3c262ec}\index{KAT\_NIST\_rng.c@{KAT\_NIST\_rng.c}!KAT\_NIST\_randombytes\_init@{KAT\_NIST\_randombytes\_init}}
+\index{KAT\_NIST\_randombytes\_init@{KAT\_NIST\_randombytes\_init}!KAT\_NIST\_rng.c@{KAT\_NIST\_rng.c}}
+\doxysubsubsection{\texorpdfstring{KAT\_NIST\_randombytes\_init()}{KAT\_NIST\_randombytes\_init()}}
+{\footnotesize\ttfamily \label{KAT__NIST__rng_8c_a0f4bb50b69ea43fc02ac1e14a3c262ec} 
+void KAT\+\_\+\+NIST\+\_\+randombytes\+\_\+init (\begin{DoxyParamCaption}\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{entropy\+\_\+input}{, }\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{personalization\+\_\+string}{, }\item[{int}]{security\+\_\+strength}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{KAT__NIST__rng_8c_a0f4bb50b69ea43fc02ac1e14a3c262ec_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{KAT__NIST__rng_8c_a0f4bb50b69ea43fc02ac1e14a3c262ec_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{KAT__NIST__rng_8c_a9e91fbcdffbc2b98c69bc73e872669ee}\index{KAT\_NIST\_rng.c@{KAT\_NIST\_rng.c}!KAT\_NIST\_seedexpander@{KAT\_NIST\_seedexpander}}
+\index{KAT\_NIST\_seedexpander@{KAT\_NIST\_seedexpander}!KAT\_NIST\_rng.c@{KAT\_NIST\_rng.c}}
+\doxysubsubsection{\texorpdfstring{KAT\_NIST\_seedexpander()}{KAT\_NIST\_seedexpander()}}
+{\footnotesize\ttfamily \label{KAT__NIST__rng_8c_a9e91fbcdffbc2b98c69bc73e872669ee} 
+int KAT\+\_\+\+NIST\+\_\+seedexpander (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKAT__NIST__AES__XOF__struct}{KAT\+\_\+\+NIST\+\_\+\+AES\+\_\+\+XOF\+\_\+struct}} \texorpdfstring{$\ast$}{*}}]{ctx}{, }\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{x}{, }\item[{unsigned long}]{xlen}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{KAT__NIST__rng_8c_a9e91fbcdffbc2b98c69bc73e872669ee_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{KAT__NIST__rng_8c_aeb724730986daed71ba870b1a68464ae}\index{KAT\_NIST\_rng.c@{KAT\_NIST\_rng.c}!KAT\_NIST\_seedexpander\_init@{KAT\_NIST\_seedexpander\_init}}
+\index{KAT\_NIST\_seedexpander\_init@{KAT\_NIST\_seedexpander\_init}!KAT\_NIST\_rng.c@{KAT\_NIST\_rng.c}}
+\doxysubsubsection{\texorpdfstring{KAT\_NIST\_seedexpander\_init()}{KAT\_NIST\_seedexpander\_init()}}
+{\footnotesize\ttfamily \label{KAT__NIST__rng_8c_aeb724730986daed71ba870b1a68464ae} 
+int KAT\+\_\+\+NIST\+\_\+seedexpander\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKAT__NIST__AES__XOF__struct}{KAT\+\_\+\+NIST\+\_\+\+AES\+\_\+\+XOF\+\_\+struct}} \texorpdfstring{$\ast$}{*}}]{ctx}{, }\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{seed}{, }\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{diversifier}{, }\item[{unsigned long}]{maxlen}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{KAT__NIST__rng_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{KAT__NIST__rng_8c_ad3e1b31df403ec1ced6db8e4bc0920d4}\index{KAT\_NIST\_rng.c@{KAT\_NIST\_rng.c}!DRBG\_ctx@{DRBG\_ctx}}
+\index{DRBG\_ctx@{DRBG\_ctx}!KAT\_NIST\_rng.c@{KAT\_NIST\_rng.c}}
+\doxysubsubsection{\texorpdfstring{DRBG\_ctx}{DRBG\_ctx}}
+{\footnotesize\ttfamily \label{KAT__NIST__rng_8c_ad3e1b31df403ec1ced6db8e4bc0920d4} 
+\mbox{\hyperlink{structKAT__NIST__AES256__CTR__DRBG__struct}{KAT\+\_\+\+NIST\+\_\+\+AES256\+\_\+\+CTR\+\_\+\+DRBG\+\_\+struct}} DRBG\+\_\+ctx}
+

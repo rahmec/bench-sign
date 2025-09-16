@@ -1,0 +1,179 @@
+\doxysection{parameters.\+h}
+\hypertarget{parameters_8h_source}{}\label{parameters_8h_source}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/include/parameters.h@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/include/parameters.h}}
+\mbox{\hyperlink{parameters_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{/*\ Seed\ tree\ max\ size\ is\ computed\ according\ to\ Parameter\ Generation\ Script\ in\ Utilities\ folder\ */}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{comment}{/*****************************\ Common\ Parameters\ ******************************/}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ Q\ (127)}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ Qm1\ (Q-\/1)}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ FQ\_ELEM\ uint8\_t}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ FQ\_DOUBLEPREC\ uint16\_t}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ POSITION\_T\ uint8\_t}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{comment}{/*********************************\ Category\ 1\ *********************************/}}
+\DoxyCodeLine{00031\ \textcolor{comment}{//\#elif\ CATEGORY\ ==\ 252}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ N\ (252)}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ K\ (126)}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ NUM\_KEYPAIRS\ (2)}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ SEED\_LENGTH\_BYTES\ (16)}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ SIGN\_PIVOT\_REUSE\_LIMIT\ (25)\ }\textcolor{comment}{//\ Ensures\ probability\ of\ non-\/CT\ operation\ is\ <\ 2\string^-\/64}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#if\ TARGET==133}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ T\ (133)}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ W\ (60)}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ TREE\_OFFSETS\ \{0,\ 0,\ 0,\ 2,\ 2,\ 10,\ 10,\ 10,\ 10\}}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ TREE\_NODES\_PER\_LEVEL\ \{1,\ 2,\ 4,\ 6,\ 12,\ 16,\ 32,\ 64,\ 128\}}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ TREE\_LEAVES\_PER\_LEVEL\ \{0,\ 0,\ 1,\ 0,\ 4,\ 0,\ 0,\ 0,\ 128\}}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ TREE\_SUBROOTS\ 3}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ TREE\_LEAVES\_START\_INDICES\ \{137,\ 21,\ 6\}}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ TREE\_CONSECUTIVE\_LEAVES\ \{128,\ 4,\ 1\}}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#define\ TREE\_NODES\_TO\_STORE\ 60}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ MAX\_PUBLISHED\_SEEDS\ 70}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#elif\ TARGET==256}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ T\ (256)}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#define\ W\ (30)}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#define\ TREE\_OFFSETS\ \{0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0\}}}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#define\ TREE\_NODES\_PER\_LEVEL\ \{1,\ 2,\ 4,\ 8,\ 16,\ 32,\ 64,\ 128,\ 256\}}}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#define\ TREE\_LEAVES\_PER\_LEVEL\ \{0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 256\}}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#define\ TREE\_SUBROOTS\ 1}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#define\ TREE\_LEAVES\_START\_INDICES\ \{255\}}}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#define\ TREE\_CONSECUTIVE\_LEAVES\ \{256\}}}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#define\ TREE\_NODES\_TO\_STORE\ 30}}
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#define\ MAX\_PUBLISHED\_SEEDS\ 92}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#elif\ TARGET==512}}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#define\ T\ (512)}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#define\ W\ (23)}}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#define\ TREE\_OFFSETS\ \{0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0\}}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#define\ TREE\_NODES\_PER\_LEVEL\ \{1,\ 2,\ 4,\ 8,\ 16,\ 32,\ 64,\ 128,\ 256,\ 512\}}}
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#define\ TREE\_LEAVES\_PER\_LEVEL\ \{0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 512\}}}
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#define\ TREE\_SUBROOTS\ 1}}
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#define\ TREE\_LEAVES\_START\_INDICES\ \{511\}}}
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#define\ TREE\_CONSECUTIVE\_LEAVES\ \{512\}}}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#define\ TREE\_NODES\_TO\_STORE\ 23}}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#define\ MAX\_PUBLISHED\_SEEDS\ 102}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#elif\ TARGET==768}}
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#define\ T\ (768)}}
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#define\ W\ (20)}}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#define\ TREE\_OFFSETS\ \{0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 512\}}}
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#define\ TREE\_NODES\_PER\_LEVEL\ \{1,\ 2,\ 4,\ 8,\ 16,\ 32,\ 64,\ 128,\ 256,\ 512,\ 512\}}}
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#define\ TREE\_LEAVES\_PER\_LEVEL\ \{0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 256,\ 512\}}}
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#define\ TREE\_SUBROOTS\ 2}}
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#define\ TREE\_LEAVES\_START\_INDICES\ \{1023,\ 767\}}}
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#define\ TREE\_CONSECUTIVE\_LEAVES\ \{512,\ 256\}}}
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#define\ TREE\_NODES\_TO\_STORE\ 20}}
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#define\ MAX\_PUBLISHED\_SEEDS\ 106}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#elif\ TARGET==4096}}
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#define\ T\ (4096)}}
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#define\ W\ (14)}}
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#define\ TREE\_OFFSETS\ \{0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0\}}}
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\#define\ TREE\_NODES\_PER\_LEVEL\ \{1,\ 2,\ 4,\ 8,\ 16,\ 32,\ 64,\ 128,\ 256,\ 512,\ 1024,\ 2048,\ 4096\}}}
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\#define\ TREE\_LEAVES\_PER\_LEVEL\ \{0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 4096\}}}
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#define\ TREE\_SUBROOTS\ 1}}
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#define\ TREE\_LEAVES\_START\_INDICES\ \{4095\}}}
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#define\ TREE\_CONSECUTIVE\_LEAVES\ \{4096\}}}
+\DoxyCodeLine{00100\ \textcolor{preprocessor}{\#define\ TREE\_NODES\_TO\_STORE\ 14}}
+\DoxyCodeLine{00101\ \textcolor{preprocessor}{\#define\ MAX\_PUBLISHED\_SEEDS\ 114}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#error\ define\ optimization\ corner\ in\ parameters.h}}
+\DoxyCodeLine{00105\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#define\ VERIFY\_PIVOT\_REUSE\_LIMIT\ K}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{comment}{/*\ number\ of\ bytes\ needed\ to\ store\ K\ or\ N\ bits\ */}}
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#define\ K8\ ((K+7u)/8u)}}
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#define\ N8\ ((N+7u)/8u)}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\#define\ NEXT\_MULTIPLE(x,n)\ ((((x)+((n)-\/1u))/(n))*(n))}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#if\ defined(USE\_AVX2)\ ||\ defined(USE\_NEON)}}
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\#define\ N\_K\_pad\ NEXT\_MULTIPLE(N-\/K,\ 32)}}
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#define\ N\_pad\ \ \ NEXT\_MULTIPLE(N,\ 32)}}
+\DoxyCodeLine{00121\ \textcolor{preprocessor}{\#define\ K\_pad\ \ \ NEXT\_MULTIPLE(K,\ 32)}}
+\DoxyCodeLine{00122\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#define\ N\_K\_pad\ (N-\/K)}}
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\#define\ N\_pad\ \ \ N}}
+\DoxyCodeLine{00126\ \textcolor{preprocessor}{\#define\ K\_pad\ \ \ K}}
+\DoxyCodeLine{00127\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#define\ Q\_pad\ \ \ NEXT\_MULTIPLE(Q,\ 8)}}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \textcolor{comment}{/*****************\ Derived\ parameters\ *****************************************/}}
+\DoxyCodeLine{00132\ \textcolor{comment}{/*length\ of\ the\ output\ of\ the\ cryptographic\ hash,\ in\ bytes\ */}}
+\DoxyCodeLine{00133\ \textcolor{preprocessor}{\#define\ HASH\_DIGEST\_LENGTH\ (2*SEED\_LENGTH\_BYTES)}}
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\#define\ SALT\_LENGTH\_BYTES\ HASH\_DIGEST\_LENGTH}}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \textcolor{comment}{/*\ length\ of\ the\ private\ key\ seed\ doubled\ to\ avoid\ multikey\ attacks\ */}}
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#define\ PRIVATE\_KEY\_SEED\_LENGTH\_BYTES\ (2*SEED\_LENGTH\_BYTES)}}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \textcolor{preprocessor}{\#define\ MASK\_Q\ ((1\ <<\ BITS\_TO\_REPRESENT(Q))\ -\/\ 1)}}
+\DoxyCodeLine{00141\ \textcolor{preprocessor}{\#define\ MASK\_N\ ((1\ <<\ BITS\_TO\_REPRESENT(N))\ -\/\ 1)}}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \textcolor{preprocessor}{\#define\ IS\_REPRESENTABLE\_IN\_D\_BITS(D,\ N)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00145\ \textcolor{preprocessor}{\ \ (((unsigned\ long)\ N>=(1UL\ <<\ (D-\/1))\ \&\&\ (unsigned\ long)\ N<(1UL\ <<\ D))\ ?\ D\ :\ -\/1)}}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \textcolor{preprocessor}{\#define\ BITS\_TO\_REPRESENT(N)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00148\ \textcolor{preprocessor}{\ \ (N\ ==\ 0\ ?\ 1\ :\ (15\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00149\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ IS\_REPRESENTABLE\_IN\_D\_BITS(\ 1,\ N)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00150\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ IS\_REPRESENTABLE\_IN\_D\_BITS(\ 2,\ N)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00151\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ IS\_REPRESENTABLE\_IN\_D\_BITS(\ 3,\ N)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00152\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ IS\_REPRESENTABLE\_IN\_D\_BITS(\ 4,\ N)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00153\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ IS\_REPRESENTABLE\_IN\_D\_BITS(\ 5,\ N)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00154\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ IS\_REPRESENTABLE\_IN\_D\_BITS(\ 6,\ N)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00155\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ IS\_REPRESENTABLE\_IN\_D\_BITS(\ 7,\ N)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00156\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ IS\_REPRESENTABLE\_IN\_D\_BITS(\ 8,\ N)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00157\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ IS\_REPRESENTABLE\_IN\_D\_BITS(\ 9,\ N)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00158\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ IS\_REPRESENTABLE\_IN\_D\_BITS(10,\ N)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00159\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ IS\_REPRESENTABLE\_IN\_D\_BITS(11,\ N)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00160\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ IS\_REPRESENTABLE\_IN\_D\_BITS(12,\ N)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00161\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ IS\_REPRESENTABLE\_IN\_D\_BITS(13,\ N)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00162\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ IS\_REPRESENTABLE\_IN\_D\_BITS(14,\ N)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ IS\_REPRESENTABLE\_IN\_D\_BITS(15,\ N)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00164\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ IS\_REPRESENTABLE\_IN\_D\_BITS(16,\ N)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00166\ \textcolor{preprocessor}{\ \ \ )}}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \textcolor{preprocessor}{\#define\ LOG2(L)\ (\ (BITS\_TO\_REPRESENT(L)\ >\ BITS\_TO\_REPRESENT(L-\/1))\ ?\ (BITS\_TO\_REPRESENT(L-\/1))\ :\ (BITS\_TO\_REPRESENT(L))\ )}}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \textcolor{preprocessor}{\#define\ NUM\_LEAVES\_SEED\_TREE\ (T)}}
+\DoxyCodeLine{00171\ \textcolor{preprocessor}{\#define\ NUM\_NODES\_SEED\_TREE\ ((2*NUM\_LEAVES\_SEED\_TREE)\ -\/\ 1)}}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \textcolor{preprocessor}{\#define\ RREF\_MAT\_PACKEDBYTES\ ((BITS\_TO\_REPRESENT(Q)*(N-\/K)*K\ +\ 7)/8\ +\ (N\ +\ 7)/8)}}
+\DoxyCodeLine{00174\ \textcolor{preprocessor}{\#define\ SPECK\_RREF\_MAT\_PACKEDBYTES\ ((BITS\_TO\_REPRESENT(Q)*(N-\/K)*K\ +\ 7)/8)}}
+\DoxyCodeLine{00175\ \textcolor{preprocessor}{\#define\ SPECK\_C1S\_PACKEDBYTES\ ((BITS\_TO\_REPRESENT(Q)*(N-\/K)*W\ +\ 7)/8)}}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ \textcolor{preprocessor}{\#define\ SEED\_TREE\_MAX\_PUBLISHED\_BYTES\ (MAX\_PUBLISHED\_SEEDS*SEED\_LENGTH\_BYTES\ +\ 1)}}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ \textcolor{comment}{//\#define\ SPECK\_RESAMPLE\_G\ //\ <-\/\ Resample\ G0\ in\ Sign\ and\ Verify}}
+\DoxyCodeLine{00180\ \textcolor{preprocessor}{\#define\ SPECK\_FULL\_G\ }\textcolor{comment}{//\ <-\/\ Compress/Expand\ G0\ in\ Keygen/Sign\ and\ Verify\ }}
+\DoxyCodeLine{00181\ \textcolor{comment}{//\#define\ SPECK\_COMPRESS\_G\ //\ <-\/\ Compress/Expand\ G0\ in\ Keygen/Sign\ and\ Verify\ }}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ \textcolor{preprocessor}{\#define\ SPECK\_COMPRESS\_GP\ }}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \textcolor{preprocessor}{\#define\ SPECK\_COMPRESS\_C1S}}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \textcolor{preprocessor}{\#ifdef\ SPECK\_COMPRESS\_C1S}}
+\DoxyCodeLine{00188\ \textcolor{preprocessor}{\#define\ SPECK\_SIGNATURE\_SIZE(NR\_LEAVES)\ (HASH\_DIGEST\_LENGTH*2\ +\ SPECK\_C1S\_PACKEDBYTES\ +\ NR\_LEAVES*SEED\_LENGTH\_BYTES\ +\ 1)}}
+\DoxyCodeLine{00189\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00190\ \textcolor{preprocessor}{\#define\ SPECK\_SIGNATURE\_SIZE(NR\_LEAVES)\ (HASH\_DIGEST\_LENGTH*2\ +\ Q*W\ +\ NR\_LEAVES*SEED\_LENGTH\_BYTES\ +\ 1)}}
+\DoxyCodeLine{00191\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

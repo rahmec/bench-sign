@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['salt_5flength_5fbytes_0',['SALT_LENGTH_BYTES',['../parameters_8h.html#a23438446fea87b735bec6d115ef09910',1,'parameters.h']]],
+  ['sec_5fto_5fms_1',['SEC_TO_MS',['../speck__benchmark_8c.html#aac0ca674e0663e0604bc9e5bcc1ff70b',1,'speck_benchmark.c']]],
+  ['sec_5fto_5fns_2',['SEC_TO_NS',['../speck__benchmark_8c.html#a03dba70e48d41aaa79b166dcd68c4dfa',1,'speck_benchmark.c']]],
+  ['sec_5fto_5fus_3',['SEC_TO_US',['../speck__benchmark_8c.html#ad4fb94c1ab9cbc945f797df08da3fcf1',1,'speck_benchmark.c']]],
+  ['seed_5flength_5fbytes_4',['SEED_LENGTH_BYTES',['../parameters_8h.html#ae88eb9ef49f8d53205a5cd4fe9436a83',1,'parameters.h']]],
+  ['seed_5ftree_5fmax_5fpublished_5fbytes_5',['SEED_TREE_MAX_PUBLISHED_BYTES',['../parameters_8h.html#a0e4b941a88b4e9357701b39342d7b90e',1,'parameters.h']]],
+  ['sha3_5f256_5frate_6',['SHA3_256_RATE',['../fips202_8h.html#ab9de5144a98915cf8c844aa43d034ce5',1,'fips202.h']]],
+  ['sha3_5f384_5frate_7',['SHA3_384_RATE',['../fips202_8h.html#a30a3980b066c67146181d38063127f2c',1,'fips202.h']]],
+  ['sha3_5f512_5frate_8',['SHA3_512_RATE',['../fips202_8h.html#a73007506dace85201de74725a3f5b7bb',1,'fips202.h']]],
+  ['shake128_5frate_9',['SHAKE128_RATE',['../fips202_8h.html#a049b154b3d12b0df19b2c986f458341d',1,'fips202.h']]],
+  ['shake256_5frate_10',['SHAKE256_RATE',['../fips202_8h.html#a8cd7a41f6f7efca80d063e7521f5b7fa',1,'fips202.h']]],
+  ['shake_5fstate_5fstruct_11',['SHAKE_STATE_STRUCT',['../sha3_8h.html#adae9f13da8f3a47ecf60fc57d69be0d0',1,'sha3.h']]],
+  ['sibling_12',['SIBLING',['../seedtree_8c.html#a2b0ffefcf249b714073dcaf6cb80c03d',1,'seedtree.c']]],
+  ['sign_5fpivot_5freuse_5flimit_13',['SIGN_PIVOT_REUSE_LIMIT',['../parameters_8h.html#a0b67420f2cf7d72d630191de6ae6a41f',1,'parameters.h']]],
+  ['speck_5fc1s_5fpackedbytes_14',['SPECK_C1S_PACKEDBYTES',['../parameters_8h.html#ab24d8ee301b4339ca85e03a14bb950ee',1,'parameters.h']]],
+  ['speck_5fcompress_5fc1s_15',['SPECK_COMPRESS_C1S',['../parameters_8h.html#a2137f3adb75a5312e3e323fdd57d0bd2',1,'parameters.h']]],
+  ['speck_5fcompress_5fgp_16',['SPECK_COMPRESS_GP',['../parameters_8h.html#a39e7e660b48224aee1f4197e3b738969',1,'parameters.h']]],
+  ['speck_5ffull_5fg_17',['SPECK_FULL_G',['../parameters_8h.html#a91cbf652a0cad30f51446f7b6083bd60',1,'parameters.h']]],
+  ['speck_5frref_5fmat_5fpackedbytes_18',['SPECK_RREF_MAT_PACKEDBYTES',['../parameters_8h.html#a57e8e1ea3d17704ed5ac32e4bd2df8e9',1,'parameters.h']]],
+  ['speck_5fsignature_5fsize_19',['SPECK_SIGNATURE_SIZE',['../parameters_8h.html#a4a8c3e88d0225dda434f49a2b9987028',1,'parameters.h']]],
+  ['stringify_20',['STRINGIFY',['../build_2CMakeFiles_24_80_83-dirty_2CompilerIdC_2CMakeCCompilerId_8c.html#a43e1cad902b6477bec893cb6430bd6c8',1,'STRINGIFY:&#160;CMakeCCompilerId.c'],['../build_2CMakeFiles_24_80_83-dirty_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp.html#a43e1cad902b6477bec893cb6430bd6c8',1,'STRINGIFY:&#160;CMakeCXXCompilerId.cpp'],['../CMakeFiles_24_80_83-dirty_2CompilerIdC_2CMakeCCompilerId_8c.html#a43e1cad902b6477bec893cb6430bd6c8',1,'STRINGIFY:&#160;CMakeCCompilerId.c'],['../CMakeFiles_24_80_83-dirty_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp.html#a43e1cad902b6477bec893cb6430bd6c8',1,'STRINGIFY:&#160;CMakeCXXCompilerId.cpp']]],
+  ['stringify_5fhelper_21',['STRINGIFY_HELPER',['../build_2CMakeFiles_24_80_83-dirty_2CompilerIdC_2CMakeCCompilerId_8c.html#a2ae9b72bb13abaabfcf2ee0ba7d3fa1d',1,'STRINGIFY_HELPER:&#160;CMakeCCompilerId.c'],['../build_2CMakeFiles_24_80_83-dirty_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp.html#a2ae9b72bb13abaabfcf2ee0ba7d3fa1d',1,'STRINGIFY_HELPER:&#160;CMakeCXXCompilerId.cpp'],['../CMakeFiles_24_80_83-dirty_2CompilerIdC_2CMakeCCompilerId_8c.html#a2ae9b72bb13abaabfcf2ee0ba7d3fa1d',1,'STRINGIFY_HELPER:&#160;CMakeCCompilerId.c'],['../CMakeFiles_24_80_83-dirty_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp.html#a2ae9b72bb13abaabfcf2ee0ba7d3fa1d',1,'STRINGIFY_HELPER:&#160;CMakeCXXCompilerId.cpp']]],
+  ['swap_22',['SWAP',['../utils_8h.html#aac9153aee4bdb92701df902e06a74eb3',1,'utils.h']]]
+];

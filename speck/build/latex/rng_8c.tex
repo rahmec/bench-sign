@@ -1,0 +1,77 @@
+\doxysection{/home/raximus/repos/work/speck/implementation/\+SPECK/repo/optimized/lib/rng.c File Reference}
+\hypertarget{rng_8c}{}\label{rng_8c}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/rng.c@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/rng.c}}
+{\ttfamily \#include "{}rng.\+h"{}}\newline
+Include dependency graph for rng.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{rng_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{rng_8c_adc526129a5eb8bc803adf13bc5d72138}{initialize\+\_\+csprng}} (\mbox{\hyperlink{sha3_8h_adae9f13da8f3a47ecf60fc57d69be0d0}{SHAKE\+\_\+\+STATE\+\_\+\+STRUCT}} \texorpdfstring{$\ast$}{*}shake\+\_\+state, const unsigned char \texorpdfstring{$\ast$}{*}seed, const uint32\+\_\+t \mbox{\hyperlink{rng_8h_a5e333f6a68d1e8a63d33c5a8f08927ef}{seed\+\_\+len\+\_\+bytes}})
+\item 
+void \mbox{\hyperlink{rng_8c_a1a8f2acf1fd38dd37b4efc5651c0187d}{initialize\+\_\+csprng\+\_\+ds}} (\mbox{\hyperlink{sha3_8h_adae9f13da8f3a47ecf60fc57d69be0d0}{SHAKE\+\_\+\+STATE\+\_\+\+STRUCT}} \texorpdfstring{$\ast$}{*}shake\+\_\+state, const unsigned char \texorpdfstring{$\ast$}{*}seed, const uint32\+\_\+t \mbox{\hyperlink{rng_8h_a5e333f6a68d1e8a63d33c5a8f08927ef}{seed\+\_\+len\+\_\+bytes}}, const uint16\+\_\+t domain\+\_\+sep\+\_\+constant)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{sha3_8h_adae9f13da8f3a47ecf60fc57d69be0d0}{SHAKE\+\_\+\+STATE\+\_\+\+STRUCT}} \mbox{\hyperlink{rng_8c_a0a3ba30969b607063eaad589f3bb9195}{platform\+\_\+csprng\+\_\+state}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{rng_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{rng_8c_adc526129a5eb8bc803adf13bc5d72138}\index{rng.c@{rng.c}!initialize\_csprng@{initialize\_csprng}}
+\index{initialize\_csprng@{initialize\_csprng}!rng.c@{rng.c}}
+\doxysubsubsection{\texorpdfstring{initialize\_csprng()}{initialize\_csprng()}}
+{\footnotesize\ttfamily \label{rng_8c_adc526129a5eb8bc803adf13bc5d72138} 
+void initialize\+\_\+csprng (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sha3_8h_adae9f13da8f3a47ecf60fc57d69be0d0}{SHAKE\+\_\+\+STATE\+\_\+\+STRUCT}} \texorpdfstring{$\ast$}{*}}]{shake\+\_\+state}{, }\item[{const unsigned char \texorpdfstring{$\ast$}{*}}]{seed}{, }\item[{const uint32\+\_\+t}]{seed\+\_\+len\+\_\+bytes}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em shake\+\_\+state\mbox{[}in/out\mbox{]}} & \\
+\hline
+{\em seed\mbox{[}in\mbox{]}} & \\
+\hline
+{\em seed\+\_\+len\+\_\+bytes\mbox{[}in\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rng_8c_adc526129a5eb8bc803adf13bc5d72138_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rng_8c_a1a8f2acf1fd38dd37b4efc5651c0187d}\index{rng.c@{rng.c}!initialize\_csprng\_ds@{initialize\_csprng\_ds}}
+\index{initialize\_csprng\_ds@{initialize\_csprng\_ds}!rng.c@{rng.c}}
+\doxysubsubsection{\texorpdfstring{initialize\_csprng\_ds()}{initialize\_csprng\_ds()}}
+{\footnotesize\ttfamily \label{rng_8c_a1a8f2acf1fd38dd37b4efc5651c0187d} 
+void initialize\+\_\+csprng\+\_\+ds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sha3_8h_adae9f13da8f3a47ecf60fc57d69be0d0}{SHAKE\+\_\+\+STATE\+\_\+\+STRUCT}} \texorpdfstring{$\ast$}{*}}]{shake\+\_\+state}{, }\item[{const unsigned char \texorpdfstring{$\ast$}{*}}]{seed}{, }\item[{const uint32\+\_\+t}]{seed\+\_\+len\+\_\+bytes}{, }\item[{const uint16\+\_\+t}]{domain\+\_\+sep\+\_\+constant}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rng_8c_a1a8f2acf1fd38dd37b4efc5651c0187d_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-var-members}
+\Hypertarget{rng_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{rng_8c_a0a3ba30969b607063eaad589f3bb9195}\index{rng.c@{rng.c}!platform\_csprng\_state@{platform\_csprng\_state}}
+\index{platform\_csprng\_state@{platform\_csprng\_state}!rng.c@{rng.c}}
+\doxysubsubsection{\texorpdfstring{platform\_csprng\_state}{platform\_csprng\_state}}
+{\footnotesize\ttfamily \label{rng_8c_a0a3ba30969b607063eaad589f3bb9195} 
+\mbox{\hyperlink{sha3_8h_adae9f13da8f3a47ecf60fc57d69be0d0}{SHAKE\+\_\+\+STATE\+\_\+\+STRUCT}} platform\+\_\+csprng\+\_\+state}
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHORS \textquotesingle{}\textquotesingle{}AS IS\textquotesingle{}\textquotesingle{} AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 

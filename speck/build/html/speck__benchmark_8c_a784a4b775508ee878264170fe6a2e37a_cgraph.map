@@ -1,0 +1,12 @@
+<map id="bench_sample_antiorthogonal" name="bench_sample_antiorthogonal">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,199,83"/>
+<area shape="rect" id="Node000002" href="$codes_8c.html#a0ca5bc0d8f230387da21f402f7151ed7" title=" " alt="" coords="247,56,398,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,67,232,67,232,72,199,72"/>
+<area shape="rect" id="Node000003" href="$rng_8c.html#adc526129a5eb8bc803adf13bc5d72138" title=" " alt="" coords="446,5,560,32"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="176,53,246,41,430,22,430,27,247,47,177,58"/>
+<area shape="rect" id="Node000005" href="$speck__benchmark_8c.html#a0d3481fb7e7b937f5bc2dc4673cc904c" title=" " alt="" coords="301,107,344,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="164,81,286,109,285,114,163,86"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="372,53,438,34,439,39,374,58"/>
+<area shape="rect" id="Node000004" href="$codes_8c.html#a4e8c8464fa9a0df4291169c87e56b40f" title=" " alt="" coords="449,56,557,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="398,67,433,67,433,72,398,72"/>
+</map>

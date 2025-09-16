@@ -1,0 +1,4 @@
+/home/raximus/repos/work/speck/implementation/bench/sqisign/the-sqisign/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir
+/home/raximus/repos/work/speck/implementation/bench/sqisign/the-sqisign/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir
+/home/raximus/repos/work/speck/implementation/bench/sqisign/the-sqisign/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/edit_cache.dir
+/home/raximus/repos/work/speck/implementation/bench/sqisign/the-sqisign/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/rebuild_cache.dir

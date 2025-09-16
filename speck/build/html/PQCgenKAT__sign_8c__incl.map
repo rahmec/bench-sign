@@ -1,0 +1,39 @@
+<map id="/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/nist/PQCgenKAT_sign.c" name="/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/nist/PQCgenKAT_sign.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="240,5,424,80"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="79,128,140,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,83,154,124,152,119,246,78"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,203,70,229"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="276,83,153,157,77,198,75,193,151,152,273,78"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="359,128,423,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="357,79,378,113,373,116,352,82"/>
+<area shape="rect" id="Node000005" href="$KAT__NIST__rng_8h.html" title=" " alt="" coords="215,128,335,155"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="313,82,292,116,288,113,308,79"/>
+<area shape="rect" id="Node000009" href="$api_8h.html" title=" " alt="" coords="460,128,509,155"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="391,78,453,117,450,122,389,83"/>
+<area shape="rect" id="Node000014" href="$rng_8h.html" title=" " alt="" coords="644,128,695,155"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="426,68,630,126,629,131,424,73"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="234,158,85,203,84,198,233,153"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="94,203,200,229"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="254,158,184,197,181,192,251,153"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="224,203,326,229"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="278,155,278,187,272,187,272,155"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="351,203,447,229"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="298,153,366,192,363,197,295,158"/>
+<area shape="rect" id="Node000010" href="$parameters_8h.html" title=" " alt="" coords="490,277,588,304"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="490,154,512,228,527,262,522,264,507,230,485,156"/>
+<area shape="rect" id="Node000012" href="$SPECK_8h.html" title=" " alt="" coords="521,203,599,229"/>
+<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="499,153,538,190,534,194,496,157"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="543,352,607,379"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="547,303,564,337,559,339,543,306"/>
+<area shape="poly" id="edge13_Node000012_Node000010" title=" " alt="" coords="559,231,549,263,544,262,554,229"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="666,352,734,379"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="574,228,680,339,676,343,570,232"/>
+<area shape="poly" id="edge16_Node000014_Node000010" title=" " alt="" coords="665,157,643,191,613,231,571,269,567,265,609,228,639,188,660,154"/>
+<area shape="poly" id="edge21_Node000014_Node000013" title=" " alt="" coords="697,153,725,173,749,201,761,229,764,252,761,276,752,305,742,325,728,342,724,339,737,322,747,303,756,275,759,252,755,230,745,204,722,177,694,157"/>
+<area shape="rect" id="Node000015" href="$sha3_8h.html" title=" " alt="" coords="674,203,734,229"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="678,154,694,187,689,190,673,156"/>
+<area shape="rect" id="Node000016" href="$fips202_8h.html" title=" " alt="" coords="663,277,737,304"/>
+<area shape="poly" id="edge18_Node000015_Node000016" title=" " alt="" coords="706,230,704,262,699,262,701,230"/>
+<area shape="poly" id="edge20_Node000016_Node000011" title=" " alt="" coords="680,307,611,346,608,342,677,302"/>
+<area shape="poly" id="edge19_Node000016_Node000013" title=" " alt="" coords="703,305,703,336,698,336,698,305"/>
+</map>

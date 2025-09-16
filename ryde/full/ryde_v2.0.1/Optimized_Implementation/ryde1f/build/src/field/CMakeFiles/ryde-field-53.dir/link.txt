@@ -1,0 +1,2 @@
+/usr/bin/ar qc libryde-field-53.a "CMakeFiles/ryde-field-53.dir/field_53.c.o"
+/usr/bin/ranlib libryde-field-53.a

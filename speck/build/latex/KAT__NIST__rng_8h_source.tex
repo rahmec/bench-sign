@@ -1,0 +1,90 @@
+\doxysection{KAT\+\_\+\+NIST\+\_\+rng.\+h}
+\hypertarget{KAT__NIST__rng_8h_source}{}\label{KAT__NIST__rng_8h_source}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/nist/KAT\_NIST\_rng.h@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/nist/KAT\_NIST\_rng.h}}
+\mbox{\hyperlink{KAT__NIST__rng_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ NIST-\/developed\ software\ is\ provided\ by\ NIST\ as\ a\ public\ service.\ You\ may\ use,\ }}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ copy,\ and\ distribute\ copies\ of\ the\ software\ in\ any\ medium,\ provided\ that\ you\ }}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ keep\ intact\ this\ entire\ notice.\ You\ may\ improve,\ modify,\ and\ create\ }}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ derivative\ works\ of\ the\ software\ or\ any\ portion\ of\ the\ software,\ and\ you\ may\ }}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ copy\ and\ distribute\ such\ modifications\ or\ works.\ Modified\ works\ should\ carry\ }}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ a\ notice\ stating\ that\ you\ changed\ the\ software\ and\ should\ note\ the\ date\ and\ }}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ nature\ of\ any\ such\ change.\ Please\ explicitly\ acknowledge\ the\ National\ }}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ Institute\ of\ Standards\ and\ Technology\ as\ the\ source\ of\ the\ software.}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ }}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ NIST-\/developed\ software\ is\ expressly\ provided\ "{}AS\ IS."{}\ NIST\ MAKES\ NO\ WARRANTY\ }}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ OF\ ANY\ KIND,\ EXPRESS,\ IMPLIED,\ IN\ FACT,\ OR\ ARISING\ BY\ OPERATION\ OF\ LAW,\ }}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ INCLUDING,\ WITHOUT\ LIMITATION,\ THE\ IMPLIED\ WARRANTY\ OF\ MERCHANTABILITY,\ }}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE,\ NON-\/INFRINGEMENT,\ AND\ DATA\ ACCURACY.\ NIST\ }}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ NEITHER\ REPRESENTS\ NOR\ WARRANTS\ THAT\ THE\ OPERATION\ OF\ THE\ SOFTWARE\ WILL\ BE\ }}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ UNINTERRUPTED\ OR\ ERROR-\/FREE,\ OR\ THAT\ ANY\ DEFECTS\ WILL\ BE\ CORRECTED.\ }}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ NIST\ DOES\ NOT\ WARRANT\ OR\ MAKE\ ANY\ REPRESENTATIONS\ REGARDING\ THE\ USE\ OF\ THE\ }}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ SOFTWARE\ OR\ THE\ RESULTS\ THEREOF,\ INCLUDING\ BUT\ NOT\ LIMITED\ TO\ THE\ }}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ CORRECTNESS,\ ACCURACY,\ RELIABILITY,\ OR\ USEFULNESS\ OF\ THE\ SOFTWARE.}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ \ }}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ You\ are\ solely\ responsible\ for\ determining\ the\ appropriateness\ of\ using\ and\ }}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ distributing\ the\ software\ and\ you\ assume\ all\ risks\ associated\ with\ its\ use,\ }}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ including\ but\ not\ limited\ to\ the\ risks\ and\ costs\ of\ program\ errors,\ }}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ compliance\ with\ applicable\ laws,\ damage\ to\ or\ loss\ of\ data,\ programs\ or\ }}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ equipment,\ and\ the\ unavailability\ or\ interruption\ of\ operation.\ }}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ This\ software\ is\ not\ intended\ to\ be\ used\ in\ any\ situation\ where\ a\ failure\ }}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ could\ cause\ risk\ of\ injury\ or\ damage\ to\ property.\ }}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ The\ software\ developed\ by\ NIST\ employees\ is\ not\ subject\ to\ copyright\ }}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ protection\ within\ the\ United\ States.}}
+\DoxyCodeLine{00030\ \textcolor{comment}{*******************************************************************************/}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#ifndef\ kat\_nist\_rng\_h}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ kat\_nist\_rng\_h}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#include\ <openssl/conf.h>}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#include\ <openssl/evp.h>}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#include\ <openssl/err.h>}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ KAT\_NIST\_RNG\_SUCCESS\ \ \ \ \ (\ 0)}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ KAT\_NIST\_RNG\_BAD\_MAXLEN\ \ (-\/1)}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ KAT\_NIST\_RNG\_BAD\_OUTBUF\ \ (-\/2)}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ KAT\_NIST\_RNG\_BAD\_REQ\_LEN\ (-\/3)}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \ \ \mbox{\hyperlink{structKAT__NIST__AES__XOF__struct_ade215c1a16e2aa55085db4a304fbc719}{buffer}}[16];}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \ \ \ \mbox{\hyperlink{structKAT__NIST__AES__XOF__struct_a322aebf35a0f1065367f9ca3f508d457}{buffer\_pos}};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \ \ \mbox{\hyperlink{structKAT__NIST__AES__XOF__struct_ab7abf0839d8a2d9b9ef4d59e08ee1142}{length\_remaining}};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \ \ \mbox{\hyperlink{structKAT__NIST__AES__XOF__struct_ab9271e044c2877e5a49095be633f8796}{key}}[32];}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \ \ \mbox{\hyperlink{structKAT__NIST__AES__XOF__struct_a6482b80928791a211824436099090c27}{ctr}}[16];}
+\DoxyCodeLine{00052\ \}\ \mbox{\hyperlink{structKAT__NIST__AES__XOF__struct}{KAT\_NIST\_AES\_XOF\_struct}};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \ \ \mbox{\hyperlink{structKAT__NIST__AES256__CTR__DRBG__struct_a7d3123be04a71df99feb57f74eca1fd0}{Key}}[32];}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \ \ \mbox{\hyperlink{structKAT__NIST__AES256__CTR__DRBG__struct_adf825cfc2fdd43718982ce9b01fc900c}{V}}[16];}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structKAT__NIST__AES256__CTR__DRBG__struct_a7c96ac0bc1cec258da11012270ab7edc}{reseed\_counter}};}
+\DoxyCodeLine{00058\ \}\ \mbox{\hyperlink{structKAT__NIST__AES256__CTR__DRBG__struct}{KAT\_NIST\_AES256\_CTR\_DRBG\_struct}};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keywordtype}{void}}
+\DoxyCodeLine{00062\ \mbox{\hyperlink{KAT__NIST__rng_8h_a7df313310023d88610d44c0757f6fc9b}{KAT\_NIST\_AES256\_CTR\_DRBG\_Update}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *provided\_data,}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *Key,}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *V);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00067\ \mbox{\hyperlink{KAT__NIST__rng_8h_aeb724730986daed71ba870b1a68464ae}{KAT\_NIST\_seedexpander\_init}}(\mbox{\hyperlink{structKAT__NIST__AES__XOF__struct}{KAT\_NIST\_AES\_XOF\_struct}}\ *ctx,}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *seed,}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *diversifier,}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ maxlen);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00073\ \mbox{\hyperlink{KAT__NIST__rng_8h_a9e91fbcdffbc2b98c69bc73e872669ee}{KAT\_NIST\_seedexpander}}(\mbox{\hyperlink{structKAT__NIST__AES__XOF__struct}{KAT\_NIST\_AES\_XOF\_struct}}\ *ctx,\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *x,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ xlen);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{keywordtype}{void}}
+\DoxyCodeLine{00077\ \mbox{\hyperlink{KAT__NIST__rng_8h_a0f4bb50b69ea43fc02ac1e14a3c262ec}{KAT\_NIST\_randombytes\_init}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *entropy\_input,}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *personalization\_string,}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ security\_strength);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00082\ \mbox{\hyperlink{KAT__NIST__rng_8h_a304ba339ac0622e9283add5b32438432}{KAT\_NIST\_randombytes}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *x,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ xlen);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ kat\_nist\_rng\_h\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

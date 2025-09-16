@@ -1,0 +1,621 @@
+\doxysection{/home/raximus/repos/work/speck/implementation/\+SPECK/repo/optimized/include/fips202.h File Reference}
+\hypertarget{fips202_8h}{}\label{fips202_8h}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/include/fips202.h@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/include/fips202.h}}
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for fips202.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{fips202_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structshake128incctx}{shake128incctx}}
+\item 
+struct \mbox{\hyperlink{structshake128ctx}{shake128ctx}}
+\item 
+struct \mbox{\hyperlink{structshake256incctx}{shake256incctx}}
+\item 
+struct \mbox{\hyperlink{structshake256ctx}{shake256ctx}}
+\item 
+struct \mbox{\hyperlink{structsha3__256incctx}{sha3\+\_\+256incctx}}
+\item 
+struct \mbox{\hyperlink{structsha3__384incctx}{sha3\+\_\+384incctx}}
+\item 
+struct \mbox{\hyperlink{structsha3__512incctx}{sha3\+\_\+512incctx}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{fips202_8h_a049b154b3d12b0df19b2c986f458341d}{SHAKE128\+\_\+\+RATE}}~(168)
+\item 
+\#define \mbox{\hyperlink{fips202_8h_a8cd7a41f6f7efca80d063e7521f5b7fa}{SHAKE256\+\_\+\+RATE}}~(136)
+\item 
+\#define \mbox{\hyperlink{fips202_8h_ab9de5144a98915cf8c844aa43d034ce5}{SHA3\+\_\+256\+\_\+\+RATE}}~(136)
+\item 
+\#define \mbox{\hyperlink{fips202_8h_a30a3980b066c67146181d38063127f2c}{SHA3\+\_\+384\+\_\+\+RATE}}~(104)
+\item 
+\#define \mbox{\hyperlink{fips202_8h_a73007506dace85201de74725a3f5b7bb}{SHA3\+\_\+512\+\_\+\+RATE}}~( 72)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{fips202_8h_aa936c33b5efb099ce64ef6a4a8ac466d}{keccak\+\_\+inc\+\_\+init}} (uint64\+\_\+t \texorpdfstring{$\ast$}{*}s\+\_\+inc)
+\item 
+void \mbox{\hyperlink{fips202_8h_a36a67b40b2ea747e4798d4ec15b99dac}{keccak\+\_\+absorb}} (uint64\+\_\+t \texorpdfstring{$\ast$}{*}s, uint32\+\_\+t r, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}m, size\+\_\+t mlen, uint8\+\_\+t p)
+\item 
+void \mbox{\hyperlink{fips202_8h_a701be56ef812a48ae8f97479b3150dc6}{keccak\+\_\+inc\+\_\+absorb}} (uint64\+\_\+t \texorpdfstring{$\ast$}{*}s\+\_\+inc, uint32\+\_\+t r, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}m, size\+\_\+t mlen)
+\item 
+void \mbox{\hyperlink{fips202_8h_a25f762b995553b10c94db759c2e816d3}{keccak\+\_\+inc\+\_\+finalize}} (uint64\+\_\+t \texorpdfstring{$\ast$}{*}s\+\_\+inc, uint32\+\_\+t r, uint8\+\_\+t p)
+\item 
+void \mbox{\hyperlink{fips202_8h_ab4f4188cba4e21cb7f9a4cf8f51c0319}{keccak\+\_\+inc\+\_\+squeeze}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}h, size\+\_\+t outlen, uint64\+\_\+t \texorpdfstring{$\ast$}{*}s\+\_\+inc, uint32\+\_\+t r)
+\item 
+void \mbox{\hyperlink{fips202_8h_a78c531883720dbec732be4d8e5b07259}{shake128\+\_\+absorb}} (\mbox{\hyperlink{structshake128ctx}{shake128ctx}} \texorpdfstring{$\ast$}{*}state, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}input, size\+\_\+t inlen)
+\item 
+void \mbox{\hyperlink{fips202_8h_a8d1a3d1462e701f2e1f44ea7e8e88eeb}{shake128\+\_\+squeezeblocks}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}output, size\+\_\+t nblocks, \mbox{\hyperlink{structshake128ctx}{shake128ctx}} \texorpdfstring{$\ast$}{*}state)
+\item 
+void \mbox{\hyperlink{fips202_8h_a5065b658a305327896d1c80c5212d034}{shake128\+\_\+inc\+\_\+init}} (\mbox{\hyperlink{structshake128incctx}{shake128incctx}} \texorpdfstring{$\ast$}{*}state)
+\item 
+void \mbox{\hyperlink{fips202_8h_a559fc108d049c2e201f188aa0dd5b2f7}{shake128\+\_\+inc\+\_\+absorb}} (\mbox{\hyperlink{structshake128incctx}{shake128incctx}} \texorpdfstring{$\ast$}{*}state, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}input, size\+\_\+t inlen)
+\item 
+void \mbox{\hyperlink{fips202_8h_a6bd44b91ec062da3411d82d0f7a7df17}{shake128\+\_\+inc\+\_\+finalize}} (\mbox{\hyperlink{structshake128incctx}{shake128incctx}} \texorpdfstring{$\ast$}{*}state)
+\item 
+void \mbox{\hyperlink{fips202_8h_a58c99c53a540594f27c7fd66dcf7b19a}{shake128\+\_\+inc\+\_\+squeeze}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}output, size\+\_\+t outlen, \mbox{\hyperlink{structshake128incctx}{shake128incctx}} \texorpdfstring{$\ast$}{*}state)
+\item 
+void \mbox{\hyperlink{fips202_8h_afe1d930667e44ea47dab3af2a64c99cc}{shake256\+\_\+absorb}} (\mbox{\hyperlink{structshake256ctx}{shake256ctx}} \texorpdfstring{$\ast$}{*}state, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}input, size\+\_\+t inlen)
+\item 
+void \mbox{\hyperlink{fips202_8h_a6c77d17833cf55b31a66d00961f6fc24}{shake256\+\_\+squeezeblocks}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}output, size\+\_\+t nblocks, \mbox{\hyperlink{structshake256ctx}{shake256ctx}} \texorpdfstring{$\ast$}{*}state)
+\item 
+void \mbox{\hyperlink{fips202_8h_ac9a36479b08be191e48316af52aba66e}{shake256\+\_\+inc\+\_\+init}} (\mbox{\hyperlink{structshake256incctx}{shake256incctx}} \texorpdfstring{$\ast$}{*}state)
+\item 
+void \mbox{\hyperlink{fips202_8h_adfcfb4ad50d0ed405c267dbd5b43b596}{shake256\+\_\+inc\+\_\+absorb}} (\mbox{\hyperlink{structshake256incctx}{shake256incctx}} \texorpdfstring{$\ast$}{*}state, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}input, size\+\_\+t inlen)
+\item 
+void \mbox{\hyperlink{fips202_8h_a2f8f1c0a2a1b9c233dea5f09ea1f263d}{shake256\+\_\+inc\+\_\+finalize}} (\mbox{\hyperlink{structshake256incctx}{shake256incctx}} \texorpdfstring{$\ast$}{*}state)
+\item 
+void \mbox{\hyperlink{fips202_8h_aa57ec4c71844143ed7bc7b88c44b96f7}{shake256\+\_\+inc\+\_\+squeeze}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}output, size\+\_\+t outlen, \mbox{\hyperlink{structshake256incctx}{shake256incctx}} \texorpdfstring{$\ast$}{*}state)
+\item 
+void \mbox{\hyperlink{fips202_8h_a9f237751cc0fe34eb7716258e1e71bd1}{shake128}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}output, size\+\_\+t outlen, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}input, size\+\_\+t inlen)
+\item 
+void \mbox{\hyperlink{fips202_8h_a270512bae02a672a432ff5d72aada606}{shake256}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}output, size\+\_\+t outlen, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}input, size\+\_\+t inlen)
+\item 
+void \mbox{\hyperlink{fips202_8h_ab08e6c228c6a1bd5ce766abdb45edb84}{sha3\+\_\+256\+\_\+inc\+\_\+init}} (\mbox{\hyperlink{structsha3__256incctx}{sha3\+\_\+256incctx}} \texorpdfstring{$\ast$}{*}state)
+\item 
+void \mbox{\hyperlink{fips202_8h_a5d7920f81053f68a04bdba9f1b05e7bf}{sha3\+\_\+256\+\_\+inc\+\_\+absorb}} (\mbox{\hyperlink{structsha3__256incctx}{sha3\+\_\+256incctx}} \texorpdfstring{$\ast$}{*}state, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}input, size\+\_\+t inlen)
+\item 
+void \mbox{\hyperlink{fips202_8h_a6d7e2382db71a8bd56079eba820c79d8}{sha3\+\_\+256\+\_\+inc\+\_\+finalize}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}output, \mbox{\hyperlink{structsha3__256incctx}{sha3\+\_\+256incctx}} \texorpdfstring{$\ast$}{*}state)
+\item 
+void \mbox{\hyperlink{fips202_8h_aea7a526d3102307cb701d7e225ba519b}{sha3\+\_\+256}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}output, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}input, size\+\_\+t inlen)
+\item 
+void \mbox{\hyperlink{fips202_8h_a8882815bbbb9770d7d701e1baa82bf91}{sha3\+\_\+384\+\_\+inc\+\_\+init}} (\mbox{\hyperlink{structsha3__384incctx}{sha3\+\_\+384incctx}} \texorpdfstring{$\ast$}{*}state)
+\item 
+void \mbox{\hyperlink{fips202_8h_ac254ca6741a420a724dd00bc9940bdd1}{sha3\+\_\+384\+\_\+inc\+\_\+absorb}} (\mbox{\hyperlink{structsha3__384incctx}{sha3\+\_\+384incctx}} \texorpdfstring{$\ast$}{*}state, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}input, size\+\_\+t inlen)
+\item 
+void \mbox{\hyperlink{fips202_8h_a98dd5f672ecf3a6f1b52099a928c11a8}{sha3\+\_\+384\+\_\+inc\+\_\+finalize}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}output, \mbox{\hyperlink{structsha3__384incctx}{sha3\+\_\+384incctx}} \texorpdfstring{$\ast$}{*}state)
+\item 
+void \mbox{\hyperlink{fips202_8h_a5ebef768cc58e0956b2c5ed1e51bc14d}{sha3\+\_\+384}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}output, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}input, size\+\_\+t inlen)
+\item 
+void \mbox{\hyperlink{fips202_8h_a5c48f22d3686de7ca4e4085cde49386d}{sha3\+\_\+512\+\_\+inc\+\_\+init}} (\mbox{\hyperlink{structsha3__512incctx}{sha3\+\_\+512incctx}} \texorpdfstring{$\ast$}{*}state)
+\item 
+void \mbox{\hyperlink{fips202_8h_a5f4489e01f1f004a6afebdcab211004a}{sha3\+\_\+512\+\_\+inc\+\_\+absorb}} (\mbox{\hyperlink{structsha3__512incctx}{sha3\+\_\+512incctx}} \texorpdfstring{$\ast$}{*}state, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}input, size\+\_\+t inlen)
+\item 
+void \mbox{\hyperlink{fips202_8h_a908d0cf3ab4099c3c161ddbcf554b60a}{sha3\+\_\+512\+\_\+inc\+\_\+finalize}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}output, \mbox{\hyperlink{structsha3__512incctx}{sha3\+\_\+512incctx}} \texorpdfstring{$\ast$}{*}state)
+\item 
+void \mbox{\hyperlink{fips202_8h_ab41d66052ac5fa044bd8d5cd008e4a93}{sha3\+\_\+512}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}output, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}input, size\+\_\+t inlen)
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{fips202_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{fips202_8h_ab9de5144a98915cf8c844aa43d034ce5}\index{fips202.h@{fips202.h}!SHA3\_256\_RATE@{SHA3\_256\_RATE}}
+\index{SHA3\_256\_RATE@{SHA3\_256\_RATE}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{SHA3\_256\_RATE}{SHA3\_256\_RATE}}
+{\footnotesize\ttfamily \label{fips202_8h_ab9de5144a98915cf8c844aa43d034ce5} 
+\#define SHA3\+\_\+256\+\_\+\+RATE~(136)}
+
+\Hypertarget{fips202_8h_a30a3980b066c67146181d38063127f2c}\index{fips202.h@{fips202.h}!SHA3\_384\_RATE@{SHA3\_384\_RATE}}
+\index{SHA3\_384\_RATE@{SHA3\_384\_RATE}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{SHA3\_384\_RATE}{SHA3\_384\_RATE}}
+{\footnotesize\ttfamily \label{fips202_8h_a30a3980b066c67146181d38063127f2c} 
+\#define SHA3\+\_\+384\+\_\+\+RATE~(104)}
+
+\Hypertarget{fips202_8h_a73007506dace85201de74725a3f5b7bb}\index{fips202.h@{fips202.h}!SHA3\_512\_RATE@{SHA3\_512\_RATE}}
+\index{SHA3\_512\_RATE@{SHA3\_512\_RATE}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{SHA3\_512\_RATE}{SHA3\_512\_RATE}}
+{\footnotesize\ttfamily \label{fips202_8h_a73007506dace85201de74725a3f5b7bb} 
+\#define SHA3\+\_\+512\+\_\+\+RATE~( 72)}
+
+\Hypertarget{fips202_8h_a049b154b3d12b0df19b2c986f458341d}\index{fips202.h@{fips202.h}!SHAKE128\_RATE@{SHAKE128\_RATE}}
+\index{SHAKE128\_RATE@{SHAKE128\_RATE}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{SHAKE128\_RATE}{SHAKE128\_RATE}}
+{\footnotesize\ttfamily \label{fips202_8h_a049b154b3d12b0df19b2c986f458341d} 
+\#define SHAKE128\+\_\+\+RATE~(168)}
+
+\Hypertarget{fips202_8h_a8cd7a41f6f7efca80d063e7521f5b7fa}\index{fips202.h@{fips202.h}!SHAKE256\_RATE@{SHAKE256\_RATE}}
+\index{SHAKE256\_RATE@{SHAKE256\_RATE}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{SHAKE256\_RATE}{SHAKE256\_RATE}}
+{\footnotesize\ttfamily \label{fips202_8h_a8cd7a41f6f7efca80d063e7521f5b7fa} 
+\#define SHAKE256\+\_\+\+RATE~(136)}
+
+
+
+\label{doc-func-members}
+\Hypertarget{fips202_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{fips202_8h_a36a67b40b2ea747e4798d4ec15b99dac}\index{fips202.h@{fips202.h}!keccak\_absorb@{keccak\_absorb}}
+\index{keccak\_absorb@{keccak\_absorb}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{keccak\_absorb()}{keccak\_absorb()}}
+{\footnotesize\ttfamily \label{fips202_8h_a36a67b40b2ea747e4798d4ec15b99dac} 
+void keccak\+\_\+absorb (\begin{DoxyParamCaption}\item[{uint64\+\_\+t \texorpdfstring{$\ast$}{*}}]{s}{, }\item[{uint32\+\_\+t}]{r}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{m}{, }\item[{size\+\_\+t}]{mlen}{, }\item[{uint8\+\_\+t}]{p}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a36a67b40b2ea747e4798d4ec15b99dac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{fips202_8h_a36a67b40b2ea747e4798d4ec15b99dac_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a701be56ef812a48ae8f97479b3150dc6}\index{fips202.h@{fips202.h}!keccak\_inc\_absorb@{keccak\_inc\_absorb}}
+\index{keccak\_inc\_absorb@{keccak\_inc\_absorb}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{keccak\_inc\_absorb()}{keccak\_inc\_absorb()}}
+{\footnotesize\ttfamily \label{fips202_8h_a701be56ef812a48ae8f97479b3150dc6} 
+void keccak\+\_\+inc\+\_\+absorb (\begin{DoxyParamCaption}\item[{uint64\+\_\+t \texorpdfstring{$\ast$}{*}}]{s\+\_\+inc}{, }\item[{uint32\+\_\+t}]{r}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{m}{, }\item[{size\+\_\+t}]{mlen}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a701be56ef812a48ae8f97479b3150dc6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{fips202_8h_a701be56ef812a48ae8f97479b3150dc6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a25f762b995553b10c94db759c2e816d3}\index{fips202.h@{fips202.h}!keccak\_inc\_finalize@{keccak\_inc\_finalize}}
+\index{keccak\_inc\_finalize@{keccak\_inc\_finalize}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{keccak\_inc\_finalize()}{keccak\_inc\_finalize()}}
+{\footnotesize\ttfamily \label{fips202_8h_a25f762b995553b10c94db759c2e816d3} 
+void keccak\+\_\+inc\+\_\+finalize (\begin{DoxyParamCaption}\item[{uint64\+\_\+t \texorpdfstring{$\ast$}{*}}]{s\+\_\+inc}{, }\item[{uint32\+\_\+t}]{r}{, }\item[{uint8\+\_\+t}]{p}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a25f762b995553b10c94db759c2e816d3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{fips202_8h_a25f762b995553b10c94db759c2e816d3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_aa936c33b5efb099ce64ef6a4a8ac466d}\index{fips202.h@{fips202.h}!keccak\_inc\_init@{keccak\_inc\_init}}
+\index{keccak\_inc\_init@{keccak\_inc\_init}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{keccak\_inc\_init()}{keccak\_inc\_init()}}
+{\footnotesize\ttfamily \label{fips202_8h_aa936c33b5efb099ce64ef6a4a8ac466d} 
+void keccak\+\_\+inc\+\_\+init (\begin{DoxyParamCaption}\item[{uint64\+\_\+t \texorpdfstring{$\ast$}{*}}]{s\+\_\+inc}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{fips202_8h_aa936c33b5efb099ce64ef6a4a8ac466d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_ab4f4188cba4e21cb7f9a4cf8f51c0319}\index{fips202.h@{fips202.h}!keccak\_inc\_squeeze@{keccak\_inc\_squeeze}}
+\index{keccak\_inc\_squeeze@{keccak\_inc\_squeeze}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{keccak\_inc\_squeeze()}{keccak\_inc\_squeeze()}}
+{\footnotesize\ttfamily \label{fips202_8h_ab4f4188cba4e21cb7f9a4cf8f51c0319} 
+void keccak\+\_\+inc\+\_\+squeeze (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{h}{, }\item[{size\+\_\+t}]{outlen}{, }\item[{uint64\+\_\+t \texorpdfstring{$\ast$}{*}}]{s\+\_\+inc}{, }\item[{uint32\+\_\+t}]{r}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_ab4f4188cba4e21cb7f9a4cf8f51c0319_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{fips202_8h_ab4f4188cba4e21cb7f9a4cf8f51c0319_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_aea7a526d3102307cb701d7e225ba519b}\index{fips202.h@{fips202.h}!sha3\_256@{sha3\_256}}
+\index{sha3\_256@{sha3\_256}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{sha3\_256()}{sha3\_256()}}
+{\footnotesize\ttfamily \label{fips202_8h_aea7a526d3102307cb701d7e225ba519b} 
+void sha3\+\_\+256 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{output}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{input}{, }\item[{size\+\_\+t}]{inlen}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_aea7a526d3102307cb701d7e225ba519b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a5d7920f81053f68a04bdba9f1b05e7bf}\index{fips202.h@{fips202.h}!sha3\_256\_inc\_absorb@{sha3\_256\_inc\_absorb}}
+\index{sha3\_256\_inc\_absorb@{sha3\_256\_inc\_absorb}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{sha3\_256\_inc\_absorb()}{sha3\_256\_inc\_absorb()}}
+{\footnotesize\ttfamily \label{fips202_8h_a5d7920f81053f68a04bdba9f1b05e7bf} 
+void sha3\+\_\+256\+\_\+inc\+\_\+absorb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsha3__256incctx}{sha3\+\_\+256incctx}} \texorpdfstring{$\ast$}{*}}]{state}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{input}{, }\item[{size\+\_\+t}]{inlen}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a5d7920f81053f68a04bdba9f1b05e7bf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a6d7e2382db71a8bd56079eba820c79d8}\index{fips202.h@{fips202.h}!sha3\_256\_inc\_finalize@{sha3\_256\_inc\_finalize}}
+\index{sha3\_256\_inc\_finalize@{sha3\_256\_inc\_finalize}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{sha3\_256\_inc\_finalize()}{sha3\_256\_inc\_finalize()}}
+{\footnotesize\ttfamily \label{fips202_8h_a6d7e2382db71a8bd56079eba820c79d8} 
+void sha3\+\_\+256\+\_\+inc\+\_\+finalize (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{output}{, }\item[{\mbox{\hyperlink{structsha3__256incctx}{sha3\+\_\+256incctx}} \texorpdfstring{$\ast$}{*}}]{state}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a6d7e2382db71a8bd56079eba820c79d8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_ab08e6c228c6a1bd5ce766abdb45edb84}\index{fips202.h@{fips202.h}!sha3\_256\_inc\_init@{sha3\_256\_inc\_init}}
+\index{sha3\_256\_inc\_init@{sha3\_256\_inc\_init}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{sha3\_256\_inc\_init()}{sha3\_256\_inc\_init()}}
+{\footnotesize\ttfamily \label{fips202_8h_ab08e6c228c6a1bd5ce766abdb45edb84} 
+void sha3\+\_\+256\+\_\+inc\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsha3__256incctx}{sha3\+\_\+256incctx}} \texorpdfstring{$\ast$}{*}}]{state}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{fips202_8h_ab08e6c228c6a1bd5ce766abdb45edb84_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a5ebef768cc58e0956b2c5ed1e51bc14d}\index{fips202.h@{fips202.h}!sha3\_384@{sha3\_384}}
+\index{sha3\_384@{sha3\_384}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{sha3\_384()}{sha3\_384()}}
+{\footnotesize\ttfamily \label{fips202_8h_a5ebef768cc58e0956b2c5ed1e51bc14d} 
+void sha3\+\_\+384 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{output}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{input}{, }\item[{size\+\_\+t}]{inlen}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a5ebef768cc58e0956b2c5ed1e51bc14d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_ac254ca6741a420a724dd00bc9940bdd1}\index{fips202.h@{fips202.h}!sha3\_384\_inc\_absorb@{sha3\_384\_inc\_absorb}}
+\index{sha3\_384\_inc\_absorb@{sha3\_384\_inc\_absorb}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{sha3\_384\_inc\_absorb()}{sha3\_384\_inc\_absorb()}}
+{\footnotesize\ttfamily \label{fips202_8h_ac254ca6741a420a724dd00bc9940bdd1} 
+void sha3\+\_\+384\+\_\+inc\+\_\+absorb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsha3__384incctx}{sha3\+\_\+384incctx}} \texorpdfstring{$\ast$}{*}}]{state}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{input}{, }\item[{size\+\_\+t}]{inlen}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_ac254ca6741a420a724dd00bc9940bdd1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a98dd5f672ecf3a6f1b52099a928c11a8}\index{fips202.h@{fips202.h}!sha3\_384\_inc\_finalize@{sha3\_384\_inc\_finalize}}
+\index{sha3\_384\_inc\_finalize@{sha3\_384\_inc\_finalize}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{sha3\_384\_inc\_finalize()}{sha3\_384\_inc\_finalize()}}
+{\footnotesize\ttfamily \label{fips202_8h_a98dd5f672ecf3a6f1b52099a928c11a8} 
+void sha3\+\_\+384\+\_\+inc\+\_\+finalize (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{output}{, }\item[{\mbox{\hyperlink{structsha3__384incctx}{sha3\+\_\+384incctx}} \texorpdfstring{$\ast$}{*}}]{state}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a98dd5f672ecf3a6f1b52099a928c11a8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a8882815bbbb9770d7d701e1baa82bf91}\index{fips202.h@{fips202.h}!sha3\_384\_inc\_init@{sha3\_384\_inc\_init}}
+\index{sha3\_384\_inc\_init@{sha3\_384\_inc\_init}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{sha3\_384\_inc\_init()}{sha3\_384\_inc\_init()}}
+{\footnotesize\ttfamily \label{fips202_8h_a8882815bbbb9770d7d701e1baa82bf91} 
+void sha3\+\_\+384\+\_\+inc\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsha3__384incctx}{sha3\+\_\+384incctx}} \texorpdfstring{$\ast$}{*}}]{state}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{fips202_8h_a8882815bbbb9770d7d701e1baa82bf91_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_ab41d66052ac5fa044bd8d5cd008e4a93}\index{fips202.h@{fips202.h}!sha3\_512@{sha3\_512}}
+\index{sha3\_512@{sha3\_512}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{sha3\_512()}{sha3\_512()}}
+{\footnotesize\ttfamily \label{fips202_8h_ab41d66052ac5fa044bd8d5cd008e4a93} 
+void sha3\+\_\+512 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{output}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{input}{, }\item[{size\+\_\+t}]{inlen}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_ab41d66052ac5fa044bd8d5cd008e4a93_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a5f4489e01f1f004a6afebdcab211004a}\index{fips202.h@{fips202.h}!sha3\_512\_inc\_absorb@{sha3\_512\_inc\_absorb}}
+\index{sha3\_512\_inc\_absorb@{sha3\_512\_inc\_absorb}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{sha3\_512\_inc\_absorb()}{sha3\_512\_inc\_absorb()}}
+{\footnotesize\ttfamily \label{fips202_8h_a5f4489e01f1f004a6afebdcab211004a} 
+void sha3\+\_\+512\+\_\+inc\+\_\+absorb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsha3__512incctx}{sha3\+\_\+512incctx}} \texorpdfstring{$\ast$}{*}}]{state}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{input}{, }\item[{size\+\_\+t}]{inlen}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a5f4489e01f1f004a6afebdcab211004a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a908d0cf3ab4099c3c161ddbcf554b60a}\index{fips202.h@{fips202.h}!sha3\_512\_inc\_finalize@{sha3\_512\_inc\_finalize}}
+\index{sha3\_512\_inc\_finalize@{sha3\_512\_inc\_finalize}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{sha3\_512\_inc\_finalize()}{sha3\_512\_inc\_finalize()}}
+{\footnotesize\ttfamily \label{fips202_8h_a908d0cf3ab4099c3c161ddbcf554b60a} 
+void sha3\+\_\+512\+\_\+inc\+\_\+finalize (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{output}{, }\item[{\mbox{\hyperlink{structsha3__512incctx}{sha3\+\_\+512incctx}} \texorpdfstring{$\ast$}{*}}]{state}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a908d0cf3ab4099c3c161ddbcf554b60a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a5c48f22d3686de7ca4e4085cde49386d}\index{fips202.h@{fips202.h}!sha3\_512\_inc\_init@{sha3\_512\_inc\_init}}
+\index{sha3\_512\_inc\_init@{sha3\_512\_inc\_init}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{sha3\_512\_inc\_init()}{sha3\_512\_inc\_init()}}
+{\footnotesize\ttfamily \label{fips202_8h_a5c48f22d3686de7ca4e4085cde49386d} 
+void sha3\+\_\+512\+\_\+inc\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsha3__512incctx}{sha3\+\_\+512incctx}} \texorpdfstring{$\ast$}{*}}]{state}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{fips202_8h_a5c48f22d3686de7ca4e4085cde49386d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a9f237751cc0fe34eb7716258e1e71bd1}\index{fips202.h@{fips202.h}!shake128@{shake128}}
+\index{shake128@{shake128}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{shake128()}{shake128()}}
+{\footnotesize\ttfamily \label{fips202_8h_a9f237751cc0fe34eb7716258e1e71bd1} 
+void shake128 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{output}{, }\item[{size\+\_\+t}]{outlen}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{input}{, }\item[{size\+\_\+t}]{inlen}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a9f237751cc0fe34eb7716258e1e71bd1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a78c531883720dbec732be4d8e5b07259}\index{fips202.h@{fips202.h}!shake128\_absorb@{shake128\_absorb}}
+\index{shake128\_absorb@{shake128\_absorb}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{shake128\_absorb()}{shake128\_absorb()}}
+{\footnotesize\ttfamily \label{fips202_8h_a78c531883720dbec732be4d8e5b07259} 
+void shake128\+\_\+absorb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structshake128ctx}{shake128ctx}} \texorpdfstring{$\ast$}{*}}]{state}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{input}{, }\item[{size\+\_\+t}]{inlen}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a78c531883720dbec732be4d8e5b07259_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a559fc108d049c2e201f188aa0dd5b2f7}\index{fips202.h@{fips202.h}!shake128\_inc\_absorb@{shake128\_inc\_absorb}}
+\index{shake128\_inc\_absorb@{shake128\_inc\_absorb}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{shake128\_inc\_absorb()}{shake128\_inc\_absorb()}}
+{\footnotesize\ttfamily \label{fips202_8h_a559fc108d049c2e201f188aa0dd5b2f7} 
+void shake128\+\_\+inc\+\_\+absorb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structshake128incctx}{shake128incctx}} \texorpdfstring{$\ast$}{*}}]{state}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{input}{, }\item[{size\+\_\+t}]{inlen}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a559fc108d049c2e201f188aa0dd5b2f7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a6bd44b91ec062da3411d82d0f7a7df17}\index{fips202.h@{fips202.h}!shake128\_inc\_finalize@{shake128\_inc\_finalize}}
+\index{shake128\_inc\_finalize@{shake128\_inc\_finalize}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{shake128\_inc\_finalize()}{shake128\_inc\_finalize()}}
+{\footnotesize\ttfamily \label{fips202_8h_a6bd44b91ec062da3411d82d0f7a7df17} 
+void shake128\+\_\+inc\+\_\+finalize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structshake128incctx}{shake128incctx}} \texorpdfstring{$\ast$}{*}}]{state}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a6bd44b91ec062da3411d82d0f7a7df17_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a5065b658a305327896d1c80c5212d034}\index{fips202.h@{fips202.h}!shake128\_inc\_init@{shake128\_inc\_init}}
+\index{shake128\_inc\_init@{shake128\_inc\_init}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{shake128\_inc\_init()}{shake128\_inc\_init()}}
+{\footnotesize\ttfamily \label{fips202_8h_a5065b658a305327896d1c80c5212d034} 
+void shake128\+\_\+inc\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structshake128incctx}{shake128incctx}} \texorpdfstring{$\ast$}{*}}]{state}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{fips202_8h_a5065b658a305327896d1c80c5212d034_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a58c99c53a540594f27c7fd66dcf7b19a}\index{fips202.h@{fips202.h}!shake128\_inc\_squeeze@{shake128\_inc\_squeeze}}
+\index{shake128\_inc\_squeeze@{shake128\_inc\_squeeze}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{shake128\_inc\_squeeze()}{shake128\_inc\_squeeze()}}
+{\footnotesize\ttfamily \label{fips202_8h_a58c99c53a540594f27c7fd66dcf7b19a} 
+void shake128\+\_\+inc\+\_\+squeeze (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{output}{, }\item[{size\+\_\+t}]{outlen}{, }\item[{\mbox{\hyperlink{structshake128incctx}{shake128incctx}} \texorpdfstring{$\ast$}{*}}]{state}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a58c99c53a540594f27c7fd66dcf7b19a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a8d1a3d1462e701f2e1f44ea7e8e88eeb}\index{fips202.h@{fips202.h}!shake128\_squeezeblocks@{shake128\_squeezeblocks}}
+\index{shake128\_squeezeblocks@{shake128\_squeezeblocks}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{shake128\_squeezeblocks()}{shake128\_squeezeblocks()}}
+{\footnotesize\ttfamily \label{fips202_8h_a8d1a3d1462e701f2e1f44ea7e8e88eeb} 
+void shake128\+\_\+squeezeblocks (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{output}{, }\item[{size\+\_\+t}]{nblocks}{, }\item[{\mbox{\hyperlink{structshake128ctx}{shake128ctx}} \texorpdfstring{$\ast$}{*}}]{state}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a8d1a3d1462e701f2e1f44ea7e8e88eeb_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a270512bae02a672a432ff5d72aada606}\index{fips202.h@{fips202.h}!shake256@{shake256}}
+\index{shake256@{shake256}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{shake256()}{shake256()}}
+{\footnotesize\ttfamily \label{fips202_8h_a270512bae02a672a432ff5d72aada606} 
+void shake256 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{output}{, }\item[{size\+\_\+t}]{outlen}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{input}{, }\item[{size\+\_\+t}]{inlen}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a270512bae02a672a432ff5d72aada606_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_afe1d930667e44ea47dab3af2a64c99cc}\index{fips202.h@{fips202.h}!shake256\_absorb@{shake256\_absorb}}
+\index{shake256\_absorb@{shake256\_absorb}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{shake256\_absorb()}{shake256\_absorb()}}
+{\footnotesize\ttfamily \label{fips202_8h_afe1d930667e44ea47dab3af2a64c99cc} 
+void shake256\+\_\+absorb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structshake256ctx}{shake256ctx}} \texorpdfstring{$\ast$}{*}}]{state}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{input}{, }\item[{size\+\_\+t}]{inlen}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_afe1d930667e44ea47dab3af2a64c99cc_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_adfcfb4ad50d0ed405c267dbd5b43b596}\index{fips202.h@{fips202.h}!shake256\_inc\_absorb@{shake256\_inc\_absorb}}
+\index{shake256\_inc\_absorb@{shake256\_inc\_absorb}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{shake256\_inc\_absorb()}{shake256\_inc\_absorb()}}
+{\footnotesize\ttfamily \label{fips202_8h_adfcfb4ad50d0ed405c267dbd5b43b596} 
+void shake256\+\_\+inc\+\_\+absorb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structshake256incctx}{shake256incctx}} \texorpdfstring{$\ast$}{*}}]{state}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{input}{, }\item[{size\+\_\+t}]{inlen}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_adfcfb4ad50d0ed405c267dbd5b43b596_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a2f8f1c0a2a1b9c233dea5f09ea1f263d}\index{fips202.h@{fips202.h}!shake256\_inc\_finalize@{shake256\_inc\_finalize}}
+\index{shake256\_inc\_finalize@{shake256\_inc\_finalize}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{shake256\_inc\_finalize()}{shake256\_inc\_finalize()}}
+{\footnotesize\ttfamily \label{fips202_8h_a2f8f1c0a2a1b9c233dea5f09ea1f263d} 
+void shake256\+\_\+inc\+\_\+finalize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structshake256incctx}{shake256incctx}} \texorpdfstring{$\ast$}{*}}]{state}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a2f8f1c0a2a1b9c233dea5f09ea1f263d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_ac9a36479b08be191e48316af52aba66e}\index{fips202.h@{fips202.h}!shake256\_inc\_init@{shake256\_inc\_init}}
+\index{shake256\_inc\_init@{shake256\_inc\_init}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{shake256\_inc\_init()}{shake256\_inc\_init()}}
+{\footnotesize\ttfamily \label{fips202_8h_ac9a36479b08be191e48316af52aba66e} 
+void shake256\+\_\+inc\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structshake256incctx}{shake256incctx}} \texorpdfstring{$\ast$}{*}}]{state}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{fips202_8h_ac9a36479b08be191e48316af52aba66e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_aa57ec4c71844143ed7bc7b88c44b96f7}\index{fips202.h@{fips202.h}!shake256\_inc\_squeeze@{shake256\_inc\_squeeze}}
+\index{shake256\_inc\_squeeze@{shake256\_inc\_squeeze}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{shake256\_inc\_squeeze()}{shake256\_inc\_squeeze()}}
+{\footnotesize\ttfamily \label{fips202_8h_aa57ec4c71844143ed7bc7b88c44b96f7} 
+void shake256\+\_\+inc\+\_\+squeeze (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{output}{, }\item[{size\+\_\+t}]{outlen}{, }\item[{\mbox{\hyperlink{structshake256incctx}{shake256incctx}} \texorpdfstring{$\ast$}{*}}]{state}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_aa57ec4c71844143ed7bc7b88c44b96f7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fips202_8h_a6c77d17833cf55b31a66d00961f6fc24}\index{fips202.h@{fips202.h}!shake256\_squeezeblocks@{shake256\_squeezeblocks}}
+\index{shake256\_squeezeblocks@{shake256\_squeezeblocks}!fips202.h@{fips202.h}}
+\doxysubsubsection{\texorpdfstring{shake256\_squeezeblocks()}{shake256\_squeezeblocks()}}
+{\footnotesize\ttfamily \label{fips202_8h_a6c77d17833cf55b31a66d00961f6fc24} 
+void shake256\+\_\+squeezeblocks (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{output}{, }\item[{size\+\_\+t}]{nblocks}{, }\item[{\mbox{\hyperlink{structshake256ctx}{shake256ctx}} \texorpdfstring{$\ast$}{*}}]{state}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fips202_8h_a6c77d17833cf55b31a66d00961f6fc24_cgraph}
+\end{center}
+\end{figure}

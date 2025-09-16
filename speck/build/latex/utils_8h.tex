@@ -1,0 +1,139 @@
+\doxysection{/home/raximus/repos/work/speck/implementation/\+SPECK/repo/optimized/include/utils.h File Reference}
+\hypertarget{utils_8h}{}\label{utils_8h}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/include/utils.h@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/include/utils.h}}
+{\ttfamily \#include "{}parameters.\+h"{}}\newline
+{\ttfamily \#include "{}codes.\+h"{}}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+Include dependency graph for utils.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{utils_8h_aac9153aee4bdb92701df902e06a74eb3}{SWAP}}(a,  b)
+\item 
+\#define \mbox{\hyperlink{utils_8h_aa4d9d9e13a58ff09f838ecbdfdca965f}{MASKED\+\_\+\+SWAP}}(a,  b,  m)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{utils_8h_a4c9b4ff782867b06aa8969ae7896318a}{cswap}} (uintptr\+\_\+t \texorpdfstring{$\ast$}{*}a, uintptr\+\_\+t \texorpdfstring{$\ast$}{*}b, uintptr\+\_\+t mask)
+\begin{DoxyCompactList}\small\item\em swaps a and b if \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utils_8h_a9ac76c8bbd6df8f1bfab8dce9111e423}{Sample\+Challenge}} (uint8\+\_\+t fixed\+\_\+weight\+\_\+string\mbox{[}T\mbox{]}, const uint8\+\_\+t digest\mbox{[}\mbox{\hyperlink{parameters_8h_a4f084f0537806da54ffa64182398f6af}{HASH\+\_\+\+DIGEST\+\_\+\+LENGTH}}\mbox{]})
+\item 
+int \mbox{\hyperlink{utils_8h_a2cabe96c6d3148d71f1bc8f760666064}{verify}} (const uint8\+\_\+t \texorpdfstring{$\ast$}{*}a, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}b, const size\+\_\+t len)
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{utils_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{utils_8h_aa4d9d9e13a58ff09f838ecbdfdca965f}\index{utils.h@{utils.h}!MASKED\_SWAP@{MASKED\_SWAP}}
+\index{MASKED\_SWAP@{MASKED\_SWAP}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{MASKED\_SWAP}{MASKED\_SWAP}}
+{\footnotesize\ttfamily \label{utils_8h_aa4d9d9e13a58ff09f838ecbdfdca965f} 
+\#define MASKED\+\_\+\+SWAP(\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{, }\item[{}]{m}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{\ a\string^=(m\&b);\ b\string^=(m\&a);\ a\string^=(m\&b);\ \}}
+
+\end{DoxyCode}
+\Hypertarget{utils_8h_aac9153aee4bdb92701df902e06a74eb3}\index{utils.h@{utils.h}!SWAP@{SWAP}}
+\index{SWAP@{SWAP}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{SWAP}{SWAP}}
+{\footnotesize\ttfamily \label{utils_8h_aac9153aee4bdb92701df902e06a74eb3} 
+\#define SWAP(\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{\ (a)\string^=(b);\ (b)\string^=(a);\ (a)\string^=(b);\ \}}
+
+\end{DoxyCode}
+THIS SOFTWARE IS PROVIDED BY THE AUTHORS \textquotesingle{}\textquotesingle{}AS IS\textquotesingle{}\textquotesingle{} AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+
+\label{doc-func-members}
+\Hypertarget{utils_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{utils_8h_a4c9b4ff782867b06aa8969ae7896318a}\index{utils.h@{utils.h}!cswap@{cswap}}
+\index{cswap@{cswap}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{cswap()}{cswap()}}
+{\footnotesize\ttfamily \label{utils_8h_a4c9b4ff782867b06aa8969ae7896318a} 
+void cswap (\begin{DoxyParamCaption}\item[{uintptr\+\_\+t \texorpdfstring{$\ast$}{*}}]{a}{, }\item[{uintptr\+\_\+t \texorpdfstring{$\ast$}{*}}]{b}{, }\item[{const uintptr\+\_\+t}]{mask}{}\end{DoxyParamCaption})}
+
+
+
+swaps a and b if 
+
+Reference ISO-\/\+C11 Implementation of LESS.
+
+\begin{DoxyVersion}{Version}
+1.\+1 (March 2023)
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Alessandro Barenghi \href{mailto:alessandro.barenghi@polimi.it}{\texttt{alessandro.\+barenghi@polimi.\+it}} 
+
+Gerardo Pelosi \href{mailto:gerardo.pelosi@polimi.it}{\texttt{gerardo.\+pelosi@polimi.\+it}}
+\end{DoxyAuthor}
+This code is hereby placed in the public domain.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHORS \textquotesingle{}\textquotesingle{}AS IS\textquotesingle{}\textquotesingle{} AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8h_a4c9b4ff782867b06aa8969ae7896318a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{utils_8h_a9ac76c8bbd6df8f1bfab8dce9111e423}\index{utils.h@{utils.h}!SampleChallenge@{SampleChallenge}}
+\index{SampleChallenge@{SampleChallenge}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{SampleChallenge()}{SampleChallenge()}}
+{\footnotesize\ttfamily \label{utils_8h_a9ac76c8bbd6df8f1bfab8dce9111e423} 
+void Sample\+Challenge (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{fixed\+\_\+weight\+\_\+string}{\mbox{[}\+T\mbox{]}, }\item[{const uint8\+\_\+t}]{digest}{\mbox{[}\+HASH\+\_\+\+DIGEST\+\_\+\+LENGTH\mbox{]}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{utils_8h_a9ac76c8bbd6df8f1bfab8dce9111e423_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8h_a9ac76c8bbd6df8f1bfab8dce9111e423_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{utils_8h_a2cabe96c6d3148d71f1bc8f760666064}\index{utils.h@{utils.h}!verify@{verify}}
+\index{verify@{verify}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily \label{utils_8h_a2cabe96c6d3148d71f1bc8f760666064} 
+int verify (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{a}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{b}{, }\item[{const size\+\_\+t}]{len}{}\end{DoxyParamCaption})}
+
+taken from the kyber impl. Description\+: Compare two arrays for equality in constant time.
+
+Arguments\+: const uint8\+\_\+t \texorpdfstring{$\ast$}{*}a\+: pointer to first byte array const uint8\+\_\+t \texorpdfstring{$\ast$}{*}b\+: pointer to second byte array size\+\_\+t len\+: length of the byte arrays
+
+Returns 0 if the byte arrays are equal, 1 otherwise Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8h_a2cabe96c6d3148d71f1bc8f760666064_icgraph}
+\end{center}
+\end{figure}

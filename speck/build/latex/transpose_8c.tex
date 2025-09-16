@@ -1,0 +1,114 @@
+\doxysection{/home/raximus/repos/work/speck/implementation/\+SPECK/repo/optimized/lib/transpose.c File Reference}
+\hypertarget{transpose_8c}{}\label{transpose_8c}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/transpose.c@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/transpose.c}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}transpose.\+h"{}}\newline
+{\ttfamily \#include "{}parameters.\+h"{}}\newline
+Include dependency graph for transpose.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{transpose_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{transpose_8c_af40a465a7cc1ae7a8f5ad651a96be13b}{matrix\+\_\+transpose8x8}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}dst, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}src, const size\+\_\+t src\+\_\+stride, const size\+\_\+t dst\+\_\+stride)
+\item 
+const uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{transpose_8c_a4346468f255f52e357e5039ccef80896}{next\+\_\+block}} (const uint8\+\_\+t \texorpdfstring{$\ast$}{*}src, uint64\+\_\+t rb, uint64\+\_\+t cb, const size\+\_\+t n)
+\item 
+void \mbox{\hyperlink{transpose_8c_a885073d25bfd8084da07d9ff086290f2}{matrix\+\_\+transpose\+\_\+opt}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}dst, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}src, const uint32\+\_\+t r, const uint32\+\_\+t c)
+\begin{DoxyCompactList}\small\item\em transpose src int dst \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{transpose_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{transpose_8c_af40a465a7cc1ae7a8f5ad651a96be13b}\index{transpose.c@{transpose.c}!matrix\_transpose8x8@{matrix\_transpose8x8}}
+\index{matrix\_transpose8x8@{matrix\_transpose8x8}!transpose.c@{transpose.c}}
+\doxysubsubsection{\texorpdfstring{matrix\_transpose8x8()}{matrix\_transpose8x8()}}
+{\footnotesize\ttfamily \label{transpose_8c_af40a465a7cc1ae7a8f5ad651a96be13b} 
+void matrix\+\_\+transpose8x8 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{dst}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{src}{, }\item[{const size\+\_\+t}]{src\+\_\+stride}{, }\item[{const size\+\_\+t}]{dst\+\_\+stride}{}\end{DoxyParamCaption})}
+
+Reference ISO-\/\+C11 Implementation of LESS.
+
+\begin{DoxyVersion}{Version}
+1.\+2 (February 2025)
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Floyd Zweydinge \href{mailto:zweydfg8+github@rub.de}{\texttt{zweydfg8+github@rub.\+de}}
+\end{DoxyAuthor}
+This code is hereby placed in the public domain.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHORS \textquotesingle{}\textquotesingle{}AS IS\textquotesingle{}\textquotesingle{} AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+\begin{DoxyParams}{Parameters}
+{\em dst\mbox{[}out\mbox{]}} & out data \\
+\hline
+{\em src\mbox{[}in\mbox{]}} & input bytes 8x8 matrix \\
+\hline
+{\em src\+\_\+stride\mbox{[}in\mbox{]}} & in bytes \\
+\hline
+{\em dst\+\_\+stride\mbox{[}in\mbox{]}} & in bytes \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{transpose_8c_af40a465a7cc1ae7a8f5ad651a96be13b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{transpose_8c_a885073d25bfd8084da07d9ff086290f2}\index{transpose.c@{transpose.c}!matrix\_transpose\_opt@{matrix\_transpose\_opt}}
+\index{matrix\_transpose\_opt@{matrix\_transpose\_opt}!transpose.c@{transpose.c}}
+\doxysubsubsection{\texorpdfstring{matrix\_transpose\_opt()}{matrix\_transpose\_opt()}}
+{\footnotesize\ttfamily \label{transpose_8c_a885073d25bfd8084da07d9ff086290f2} 
+void matrix\+\_\+transpose\+\_\+opt (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{dst}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{src}{, }\item[{const uint32\+\_\+t}]{r}{, }\item[{const uint32\+\_\+t}]{c}{}\end{DoxyParamCaption})}
+
+
+
+transpose src int dst 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst\mbox{[}out\mbox{]}} & output non-\/\+IS matrix\+: K \textbackslash{}times N-\/K \\
+\hline
+{\em src\mbox{[}in\mbox{]}} & input non-\/\+IS matrix\+: K \textbackslash{}times N-\/K \\
+\hline
+{\em r} & nr cols \\
+\hline
+{\em c} & nr rows \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{transpose_8c_a885073d25bfd8084da07d9ff086290f2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{transpose_8c_a885073d25bfd8084da07d9ff086290f2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{transpose_8c_a4346468f255f52e357e5039ccef80896}\index{transpose.c@{transpose.c}!next\_block@{next\_block}}
+\index{next\_block@{next\_block}!transpose.c@{transpose.c}}
+\doxysubsubsection{\texorpdfstring{next\_block()}{next\_block()}}
+{\footnotesize\ttfamily \label{transpose_8c_a4346468f255f52e357e5039ccef80896} 
+const uint8\+\_\+t \texorpdfstring{$\ast$}{*} next\+\_\+block (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{src}{, }\item[{uint64\+\_\+t}]{rb}{, }\item[{uint64\+\_\+t}]{cb}{, }\item[{const size\+\_\+t}]{n}{}\end{DoxyParamCaption})}
+
+Compute origin of the 64-\/block next to (rb, cb) in row-\/major order NOTE\+: internal function. Do no call directly. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{transpose_8c_a4346468f255f52e357e5039ccef80896_icgraph}
+\end{center}
+\end{figure}

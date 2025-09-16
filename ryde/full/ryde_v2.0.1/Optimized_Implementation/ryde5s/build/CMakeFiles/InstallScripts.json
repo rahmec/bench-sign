@@ -1,0 +1,15 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/raximus/repos/work/speck/implementation/bench/ryde/full/ryde_v2.0.1/Optimized_Implementation/ryde5s/build/cmake_install.cmake",
+		"/home/raximus/repos/work/speck/implementation/bench/ryde/full/ryde_v2.0.1/Optimized_Implementation/ryde5s/build/src/cmake_install.cmake",
+		"/home/raximus/repos/work/speck/implementation/bench/ryde/full/ryde_v2.0.1/Optimized_Implementation/ryde5s/build/src/library/cmake_install.cmake",
+		"/home/raximus/repos/work/speck/implementation/bench/ryde/full/ryde_v2.0.1/Optimized_Implementation/ryde5s/build/src/library/xkcp/cmake_install.cmake",
+		"/home/raximus/repos/work/speck/implementation/bench/ryde/full/ryde_v2.0.1/Optimized_Implementation/ryde5s/build/src/library/rng/cmake_install.cmake",
+		"/home/raximus/repos/work/speck/implementation/bench/ryde/full/ryde_v2.0.1/Optimized_Implementation/ryde5s/build/src/field/cmake_install.cmake",
+		"/home/raximus/repos/work/speck/implementation/bench/ryde/full/ryde_v2.0.1/Optimized_Implementation/ryde5s/build/nist/cmake_install.cmake",
+		"/home/raximus/repos/work/speck/implementation/bench/ryde/full/ryde_v2.0.1/Optimized_Implementation/ryde5s/build/bench/cmake_install.cmake",
+		"/home/raximus/repos/work/speck/implementation/bench/ryde/full/ryde_v2.0.1/Optimized_Implementation/ryde5s/build/example/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

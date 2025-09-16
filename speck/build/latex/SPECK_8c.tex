@@ -1,0 +1,129 @@
+\doxysection{/home/raximus/repos/work/speck/implementation/\+SPECK/repo/optimized/lib/\+SPECK.c File Reference}
+\hypertarget{SPECK_8c}{}\label{SPECK_8c}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/SPECK.c@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/SPECK.c}}
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include "{}SPECK.\+h"{}}\newline
+{\ttfamily \#include "{}codes.\+h"{}}\newline
+{\ttfamily \#include "{}permutation.\+h"{}}\newline
+{\ttfamily \#include "{}parameters.\+h"{}}\newline
+{\ttfamily \#include "{}seedtree.\+h"{}}\newline
+{\ttfamily \#include "{}rng.\+h"{}}\newline
+{\ttfamily \#include "{}utils.\+h"{}}\newline
+{\ttfamily \#include "{}fips202.\+h"{}}\newline
+{\ttfamily \#include "{}sha3.\+h"{}}\newline
+{\ttfamily \#include "{}sort.\+h"{}}\newline
+Include dependency graph for SPECK.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SPECK_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{SPECK_8c_adaf9aec6a7c7f0be22755f72703e684c}{SPECK\+\_\+keygen}} (\mbox{\hyperlink{SPECK_8h_a26b74a8e38ab9da05b0df752092f8af0}{speck\+\_\+prikey\+\_\+t}} \texorpdfstring{$\ast$}{*}SK, \mbox{\hyperlink{SPECK_8h_abfe842a1185160db5aa1a0946dcdd0a8}{speck\+\_\+pubkey\+\_\+t}} \texorpdfstring{$\ast$}{*}PK)
+\item 
+size\+\_\+t \mbox{\hyperlink{SPECK_8c_af5b5ea41c5c92e085f1a99383746fdc8}{SPECK\+\_\+sign}} (const \mbox{\hyperlink{SPECK_8h_a26b74a8e38ab9da05b0df752092f8af0}{speck\+\_\+prikey\+\_\+t}} \texorpdfstring{$\ast$}{*}SK, const \mbox{\hyperlink{SPECK_8h_abfe842a1185160db5aa1a0946dcdd0a8}{speck\+\_\+pubkey\+\_\+t}} \texorpdfstring{$\ast$}{*}PK, const char \texorpdfstring{$\ast$}{*}const m, const uint64\+\_\+t mlen, \mbox{\hyperlink{SPECK_8h_abb0580e0a9437b8df67aaa8231873fad}{speck\+\_\+sign\+\_\+t}} \texorpdfstring{$\ast$}{*}sig)
+\item 
+int \mbox{\hyperlink{SPECK_8c_adf8f0d5db74a791c758782cbe9153016}{SPECK\+\_\+verify}} (const \mbox{\hyperlink{SPECK_8h_abfe842a1185160db5aa1a0946dcdd0a8}{speck\+\_\+pubkey\+\_\+t}} \texorpdfstring{$\ast$}{*}const PK, const char \texorpdfstring{$\ast$}{*}const m, const uint64\+\_\+t mlen, const \mbox{\hyperlink{SPECK_8h_abb0580e0a9437b8df67aaa8231873fad}{speck\+\_\+sign\+\_\+t}} \texorpdfstring{$\ast$}{*}const sig)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{SPECK_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{SPECK_8c_adaf9aec6a7c7f0be22755f72703e684c}\index{SPECK.c@{SPECK.c}!SPECK\_keygen@{SPECK\_keygen}}
+\index{SPECK\_keygen@{SPECK\_keygen}!SPECK.c@{SPECK.c}}
+\doxysubsubsection{\texorpdfstring{SPECK\_keygen()}{SPECK\_keygen()}}
+{\footnotesize\ttfamily \label{SPECK_8c_adaf9aec6a7c7f0be22755f72703e684c} 
+void SPECK\+\_\+keygen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{SPECK_8h_a26b74a8e38ab9da05b0df752092f8af0}{speck\+\_\+prikey\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{SK}{, }\item[{\mbox{\hyperlink{SPECK_8h_abfe842a1185160db5aa1a0946dcdd0a8}{speck\+\_\+pubkey\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{PK}{}\end{DoxyParamCaption})}
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHORS \textquotesingle{}\textquotesingle{}AS IS\textquotesingle{}\textquotesingle{} AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SPECK_8c_adaf9aec6a7c7f0be22755f72703e684c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SPECK_8c_adaf9aec6a7c7f0be22755f72703e684c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{SPECK_8c_af5b5ea41c5c92e085f1a99383746fdc8}\index{SPECK.c@{SPECK.c}!SPECK\_sign@{SPECK\_sign}}
+\index{SPECK\_sign@{SPECK\_sign}!SPECK.c@{SPECK.c}}
+\doxysubsubsection{\texorpdfstring{SPECK\_sign()}{SPECK\_sign()}}
+{\footnotesize\ttfamily \label{SPECK_8c_af5b5ea41c5c92e085f1a99383746fdc8} 
+size\+\_\+t SPECK\+\_\+sign (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{SPECK_8h_a26b74a8e38ab9da05b0df752092f8af0}{speck\+\_\+prikey\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{SK}{, }\item[{const \mbox{\hyperlink{SPECK_8h_abfe842a1185160db5aa1a0946dcdd0a8}{speck\+\_\+pubkey\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{PK}{, }\item[{const char \texorpdfstring{$\ast$}{*}const}]{m}{, }\item[{const uint64\+\_\+t}]{mlen}{, }\item[{\mbox{\hyperlink{SPECK_8h_abb0580e0a9437b8df67aaa8231873fad}{speck\+\_\+sign\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{sig}{}\end{DoxyParamCaption})}
+
+returns the number of opened seeds in the tree. 
+\begin{DoxyParams}{Parameters}
+{\em SK\mbox{[}in\mbox{]}} & secret key \\
+\hline
+{\em m\mbox{[}in\mbox{]}} & message to sign \\
+\hline
+{\em mlen\mbox{[}in\mbox{]}} & length of the message to sign in bytes \\
+\hline
+{\em sig\mbox{[}out\mbox{]}} & signature \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: x\+: number of leaves opened by the algorithm 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SPECK_8c_af5b5ea41c5c92e085f1a99383746fdc8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SPECK_8c_af5b5ea41c5c92e085f1a99383746fdc8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{SPECK_8c_adf8f0d5db74a791c758782cbe9153016}\index{SPECK.c@{SPECK.c}!SPECK\_verify@{SPECK\_verify}}
+\index{SPECK\_verify@{SPECK\_verify}!SPECK.c@{SPECK.c}}
+\doxysubsubsection{\texorpdfstring{SPECK\_verify()}{SPECK\_verify()}}
+{\footnotesize\ttfamily \label{SPECK_8c_adf8f0d5db74a791c758782cbe9153016} 
+int SPECK\+\_\+verify (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{SPECK_8h_abfe842a1185160db5aa1a0946dcdd0a8}{speck\+\_\+pubkey\+\_\+t}} \texorpdfstring{$\ast$}{*}const}]{PK}{, }\item[{const char \texorpdfstring{$\ast$}{*}const}]{m}{, }\item[{const uint64\+\_\+t}]{mlen}{, }\item[{const \mbox{\hyperlink{SPECK_8h_abb0580e0a9437b8df67aaa8231873fad}{speck\+\_\+sign\+\_\+t}} \texorpdfstring{$\ast$}{*}const}]{sig}{}\end{DoxyParamCaption})}
+
+NOTE\+: non-\/constant time 
+\begin{DoxyParams}{Parameters}
+{\em PK\mbox{[}in\mbox{]}} & public key \\
+\hline
+{\em m\mbox{[}in\mbox{]}} & message for which a signature was computed \\
+\hline
+{\em mlen\mbox{[}in\mbox{]}} & length of the message in bytes \\
+\hline
+{\em sig\mbox{[}in\mbox{]}} & signature \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0\+: on failure 1\+: on success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SPECK_8c_adf8f0d5db74a791c758782cbe9153016_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SPECK_8c_adf8f0d5db74a791c758782cbe9153016_icgraph}
+\end{center}
+\end{figure}

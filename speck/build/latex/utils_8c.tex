@@ -1,0 +1,129 @@
+\doxysection{/home/raximus/repos/work/speck/implementation/\+SPECK/repo/optimized/lib/utils.c File Reference}
+\hypertarget{utils_8c}{}\label{utils_8c}\index{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/utils.c@{/home/raximus/repos/work/speck/implementation/SPECK/repo/optimized/lib/utils.c}}
+{\ttfamily \#include "{}utils.\+h"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for utils.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{utils_8c_a6251d0dc5c242521d9d00901b41bc32e}{MAX\+\_\+\+KEYPAIR\+\_\+\+INDEX}}~(\mbox{\hyperlink{parameters_8h_a3151af823089af45401931e9f2ea363b}{NUM\+\_\+\+KEYPAIRS}}-\/1)
+\item 
+\#define \mbox{\hyperlink{utils_8c_a889253007570c020aa0f089cb60172be}{KEYPAIR\+\_\+\+INDEX\+\_\+\+MASK}}~( ((uint16\+\_\+t)1 $<$$<$ \mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(\mbox{\hyperlink{utils_8c_a6251d0dc5c242521d9d00901b41bc32e}{MAX\+\_\+\+KEYPAIR\+\_\+\+INDEX}})) -\/1 )
+\item 
+\#define \mbox{\hyperlink{utils_8c_ad9be5b1216bc3bf2b8c0a5f92342d2f3}{POSITION\+\_\+\+MASK}}~(( (uint16\+\_\+t)1 $<$$<$ \mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(T-\/1))-\/1)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{utils_8c_ab9e66a1cb38873f21128f618a83cfcfa}{cswap}} (uintptr\+\_\+t \texorpdfstring{$\ast$}{*}a, uintptr\+\_\+t \texorpdfstring{$\ast$}{*}b, const uintptr\+\_\+t mask)
+\begin{DoxyCompactList}\small\item\em swaps a and b if \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{utils_8c_a2cabe96c6d3148d71f1bc8f760666064}{verify}} (const uint8\+\_\+t \texorpdfstring{$\ast$}{*}a, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}b, const size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{utils_8c_a9ac76c8bbd6df8f1bfab8dce9111e423}{Sample\+Challenge}} (uint8\+\_\+t fixed\+\_\+weight\+\_\+string\mbox{[}T\mbox{]}, const uint8\+\_\+t digest\mbox{[}\mbox{\hyperlink{parameters_8h_a4f084f0537806da54ffa64182398f6af}{HASH\+\_\+\+DIGEST\+\_\+\+LENGTH}}\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{utils_8c_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{utils_8c_a889253007570c020aa0f089cb60172be}\index{utils.c@{utils.c}!KEYPAIR\_INDEX\_MASK@{KEYPAIR\_INDEX\_MASK}}
+\index{KEYPAIR\_INDEX\_MASK@{KEYPAIR\_INDEX\_MASK}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{KEYPAIR\_INDEX\_MASK}{KEYPAIR\_INDEX\_MASK}}
+{\footnotesize\ttfamily \label{utils_8c_a889253007570c020aa0f089cb60172be} 
+\#define KEYPAIR\+\_\+\+INDEX\+\_\+\+MASK~( ((uint16\+\_\+t)1 $<$$<$ \mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(\mbox{\hyperlink{utils_8c_a6251d0dc5c242521d9d00901b41bc32e}{MAX\+\_\+\+KEYPAIR\+\_\+\+INDEX}})) -\/1 )}
+
+\Hypertarget{utils_8c_a6251d0dc5c242521d9d00901b41bc32e}\index{utils.c@{utils.c}!MAX\_KEYPAIR\_INDEX@{MAX\_KEYPAIR\_INDEX}}
+\index{MAX\_KEYPAIR\_INDEX@{MAX\_KEYPAIR\_INDEX}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_KEYPAIR\_INDEX}{MAX\_KEYPAIR\_INDEX}}
+{\footnotesize\ttfamily \label{utils_8c_a6251d0dc5c242521d9d00901b41bc32e} 
+\#define MAX\+\_\+\+KEYPAIR\+\_\+\+INDEX~(\mbox{\hyperlink{parameters_8h_a3151af823089af45401931e9f2ea363b}{NUM\+\_\+\+KEYPAIRS}}-\/1)}
+
+\Hypertarget{utils_8c_ad9be5b1216bc3bf2b8c0a5f92342d2f3}\index{utils.c@{utils.c}!POSITION\_MASK@{POSITION\_MASK}}
+\index{POSITION\_MASK@{POSITION\_MASK}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{POSITION\_MASK}{POSITION\_MASK}}
+{\footnotesize\ttfamily \label{utils_8c_ad9be5b1216bc3bf2b8c0a5f92342d2f3} 
+\#define POSITION\+\_\+\+MASK~(( (uint16\+\_\+t)1 $<$$<$ \mbox{\hyperlink{parameters_8h_a10bcd56728c7fab03faf79ece650b74c}{BITS\+\_\+\+TO\+\_\+\+REPRESENT}}(T-\/1))-\/1)}
+
+
+
+\label{doc-func-members}
+\Hypertarget{utils_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{utils_8c_ab9e66a1cb38873f21128f618a83cfcfa}\index{utils.c@{utils.c}!cswap@{cswap}}
+\index{cswap@{cswap}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{cswap()}{cswap()}}
+{\footnotesize\ttfamily \label{utils_8c_ab9e66a1cb38873f21128f618a83cfcfa} 
+void cswap (\begin{DoxyParamCaption}\item[{uintptr\+\_\+t \texorpdfstring{$\ast$}{*}}]{a}{, }\item[{uintptr\+\_\+t \texorpdfstring{$\ast$}{*}}]{b}{, }\item[{const uintptr\+\_\+t}]{mask}{}\end{DoxyParamCaption})}
+
+
+
+swaps a and b if 
+
+Reference ISO-\/\+C11 Implementation of LESS.
+
+\begin{DoxyVersion}{Version}
+1.\+1 (March 2023)
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Alessandro Barenghi \href{mailto:alessandro.barenghi@polimi.it}{\texttt{alessandro.\+barenghi@polimi.\+it}} 
+
+Gerardo Pelosi \href{mailto:gerardo.pelosi@polimi.it}{\texttt{gerardo.\+pelosi@polimi.\+it}}
+\end{DoxyAuthor}
+This code is hereby placed in the public domain.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHORS \textquotesingle{}\textquotesingle{}AS IS\textquotesingle{}\textquotesingle{} AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c_ab9e66a1cb38873f21128f618a83cfcfa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{utils_8c_a9ac76c8bbd6df8f1bfab8dce9111e423}\index{utils.c@{utils.c}!SampleChallenge@{SampleChallenge}}
+\index{SampleChallenge@{SampleChallenge}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{SampleChallenge()}{SampleChallenge()}}
+{\footnotesize\ttfamily \label{utils_8c_a9ac76c8bbd6df8f1bfab8dce9111e423} 
+void Sample\+Challenge (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{fixed\+\_\+weight\+\_\+string}{\mbox{[}\+T\mbox{]}, }\item[{const uint8\+\_\+t}]{digest}{\mbox{[}\+HASH\+\_\+\+DIGEST\+\_\+\+LENGTH\mbox{]}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{utils_8c_a9ac76c8bbd6df8f1bfab8dce9111e423_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c_a9ac76c8bbd6df8f1bfab8dce9111e423_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{utils_8c_a2cabe96c6d3148d71f1bc8f760666064}\index{utils.c@{utils.c}!verify@{verify}}
+\index{verify@{verify}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily \label{utils_8c_a2cabe96c6d3148d71f1bc8f760666064} 
+int verify (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{a}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{b}{, }\item[{const size\+\_\+t}]{len}{}\end{DoxyParamCaption})}
+
+taken from the kyber impl. Description\+: Compare two arrays for equality in constant time.
+
+Arguments\+: const uint8\+\_\+t \texorpdfstring{$\ast$}{*}a\+: pointer to first byte array const uint8\+\_\+t \texorpdfstring{$\ast$}{*}b\+: pointer to second byte array size\+\_\+t len\+: length of the byte arrays
+
+Returns 0 if the byte arrays are equal, 1 otherwise Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c_a2cabe96c6d3148d71f1bc8f760666064_icgraph}
+\end{center}
+\end{figure}

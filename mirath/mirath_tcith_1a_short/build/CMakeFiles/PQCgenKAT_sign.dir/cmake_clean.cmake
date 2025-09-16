@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/PQCgenKAT_sign.dir/link.d"
+  "CMakeFiles/PQCgenKAT_sign.dir/PQCgenKAT_sign.c.o"
+  "CMakeFiles/PQCgenKAT_sign.dir/PQCgenKAT_sign.c.o.d"
+  "CMakeFiles/PQCgenKAT_sign.dir/common/hash_sha3_128.c.o"
+  "CMakeFiles/PQCgenKAT_sign.dir/common/hash_sha3_128.c.o.d"
+  "CMakeFiles/PQCgenKAT_sign.dir/common/xkcp/KeccakHash.c.o"
+  "CMakeFiles/PQCgenKAT_sign.dir/common/xkcp/KeccakHash.c.o.d"
+  "CMakeFiles/PQCgenKAT_sign.dir/common/xkcp/KeccakP-1600-AVX2.s.o"
+  "CMakeFiles/PQCgenKAT_sign.dir/common/xkcp/avx2/KeccakHashtimes4.c.o"
+  "CMakeFiles/PQCgenKAT_sign.dir/common/xkcp/avx2/KeccakHashtimes4.c.o.d"
+  "CMakeFiles/PQCgenKAT_sign.dir/common/xkcp/avx2/KeccakP-1600-times4-SIMD256.c.o"
+  "CMakeFiles/PQCgenKAT_sign.dir/common/xkcp/avx2/KeccakP-1600-times4-SIMD256.c.o.d"
+  "CMakeFiles/PQCgenKAT_sign.dir/common/xkcp/avx2/KeccakSpongetimes4.c.o"
+  "CMakeFiles/PQCgenKAT_sign.dir/common/xkcp/avx2/KeccakSpongetimes4.c.o.d"
+  "CMakeFiles/PQCgenKAT_sign.dir/mirath_ggm_tree.c.o"
+  "CMakeFiles/PQCgenKAT_sign.dir/mirath_ggm_tree.c.o.d"
+  "CMakeFiles/PQCgenKAT_sign.dir/mirath_keygen.c.o"
+  "CMakeFiles/PQCgenKAT_sign.dir/mirath_keygen.c.o.d"
+  "CMakeFiles/PQCgenKAT_sign.dir/mirath_matrix_ff.c.o"
+  "CMakeFiles/PQCgenKAT_sign.dir/mirath_matrix_ff.c.o.d"
+  "CMakeFiles/PQCgenKAT_sign.dir/rng.c.o"
+  "CMakeFiles/PQCgenKAT_sign.dir/rng.c.o.d"
+  "CMakeFiles/PQCgenKAT_sign.dir/sign.c.o"
+  "CMakeFiles/PQCgenKAT_sign.dir/sign.c.o.d"
+  "CMakeFiles/PQCgenKAT_sign.dir/tcith/mirath_parsing.c.o"
+  "CMakeFiles/PQCgenKAT_sign.dir/tcith/mirath_parsing.c.o.d"
+  "CMakeFiles/PQCgenKAT_sign.dir/tcith/mirath_sign.c.o"
+  "CMakeFiles/PQCgenKAT_sign.dir/tcith/mirath_sign.c.o.d"
+  "CMakeFiles/PQCgenKAT_sign.dir/tcith/mirath_tcith.c.o"
+  "CMakeFiles/PQCgenKAT_sign.dir/tcith/mirath_tcith.c.o.d"
+  "CMakeFiles/PQCgenKAT_sign.dir/tcith/mirath_verify.c.o"
+  "CMakeFiles/PQCgenKAT_sign.dir/tcith/mirath_verify.c.o.d"
+  "PQCgenKAT_sign"
+  "PQCgenKAT_sign.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang ASM C)
+  include(CMakeFiles/PQCgenKAT_sign.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
