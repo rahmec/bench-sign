@@ -22,4 +22,4 @@ clean:
 		$(wildcard sha3/*.o) \
 		$(wildcard NIST-KATs/*.o) \
 		$(wildcard tests/*.o) \
-		$(LIBFAEST) $(EXECUTBALE_BENCH)
+		$(LIBFAEST) $(EXECUTABLE_BENCH)

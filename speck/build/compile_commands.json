@@ -1,0 +1,1292 @@
+[
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/codes.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/codes.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/fips202.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/fips202.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/keccakf1600.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/keccakf1600.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/SPECK.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/SPECK.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/seedtree.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/seedtree.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/utils.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/utils.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/sort.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/sort.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/permutation.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/permutation.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/transpose.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/transpose.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/transpose_avx2.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/transpose_avx2.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -O3 -DNDEBUG -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/KeccakP-1600-AVX2.s.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/KeccakP-1600-AVX2.s.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/bench/speck_benchmark.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/bench/speck_benchmark.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/bench/speck_benchmark.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_133.dir/lib/bench/speck_benchmark.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_test_cat_252_133.dir/lib/codes.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_133.dir/lib/codes.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_test_cat_252_133.dir/lib/fips202.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_133.dir/lib/fips202.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_test_cat_252_133.dir/lib/keccakf1600.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_133.dir/lib/keccakf1600.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_test_cat_252_133.dir/lib/SPECK.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_133.dir/lib/SPECK.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_test_cat_252_133.dir/lib/rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_133.dir/lib/rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_test_cat_252_133.dir/lib/seedtree.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_133.dir/lib/seedtree.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_test_cat_252_133.dir/lib/sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_133.dir/lib/sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_test_cat_252_133.dir/lib/utils.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_133.dir/lib/utils.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_test_cat_252_133.dir/lib/sort.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_133.dir/lib/sort.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_test_cat_252_133.dir/lib/permutation.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_133.dir/lib/permutation.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_test_cat_252_133.dir/lib/transpose.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_133.dir/lib/transpose.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_test_cat_252_133.dir/lib/transpose_avx2.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_133.dir/lib/transpose_avx2.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -O3 -DNDEBUG -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_test_cat_252_133.dir/lib/KeccakP-1600-AVX2.s.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "output": "CMakeFiles/SPECK_test_cat_252_133.dir/lib/KeccakP-1600-AVX2.s.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_test_cat_252_133.dir/lib/test/speck_test.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/test/speck_test.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/test/speck_test.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_133.dir/lib/test/speck_test.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_nist_cat_252_133.dir/lib/codes.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_133.dir/lib/codes.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_nist_cat_252_133.dir/lib/fips202.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_133.dir/lib/fips202.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_nist_cat_252_133.dir/lib/keccakf1600.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_133.dir/lib/keccakf1600.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_nist_cat_252_133.dir/lib/SPECK.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_133.dir/lib/SPECK.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_nist_cat_252_133.dir/lib/rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_133.dir/lib/rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_nist_cat_252_133.dir/lib/seedtree.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_133.dir/lib/seedtree.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_nist_cat_252_133.dir/lib/sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_133.dir/lib/sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_nist_cat_252_133.dir/lib/utils.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_133.dir/lib/utils.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_nist_cat_252_133.dir/lib/sort.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_133.dir/lib/sort.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_nist_cat_252_133.dir/lib/permutation.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_133.dir/lib/permutation.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_nist_cat_252_133.dir/lib/transpose.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_133.dir/lib/transpose.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_nist_cat_252_133.dir/lib/transpose_avx2.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_133.dir/lib/transpose_avx2.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -isystem /usr/include -O3 -DNDEBUG -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_nist_cat_252_133.dir/lib/KeccakP-1600-AVX2.s.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "output": "CMakeFiles/SPECK_nist_cat_252_133.dir/lib/KeccakP-1600-AVX2.s.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_nist_cat_252_133.dir/lib/nist/KAT_NIST_rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/KAT_NIST_rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/KAT_NIST_rng.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_133.dir/lib/nist/KAT_NIST_rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=133 -o CMakeFiles/SPECK_nist_cat_252_133.dir/lib/nist/PQCgenKAT_sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/PQCgenKAT_sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/PQCgenKAT_sign.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_133.dir/lib/nist/PQCgenKAT_sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/codes.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/codes.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/fips202.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/fips202.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/keccakf1600.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/keccakf1600.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/SPECK.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/SPECK.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/seedtree.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/seedtree.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/utils.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/utils.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/sort.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/sort.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/permutation.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/permutation.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/transpose.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/transpose.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/transpose_avx2.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/transpose_avx2.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -O3 -DNDEBUG -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/KeccakP-1600-AVX2.s.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/KeccakP-1600-AVX2.s.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/bench/speck_benchmark.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/bench/speck_benchmark.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/bench/speck_benchmark.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_256.dir/lib/bench/speck_benchmark.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_test_cat_252_256.dir/lib/codes.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_256.dir/lib/codes.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_test_cat_252_256.dir/lib/fips202.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_256.dir/lib/fips202.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_test_cat_252_256.dir/lib/keccakf1600.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_256.dir/lib/keccakf1600.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_test_cat_252_256.dir/lib/SPECK.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_256.dir/lib/SPECK.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_test_cat_252_256.dir/lib/rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_256.dir/lib/rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_test_cat_252_256.dir/lib/seedtree.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_256.dir/lib/seedtree.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_test_cat_252_256.dir/lib/sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_256.dir/lib/sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_test_cat_252_256.dir/lib/utils.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_256.dir/lib/utils.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_test_cat_252_256.dir/lib/sort.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_256.dir/lib/sort.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_test_cat_252_256.dir/lib/permutation.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_256.dir/lib/permutation.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_test_cat_252_256.dir/lib/transpose.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_256.dir/lib/transpose.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_test_cat_252_256.dir/lib/transpose_avx2.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_256.dir/lib/transpose_avx2.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -O3 -DNDEBUG -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_test_cat_252_256.dir/lib/KeccakP-1600-AVX2.s.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "output": "CMakeFiles/SPECK_test_cat_252_256.dir/lib/KeccakP-1600-AVX2.s.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_test_cat_252_256.dir/lib/test/speck_test.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/test/speck_test.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/test/speck_test.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_256.dir/lib/test/speck_test.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_nist_cat_252_256.dir/lib/codes.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_256.dir/lib/codes.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_nist_cat_252_256.dir/lib/fips202.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_256.dir/lib/fips202.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_nist_cat_252_256.dir/lib/keccakf1600.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_256.dir/lib/keccakf1600.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_nist_cat_252_256.dir/lib/SPECK.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_256.dir/lib/SPECK.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_nist_cat_252_256.dir/lib/rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_256.dir/lib/rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_nist_cat_252_256.dir/lib/seedtree.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_256.dir/lib/seedtree.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_nist_cat_252_256.dir/lib/sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_256.dir/lib/sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_nist_cat_252_256.dir/lib/utils.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_256.dir/lib/utils.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_nist_cat_252_256.dir/lib/sort.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_256.dir/lib/sort.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_nist_cat_252_256.dir/lib/permutation.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_256.dir/lib/permutation.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_nist_cat_252_256.dir/lib/transpose.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_256.dir/lib/transpose.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_nist_cat_252_256.dir/lib/transpose_avx2.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_256.dir/lib/transpose_avx2.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -isystem /usr/include -O3 -DNDEBUG -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_nist_cat_252_256.dir/lib/KeccakP-1600-AVX2.s.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "output": "CMakeFiles/SPECK_nist_cat_252_256.dir/lib/KeccakP-1600-AVX2.s.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_nist_cat_252_256.dir/lib/nist/KAT_NIST_rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/KAT_NIST_rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/KAT_NIST_rng.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_256.dir/lib/nist/KAT_NIST_rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=256 -o CMakeFiles/SPECK_nist_cat_252_256.dir/lib/nist/PQCgenKAT_sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/PQCgenKAT_sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/PQCgenKAT_sign.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_256.dir/lib/nist/PQCgenKAT_sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/codes.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/codes.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/fips202.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/fips202.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/keccakf1600.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/keccakf1600.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/SPECK.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/SPECK.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/seedtree.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/seedtree.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/utils.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/utils.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/sort.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/sort.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/permutation.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/permutation.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/transpose.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/transpose.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/transpose_avx2.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/transpose_avx2.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -O3 -DNDEBUG -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/KeccakP-1600-AVX2.s.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/KeccakP-1600-AVX2.s.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/bench/speck_benchmark.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/bench/speck_benchmark.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/bench/speck_benchmark.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_512.dir/lib/bench/speck_benchmark.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_test_cat_252_512.dir/lib/codes.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_512.dir/lib/codes.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_test_cat_252_512.dir/lib/fips202.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_512.dir/lib/fips202.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_test_cat_252_512.dir/lib/keccakf1600.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_512.dir/lib/keccakf1600.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_test_cat_252_512.dir/lib/SPECK.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_512.dir/lib/SPECK.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_test_cat_252_512.dir/lib/rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_512.dir/lib/rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_test_cat_252_512.dir/lib/seedtree.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_512.dir/lib/seedtree.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_test_cat_252_512.dir/lib/sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_512.dir/lib/sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_test_cat_252_512.dir/lib/utils.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_512.dir/lib/utils.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_test_cat_252_512.dir/lib/sort.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_512.dir/lib/sort.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_test_cat_252_512.dir/lib/permutation.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_512.dir/lib/permutation.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_test_cat_252_512.dir/lib/transpose.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_512.dir/lib/transpose.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_test_cat_252_512.dir/lib/transpose_avx2.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_512.dir/lib/transpose_avx2.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -O3 -DNDEBUG -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_test_cat_252_512.dir/lib/KeccakP-1600-AVX2.s.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "output": "CMakeFiles/SPECK_test_cat_252_512.dir/lib/KeccakP-1600-AVX2.s.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_test_cat_252_512.dir/lib/test/speck_test.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/test/speck_test.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/test/speck_test.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_512.dir/lib/test/speck_test.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_nist_cat_252_512.dir/lib/codes.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_512.dir/lib/codes.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_nist_cat_252_512.dir/lib/fips202.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_512.dir/lib/fips202.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_nist_cat_252_512.dir/lib/keccakf1600.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_512.dir/lib/keccakf1600.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_nist_cat_252_512.dir/lib/SPECK.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_512.dir/lib/SPECK.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_nist_cat_252_512.dir/lib/rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_512.dir/lib/rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_nist_cat_252_512.dir/lib/seedtree.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_512.dir/lib/seedtree.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_nist_cat_252_512.dir/lib/sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_512.dir/lib/sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_nist_cat_252_512.dir/lib/utils.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_512.dir/lib/utils.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_nist_cat_252_512.dir/lib/sort.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_512.dir/lib/sort.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_nist_cat_252_512.dir/lib/permutation.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_512.dir/lib/permutation.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_nist_cat_252_512.dir/lib/transpose.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_512.dir/lib/transpose.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_nist_cat_252_512.dir/lib/transpose_avx2.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_512.dir/lib/transpose_avx2.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -isystem /usr/include -O3 -DNDEBUG -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_nist_cat_252_512.dir/lib/KeccakP-1600-AVX2.s.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "output": "CMakeFiles/SPECK_nist_cat_252_512.dir/lib/KeccakP-1600-AVX2.s.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_nist_cat_252_512.dir/lib/nist/KAT_NIST_rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/KAT_NIST_rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/KAT_NIST_rng.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_512.dir/lib/nist/KAT_NIST_rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=512 -o CMakeFiles/SPECK_nist_cat_252_512.dir/lib/nist/PQCgenKAT_sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/PQCgenKAT_sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/PQCgenKAT_sign.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_512.dir/lib/nist/PQCgenKAT_sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/codes.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/codes.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/fips202.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/fips202.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/keccakf1600.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/keccakf1600.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/SPECK.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/SPECK.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/seedtree.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/seedtree.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/utils.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/utils.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/sort.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/sort.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/permutation.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/permutation.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/transpose.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/transpose.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/transpose_avx2.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/transpose_avx2.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -O3 -DNDEBUG -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/KeccakP-1600-AVX2.s.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/KeccakP-1600-AVX2.s.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/bench/speck_benchmark.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/bench/speck_benchmark.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/bench/speck_benchmark.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_768.dir/lib/bench/speck_benchmark.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_test_cat_252_768.dir/lib/codes.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_768.dir/lib/codes.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_test_cat_252_768.dir/lib/fips202.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_768.dir/lib/fips202.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_test_cat_252_768.dir/lib/keccakf1600.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_768.dir/lib/keccakf1600.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_test_cat_252_768.dir/lib/SPECK.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_768.dir/lib/SPECK.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_test_cat_252_768.dir/lib/rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_768.dir/lib/rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_test_cat_252_768.dir/lib/seedtree.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_768.dir/lib/seedtree.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_test_cat_252_768.dir/lib/sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_768.dir/lib/sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_test_cat_252_768.dir/lib/utils.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_768.dir/lib/utils.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_test_cat_252_768.dir/lib/sort.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_768.dir/lib/sort.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_test_cat_252_768.dir/lib/permutation.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_768.dir/lib/permutation.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_test_cat_252_768.dir/lib/transpose.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_768.dir/lib/transpose.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_test_cat_252_768.dir/lib/transpose_avx2.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_768.dir/lib/transpose_avx2.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -O3 -DNDEBUG -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_test_cat_252_768.dir/lib/KeccakP-1600-AVX2.s.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "output": "CMakeFiles/SPECK_test_cat_252_768.dir/lib/KeccakP-1600-AVX2.s.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_test_cat_252_768.dir/lib/test/speck_test.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/test/speck_test.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/test/speck_test.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_768.dir/lib/test/speck_test.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_nist_cat_252_768.dir/lib/codes.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_768.dir/lib/codes.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_nist_cat_252_768.dir/lib/fips202.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_768.dir/lib/fips202.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_nist_cat_252_768.dir/lib/keccakf1600.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_768.dir/lib/keccakf1600.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_nist_cat_252_768.dir/lib/SPECK.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_768.dir/lib/SPECK.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_nist_cat_252_768.dir/lib/rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_768.dir/lib/rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_nist_cat_252_768.dir/lib/seedtree.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_768.dir/lib/seedtree.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_nist_cat_252_768.dir/lib/sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_768.dir/lib/sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_nist_cat_252_768.dir/lib/utils.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_768.dir/lib/utils.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_nist_cat_252_768.dir/lib/sort.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_768.dir/lib/sort.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_nist_cat_252_768.dir/lib/permutation.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_768.dir/lib/permutation.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_nist_cat_252_768.dir/lib/transpose.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_768.dir/lib/transpose.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_nist_cat_252_768.dir/lib/transpose_avx2.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_768.dir/lib/transpose_avx2.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -isystem /usr/include -O3 -DNDEBUG -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_nist_cat_252_768.dir/lib/KeccakP-1600-AVX2.s.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "output": "CMakeFiles/SPECK_nist_cat_252_768.dir/lib/KeccakP-1600-AVX2.s.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_nist_cat_252_768.dir/lib/nist/KAT_NIST_rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/KAT_NIST_rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/KAT_NIST_rng.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_768.dir/lib/nist/KAT_NIST_rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=768 -o CMakeFiles/SPECK_nist_cat_252_768.dir/lib/nist/PQCgenKAT_sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/PQCgenKAT_sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/PQCgenKAT_sign.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_768.dir/lib/nist/PQCgenKAT_sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/codes.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/codes.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/fips202.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/fips202.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/keccakf1600.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/keccakf1600.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/SPECK.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/SPECK.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/seedtree.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/seedtree.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/utils.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/utils.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/sort.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/sort.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/permutation.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/permutation.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/transpose.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/transpose.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/transpose_avx2.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/transpose_avx2.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -O3 -DNDEBUG -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/KeccakP-1600-AVX2.s.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/KeccakP-1600-AVX2.s.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/bench/speck_benchmark.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/bench/speck_benchmark.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/bench/speck_benchmark.c",
+  "output": "CMakeFiles/SPECK_benchmark_cat_252_4096.dir/lib/bench/speck_benchmark.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_test_cat_252_4096.dir/lib/codes.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_4096.dir/lib/codes.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_test_cat_252_4096.dir/lib/fips202.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_4096.dir/lib/fips202.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_test_cat_252_4096.dir/lib/keccakf1600.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_4096.dir/lib/keccakf1600.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_test_cat_252_4096.dir/lib/SPECK.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_4096.dir/lib/SPECK.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_test_cat_252_4096.dir/lib/rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_4096.dir/lib/rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_test_cat_252_4096.dir/lib/seedtree.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_4096.dir/lib/seedtree.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_test_cat_252_4096.dir/lib/sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_4096.dir/lib/sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_test_cat_252_4096.dir/lib/utils.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_4096.dir/lib/utils.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_test_cat_252_4096.dir/lib/sort.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_4096.dir/lib/sort.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_test_cat_252_4096.dir/lib/permutation.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_4096.dir/lib/permutation.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_test_cat_252_4096.dir/lib/transpose.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_4096.dir/lib/transpose.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_test_cat_252_4096.dir/lib/transpose_avx2.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_4096.dir/lib/transpose_avx2.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -O3 -DNDEBUG -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_test_cat_252_4096.dir/lib/KeccakP-1600-AVX2.s.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "output": "CMakeFiles/SPECK_test_cat_252_4096.dir/lib/KeccakP-1600-AVX2.s.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -I/home/raximus/repos/work/speck/implementation/bench/speck/lib/test -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_test_cat_252_4096.dir/lib/test/speck_test.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/test/speck_test.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/test/speck_test.c",
+  "output": "CMakeFiles/SPECK_test_cat_252_4096.dir/lib/test/speck_test.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/codes.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/codes.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/codes.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/fips202.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/fips202.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/fips202.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/keccakf1600.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/keccakf1600.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/keccakf1600.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/SPECK.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/SPECK.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/SPECK.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/rng.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/seedtree.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/seedtree.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/seedtree.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sign.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/sign.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/utils.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/utils.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/utils.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/sort.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/sort.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/sort.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/permutation.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/permutation.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/permutation.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/transpose.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/transpose.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/transpose_avx2.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/transpose_avx2.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/transpose_avx2.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -isystem /usr/include -O3 -DNDEBUG -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/KeccakP-1600-AVX2.s.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/KeccakP-1600-AVX2.s",
+  "output": "CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/KeccakP-1600-AVX2.s.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/nist/KAT_NIST_rng.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/KAT_NIST_rng.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/KAT_NIST_rng.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/nist/KAT_NIST_rng.c.o"
+},
+{
+  "directory": "/home/raximus/repos/work/speck/implementation/bench/speck/build",
+  "command": "/usr/bin/cc  -I/home/raximus/repos/work/speck/implementation/bench/speck/include -pg -DUSE_AVX2 -DNDEBUG -O3 -Wall -Wextra -Wpedantic -mavx2 -mavx -mbmi2 -mbmi -flto -ftree-vectorize -funroll-loops   -Wno-type-limits -std=gnu99 -DCATEGORY=252 -DTARGET=4096 -o CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/nist/PQCgenKAT_sign.c.o -c /home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/PQCgenKAT_sign.c",
+  "file": "/home/raximus/repos/work/speck/implementation/bench/speck/lib/nist/PQCgenKAT_sign.c",
+  "output": "CMakeFiles/SPECK_nist_cat_252_4096.dir/lib/nist/PQCgenKAT_sign.c.o"
+}
+]
