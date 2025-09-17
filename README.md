@@ -20,7 +20,7 @@ Still a work in progress.
 
 Run `./compile.sh` to compile all schemes' source code.
 
-Run `python3 bench_signature.py` to benchmark signing times
+Run `python3 bench_signing.py` to benchmark signing times
 
 Run `python3 bench_verification.py` to benchmark signing times
 

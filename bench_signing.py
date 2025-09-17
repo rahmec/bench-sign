@@ -1,7 +1,7 @@
 import subprocess
 import time
 
-print("Benchmarking Signature Times (AVG of 128 runs)")
+print("Benchmarking Signing Times (AVG of 128 runs)")
 
 benchmarks = {}
 
