@@ -1,2 +1,0 @@
-"/usr/bin/gcc-ar" qc libsqisign_common_sys.a CMakeFiles/sqisign_common_sys.dir/randombytes_system.c.o CMakeFiles/sqisign_common_sys.dir/fips202.c.o CMakeFiles/sqisign_common_sys.dir/mem.c.o CMakeFiles/sqisign_common_sys.dir/tools.c.o CMakeFiles/sqisign_common_sys.dir/__/broadwell/aes_ni.c.o CMakeFiles/sqisign_common_sys.dir/__/broadwell/ctr_drbg.c.o CMakeFiles/sqisign_common_sys.dir/__/broadwell/randombytes_ctrdrbg_aesni.c.o CMakeFiles/sqisign_common_sys.dir/__/broadwell/vaes256_key_expansion.S.o
-"/usr/bin/gcc-ranlib" libsqisign_common_sys.a

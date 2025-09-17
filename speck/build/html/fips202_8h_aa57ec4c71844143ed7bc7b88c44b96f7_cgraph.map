@@ -1,9 +1,0 @@
-<map id="shake256_inc_squeeze" name="shake256_inc_squeeze">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,163,69"/>
-<area shape="rect" id="Node000002" href="$fips202_8c.html#ab4f4188cba4e21cb7f9a4cf8f51c0319" title=" " alt="" coords="211,43,354,69"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,53,195,53,195,59,163,59"/>
-<area shape="rect" id="Node000003" href="$keccakf1600_8c.html#a3598f8be46b17fbcfe8dbead47c1241f" title=" " alt="" coords="406,5,587,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="354,44,390,39,390,44,355,49"/>
-<area shape="rect" id="Node000004" href="$keccakf1600_8c.html#a9384b0f51bc5e9548b61dce9a28430bf" title=" " alt="" coords="402,72,590,99"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="355,63,387,68,386,73,354,68"/>
-</map>

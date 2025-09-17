@@ -1,9 +1,0 @@
-<map id="col_bitonic_sort_transposed" name="col_bitonic_sort_transposed">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,189,83"/>
-<area shape="rect" id="Node000002" href="$test__helpers_8c.html#adcf9553fb1b4a46501ce9705de07b3ed" title=" " alt="" coords="237,5,417,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,53,248,33,249,39,162,58"/>
-<area shape="rect" id="Node000003" href="$utils_8c.html#ab9e66a1cb38873f21128f618a83cfcfa" title="swaps a and b if" alt="" coords="297,56,356,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,67,282,67,282,72,189,72"/>
-<area shape="rect" id="Node000004" href="$codes_8c.html#a497c6d4d936000237d5e028185b7656a" title=" " alt="" coords="252,107,402,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,81,249,100,248,105,160,86"/>
-</map>

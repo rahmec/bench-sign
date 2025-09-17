@@ -1,9 +1,0 @@
-<map id="monomial_mat_rnd" name="monomial_mat_rnd">
-<area shape="rect" id="Node000001" title="Permutation ///." alt="" coords="327,31,458,57"/>
-<area shape="rect" id="Node000002" href="$bench__rref_8c.html#a51cfafaa705c39426eb7205f1bca0e8b" title=" " alt="" coords="150,5,232,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="311,37,232,26,232,21,312,31"/>
-<area shape="rect" id="Node000004" href="$test__helpers_8c.html#a3828fdfeea9cf8f955762b3509997ad2" title=" " alt="" coords="103,56,279,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="312,57,280,61,279,56,311,52"/>
-<area shape="rect" id="Node000003" href="$bench__rref_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="134,21,55,21,55,16,134,16"/>
-</map>

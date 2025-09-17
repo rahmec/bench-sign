@@ -1,2 +1,0 @@
-"/usr/bin/gcc-ar" qc libsqisign_ec_lvl1.a CMakeFiles/sqisign_ec_lvl1.dir/__/lvlx/ec.c.o CMakeFiles/sqisign_ec_lvl1.dir/__/lvlx/ec_jac.c.o CMakeFiles/sqisign_ec_lvl1.dir/__/lvlx/xisog.c.o CMakeFiles/sqisign_ec_lvl1.dir/__/lvlx/xeval.c.o CMakeFiles/sqisign_ec_lvl1.dir/__/lvlx/isog_chains.c.o CMakeFiles/sqisign_ec_lvl1.dir/__/lvlx/basis.c.o CMakeFiles/sqisign_ec_lvl1.dir/__/lvlx/biextension.c.o
-"/usr/bin/gcc-ranlib" libsqisign_ec_lvl1.a

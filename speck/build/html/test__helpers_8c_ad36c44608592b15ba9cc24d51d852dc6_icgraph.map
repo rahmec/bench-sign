@@ -1,8 +1,0 @@
-<map id="row_quick_sort_recursive_internal" name="row_quick_sort_recursive_internal">
-<area shape="rect" id="Node000001" title=" " alt="" coords="401,29,570,72"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="521,16,508,10,486,8,465,10,453,15,448,21,449,28,444,29,443,19,450,10,464,5,486,3,509,5,523,11"/>
-<area shape="rect" id="Node000002" href="$test__helpers_8c.html#a8c2d820666146669b4b41b3fb0576362" title=" " alt="" coords="184,37,353,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="386,53,353,53,353,48,386,48"/>
-<area shape="rect" id="Node000003" href="$bench__sorting_8c.html#ae71d858f92d1bc696bb880e03d781b75" title=" " alt="" coords="5,37,136,64"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="168,53,136,53,136,48,168,48"/>
-</map>

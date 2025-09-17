@@ -22,6 +22,9 @@
  *
  **/
 
+#define _POSIX_C_SOURCE 199309L
+#include <time.h>
+
 #include <math.h>
 #include <stdio.h>
 
@@ -32,6 +35,20 @@
 #include "rng.h"
 #include "test_helpers.h"
 #include "api.h"
+
+/// Convert seconds to milliseconds
+#define SEC_TO_MS(sec) ((sec)*1000)
+/// Convert seconds to microseconds
+#define SEC_TO_US(sec) ((sec)*1000000)
+/// Convert seconds to nanoseconds
+#define SEC_TO_NS(sec) ((sec)*1000000000)
+
+/// Convert nanoseconds to seconds
+#define NS_TO_SEC(ns)   ((ns)/1000000000)
+/// Convert nanoseconds to milliseconds
+#define NS_TO_MS(ns)    ((ns)/1000000)
+/// Convert nanoseconds to microseconds
+#define NS_TO_US(ns)    ((ns)/1000)
 
 
 typedef struct {
@@ -165,38 +182,73 @@ void LESS_sign_verify_speed(void){
     char message[8] = "Signme!";
     info();
 
+    struct timespec ts;
+    uint64_t ms_start;
+    uint64_t ms_end;
+    uint64_t ms_sum;
+
+
     printf("Timings (kcycles):\n");
+
+    ms_sum = 0;
     welford_init(&timer);
     for(size_t i = 0; i <NUM_RUNS; i++) {
+        clock_gettime(CLOCK_MONOTONIC_RAW, &ts);
+        ms_start = SEC_TO_MS((uint64_t)ts.tv_sec) + NS_TO_MS((uint64_t)ts.tv_nsec);
+
         cycles = read_cycle_counter();
         LESS_keygen(&sk,&pk);
         welford_update(&timer,(read_cycle_counter()-cycles)/1000.0);
+        clock_gettime(CLOCK_MONOTONIC_RAW, &ts);
+        ms_end = SEC_TO_MS((uint64_t)ts.tv_sec) + NS_TO_MS((uint64_t)ts.tv_nsec);
+        ms_sum += ms_end-ms_start;
     }
     printf("Key generation kCycles (avg,stddev): ");
     welford_print(timer);
     printf("\n");
+    printf("Keygen milliseconds (avg): %0.2Lf \n",(long double)ms_sum/NUM_RUNS);
+
+    ms_sum = 0;
+
 
 
     welford_init(&timer);
     for(int i = 0; i <NUM_RUNS; i++) {
+        clock_gettime(CLOCK_MONOTONIC_RAW, &ts);
+        ms_start = SEC_TO_MS((uint64_t)ts.tv_sec) + NS_TO_MS((uint64_t)ts.tv_nsec);
         cycles = read_cycle_counter();
         LESS_sign(&sk,message,8,&signature);
         welford_update(&timer,(read_cycle_counter()-cycles)/1000.0);
+        clock_gettime(CLOCK_MONOTONIC_RAW, &ts);
+        ms_end = SEC_TO_MS((uint64_t)ts.tv_sec) + NS_TO_MS((uint64_t)ts.tv_nsec);
+        ms_sum += ms_end-ms_start;
+
     }
     printf("Signature kCycles (avg,stddev): ");
     welford_print(timer);
     printf("\n");
+    printf("Signature milliseconds (avg): %0.2Lf \n",(long double)ms_sum/NUM_RUNS);
+
+    ms_sum = 0;
 
     int is_signature_ok = 1;
     welford_init(&timer);
     for(int i = 0; i <NUM_RUNS; i++) {
+        clock_gettime(CLOCK_MONOTONIC_RAW, &ts);
+        ms_start = SEC_TO_MS((uint64_t)ts.tv_sec) + NS_TO_MS((uint64_t)ts.tv_nsec);
         cycles = read_cycle_counter();
         is_signature_ok = LESS_verify(&pk,message,8,&signature); // Message never changes
         welford_update(&timer,(read_cycle_counter()-cycles)/1000.0);
+        clock_gettime(CLOCK_MONOTONIC_RAW, &ts);
+        ms_end = SEC_TO_MS((uint64_t)ts.tv_sec) + NS_TO_MS((uint64_t)ts.tv_nsec);
+        ms_sum += ms_end-ms_start;
     }
     printf("Verification kCycles (avg,stddev):");
     welford_print(timer);
     printf("\n");
+    printf("Verification milliseconds (avg): %0.2Lf \n",(long double)ms_sum/NUM_RUNS);
+
+    ms_sum = 0;
     fprintf(stderr,"Keygen-Sign-Verify: %s", is_signature_ok == 1 ? "functional\n": "not functional\n" );
 }
 

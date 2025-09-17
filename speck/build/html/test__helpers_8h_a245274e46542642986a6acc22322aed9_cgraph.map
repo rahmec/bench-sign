@@ -1,9 +1,0 @@
-<map id="compute_canonical_form_type3_sub" name="compute_canonical_form_type3_sub">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,48,172,91"/>
-<area shape="rect" id="Node000002" href="$sort_8c.html#ab052732a46896194ffc34941566d9924" title=" " alt="" coords="220,5,340,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,45,212,34,213,39,172,50"/>
-<area shape="rect" id="Node000003" href="$sort_8h.html#ab16f0ceab6066978fcb3ed8a541f05b5" title="sort the cols of V" alt="" coords="244,56,316,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,67,228,67,228,72,172,72"/>
-<area shape="rect" id="Node000004" href="$sort_8h.html#adc3726c5b175fc98933b3800e806c1ce" title="sort the rows of V" alt="" coords="240,107,320,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="172,89,226,103,224,108,171,94"/>
-</map>

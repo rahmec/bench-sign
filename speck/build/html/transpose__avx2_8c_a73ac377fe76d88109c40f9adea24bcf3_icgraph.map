@@ -1,9 +1,0 @@
-<map id="matrix_transpose_32x32" name="matrix_transpose_32x32">
-<area shape="rect" id="Node000001" title=" " alt="" coords="424,31,587,57"/>
-<area shape="rect" id="Node000002" href="$transpose_8c.html#a885073d25bfd8084da07d9ff086290f2" title="transpose src int dst" alt="" coords="230,31,376,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="408,47,376,47,376,41,408,41"/>
-<area shape="rect" id="Node000003" href="$test__helpers_8c.html#ae23a86dec80977675698d6574bf4e02c" title=" " alt="" coords="5,5,182,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="214,36,182,32,182,27,215,31"/>
-<area shape="rect" id="Node000004" href="$speck__test_8c.html#ab132650fa00d45d20192080f6d64afd7" title=" " alt="" coords="40,56,147,83"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="215,57,148,66,147,60,214,52"/>
-</map>

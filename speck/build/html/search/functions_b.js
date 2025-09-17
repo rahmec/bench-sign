@@ -1,8 +1,0 @@
-var searchData=
-[
-  ['lex_5fcompare_5fcol_0',['lex_compare_col',['../test__helpers_8c.html#a09ff425447bf61a5149b7c7912ead509',1,'lex_compare_col(const normalized_IS_t *G1, const POSITION_T col1, const POSITION_T col2):&#160;test_helpers.c'],['../test__helpers_8h.html#a09ff425447bf61a5149b7c7912ead509',1,'lex_compare_col(const normalized_IS_t *G1, const POSITION_T col1, const POSITION_T col2):&#160;test_helpers.c']]],
-  ['lex_5fcompare_5fcolumn_1',['lex_compare_column',['../test__helpers_8c.html#a614fc0685ce850291376960228b46231',1,'lex_compare_column(const generator_mat_t *G1, const generator_mat_t *G2, const POSITION_T col1, const POSITION_T col2):&#160;test_helpers.c'],['../test__helpers_8h.html#a614fc0685ce850291376960228b46231',1,'lex_compare_column(const generator_mat_t *G1, const generator_mat_t *G2, const POSITION_T col1, const POSITION_T col2):&#160;test_helpers.c']]],
-  ['lex_5fcompare_5fwith_5fpivot_2',['lex_compare_with_pivot',['../test__helpers_8c.html#ad184d77743a1f81d17423a7d7416d3c8',1,'lex_compare_with_pivot(normalized_IS_t *V, const POSITION_T col_idx, const FQ_ELEM pivot[K]):&#160;test_helpers.c'],['../test__helpers_8h.html#ad184d77743a1f81d17423a7d7416d3c8',1,'lex_compare_with_pivot(normalized_IS_t *V, const POSITION_T col_idx, const FQ_ELEM pivot[K]):&#160;test_helpers.c']]],
-  ['lex_5fminimize_3',['lex_minimize',['../test__helpers_8h.html#a745e83ab4d91e2c8d7424c2f56c0aeeb',1,'test_helpers.h']]],
-  ['lex_5fsort_5fcols_4',['lex_sort_cols',['../test__helpers_8c.html#a01f7389dccd011cc1f89053b76032bcb',1,'lex_sort_cols(normalized_IS_t *V):&#160;test_helpers.c'],['../test__helpers_8h.html#a01f7389dccd011cc1f89053b76032bcb',1,'lex_sort_cols(normalized_IS_t *V):&#160;test_helpers.c']]]
-];

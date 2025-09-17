@@ -3,7 +3,7 @@ echo "Benchmarking Verification Times"
 grep_command=" 2>/dev/null | grep 'Verification kCycles' | grep -o '[0-9]*\.[0-9]*' | head -n 1"
 
 echo "=========================SPECK========================="
-echo "speck_128_133 $(eval './speck/build/SPECK_benchmark_cat_128_133'$grep_command)"
+echo "speck_128_133 $(eval 'echo -n ' ' & ./speck/build/SPECK_benchmark_cat_128_133'$grep_command)" | sed 's/ /\t\t/g'
 sleep 0.1
 echo "speck_128_256 $(eval './speck/build/SPECK_benchmark_cat_128_256'$grep_command)"
 sleep 0.1

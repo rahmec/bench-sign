@@ -1,7 +1,0 @@
-<map id="compare_rows" name="compare_rows">
-<area shape="rect" id="Node000001" title=" " alt="" coords="189,31,295,57"/>
-<area shape="rect" id="Node000002" href="$test__helpers_8c.html#a46a14eb363796179eb5aa5a5bdf97694" title=" " alt="" coords="5,5,141,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,36,141,31,141,26,174,31"/>
-<area shape="rect" id="Node000003" href="$test__helpers_8c.html#af3a6096c7ceedbe9d71ced315f853b58" title=" " alt="" coords="5,56,141,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,57,141,62,141,57,173,52"/>
-</map>

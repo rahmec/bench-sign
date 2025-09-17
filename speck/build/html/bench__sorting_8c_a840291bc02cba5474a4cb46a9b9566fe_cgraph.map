@@ -1,9 +1,0 @@
-<map id="main" name="main">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,55,57"/>
-<area shape="rect" id="Node000002" href="$bench__sorting_8c.html#a5617c634d8bbcc15cff3485cf90f7a0f" title=" " alt="" coords="103,31,229,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,41,87,41,87,47,55,47"/>
-<area shape="rect" id="Node000003" href="$test__helpers_8c.html#a93cccfadd912c7adaae13d4eaf5d7beb" title="Normalized ///." alt="" coords="277,5,386,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="229,32,261,27,262,32,230,37"/>
-<area shape="rect" id="Node000004" href="$sort_8h.html#ab16f0ceab6066978fcb3ed8a541f05b5" title="sort the cols of V" alt="" coords="296,56,368,83"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="230,51,281,59,280,64,229,56"/>
-</map>

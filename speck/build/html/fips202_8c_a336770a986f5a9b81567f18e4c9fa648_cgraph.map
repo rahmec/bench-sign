@@ -1,7 +1,0 @@
-<map id="keccak_squeezeblocks" name="keccak_squeezeblocks">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,163,69"/>
-<area shape="rect" id="Node000002" href="$keccakf1600_8c.html#a3598f8be46b17fbcfe8dbead47c1241f" title=" " alt="" coords="214,5,396,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,43,198,38,199,43,163,48"/>
-<area shape="rect" id="Node000003" href="$keccakf1600_8c.html#a9384b0f51bc5e9548b61dce9a28430bf" title=" " alt="" coords="211,72,399,99"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,64,196,68,195,73,163,69"/>
-</map>

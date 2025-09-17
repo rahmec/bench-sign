@@ -1,7 +1,0 @@
-<map id="bench_col_sorting" name="bench_col_sorting">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,132,57"/>
-<area shape="rect" id="Node000002" href="$test__helpers_8c.html#a93cccfadd912c7adaae13d4eaf5d7beb" title="Normalized ///." alt="" coords="180,5,289,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,32,164,27,165,32,132,37"/>
-<area shape="rect" id="Node000003" href="$sort_8h.html#ab16f0ceab6066978fcb3ed8a541f05b5" title="sort the cols of V" alt="" coords="198,56,270,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,51,184,59,183,64,132,56"/>
-</map>

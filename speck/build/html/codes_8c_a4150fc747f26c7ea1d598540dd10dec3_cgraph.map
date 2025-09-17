@@ -1,9 +1,0 @@
-<map id="generator_sample" name="generator_sample">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,130,57"/>
-<area shape="rect" id="Node000002" href="$codes_8c.html#a0ca5bc0d8f230387da21f402f7151ed7" title=" " alt="" coords="178,31,329,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,41,162,41,162,47,130,47"/>
-<area shape="rect" id="Node000003" href="$rng_8c.html#adc526129a5eb8bc803adf13bc5d72138" title=" " alt="" coords="377,5,491,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="329,31,361,26,362,31,330,36"/>
-<area shape="rect" id="Node000004" href="$codes_8c.html#a4e8c8464fa9a0df4291169c87e56b40f" title=" " alt="" coords="380,56,488,83"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="330,52,365,57,364,62,329,57"/>
-</map>

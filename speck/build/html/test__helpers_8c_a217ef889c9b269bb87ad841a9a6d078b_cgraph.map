@@ -1,7 +1,0 @@
-<map id="compute_canonical_form_type3_ct" name="compute_canonical_form_type3_ct">
-<area shape="rect" id="Node000001" title="Canonical Form ///." alt="" coords="5,23,172,65"/>
-<area shape="rect" id="Node000002" href="$sort_8h.html#ab16f0ceab6066978fcb3ed8a541f05b5" title="sort the cols of V" alt="" coords="223,5,296,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,29,207,24,208,29,172,34"/>
-<area shape="rect" id="Node000003" href="$sort_8h.html#adc3726c5b175fc98933b3800e806c1ce" title="sort the rows of V" alt="" coords="220,56,299,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,54,205,59,204,64,172,59"/>
-</map>

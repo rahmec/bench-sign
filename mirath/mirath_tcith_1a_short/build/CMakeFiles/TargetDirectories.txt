@@ -1,5 +1,0 @@
-/home/raximus/repos/work/speck/implementation/bench/mirath/mirath_tcith_1a_short/build/CMakeFiles/PQCgenKAT_sign.dir
-/home/raximus/repos/work/speck/implementation/bench/mirath/mirath_tcith_1a_short/build/CMakeFiles/mirath_tcith_1a_short.dir
-/home/raximus/repos/work/speck/implementation/bench/mirath/mirath_tcith_1a_short/build/CMakeFiles/bench.dir
-/home/raximus/repos/work/speck/implementation/bench/mirath/mirath_tcith_1a_short/build/CMakeFiles/edit_cache.dir
-/home/raximus/repos/work/speck/implementation/bench/mirath/mirath_tcith_1a_short/build/CMakeFiles/rebuild_cache.dir
