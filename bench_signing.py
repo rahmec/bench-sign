@@ -31,7 +31,7 @@ speck_pairs = [
 ]
 
 sqisign_pairs = [
-    ['sqisign_cat1', './sqisign/the-sqisign/build/apps/benchmark_lvl1']
+    ['sqisign_cat1', './sqisign/build/apps/benchmark_lvl1']
 ]
 
 mirath_pairs = [

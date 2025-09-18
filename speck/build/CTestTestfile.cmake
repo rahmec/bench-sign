@@ -1,0 +1,36 @@
+# CMake generated Testfile for 
+# Source directory: /home/raximus/repos/work/speck/implementation/bench/speck
+# Build directory: /home/raximus/repos/work/speck/implementation/bench/speck/build
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(SPECK_benchmark_cat_252_133 "SPECK_benchmark_cat_252_133")
+set_tests_properties(SPECK_benchmark_cat_252_133 PROPERTIES  _BACKTRACE_TRIPLES "/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;77;add_test;/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;0;")
+add_test(SPECK_test_cat_252_133 "SPECK_test_cat_252_133")
+set_tests_properties(SPECK_test_cat_252_133 PROPERTIES  _BACKTRACE_TRIPLES "/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;84;add_test;/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;0;")
+add_test(SPECK_nist_cat_252_133 "SPECK_nist_cat_252_133")
+set_tests_properties(SPECK_nist_cat_252_133 PROPERTIES  _BACKTRACE_TRIPLES "/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;92;add_test;/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;0;")
+add_test(SPECK_benchmark_cat_252_256 "SPECK_benchmark_cat_252_256")
+set_tests_properties(SPECK_benchmark_cat_252_256 PROPERTIES  _BACKTRACE_TRIPLES "/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;77;add_test;/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;0;")
+add_test(SPECK_test_cat_252_256 "SPECK_test_cat_252_256")
+set_tests_properties(SPECK_test_cat_252_256 PROPERTIES  _BACKTRACE_TRIPLES "/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;84;add_test;/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;0;")
+add_test(SPECK_nist_cat_252_256 "SPECK_nist_cat_252_256")
+set_tests_properties(SPECK_nist_cat_252_256 PROPERTIES  _BACKTRACE_TRIPLES "/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;92;add_test;/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;0;")
+add_test(SPECK_benchmark_cat_252_512 "SPECK_benchmark_cat_252_512")
+set_tests_properties(SPECK_benchmark_cat_252_512 PROPERTIES  _BACKTRACE_TRIPLES "/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;77;add_test;/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;0;")
+add_test(SPECK_test_cat_252_512 "SPECK_test_cat_252_512")
+set_tests_properties(SPECK_test_cat_252_512 PROPERTIES  _BACKTRACE_TRIPLES "/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;84;add_test;/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;0;")
+add_test(SPECK_nist_cat_252_512 "SPECK_nist_cat_252_512")
+set_tests_properties(SPECK_nist_cat_252_512 PROPERTIES  _BACKTRACE_TRIPLES "/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;92;add_test;/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;0;")
+add_test(SPECK_benchmark_cat_252_768 "SPECK_benchmark_cat_252_768")
+set_tests_properties(SPECK_benchmark_cat_252_768 PROPERTIES  _BACKTRACE_TRIPLES "/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;77;add_test;/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;0;")
+add_test(SPECK_test_cat_252_768 "SPECK_test_cat_252_768")
+set_tests_properties(SPECK_test_cat_252_768 PROPERTIES  _BACKTRACE_TRIPLES "/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;84;add_test;/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;0;")
+add_test(SPECK_nist_cat_252_768 "SPECK_nist_cat_252_768")
+set_tests_properties(SPECK_nist_cat_252_768 PROPERTIES  _BACKTRACE_TRIPLES "/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;92;add_test;/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;0;")
+add_test(SPECK_benchmark_cat_252_4096 "SPECK_benchmark_cat_252_4096")
+set_tests_properties(SPECK_benchmark_cat_252_4096 PROPERTIES  _BACKTRACE_TRIPLES "/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;77;add_test;/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;0;")
+add_test(SPECK_test_cat_252_4096 "SPECK_test_cat_252_4096")
+set_tests_properties(SPECK_test_cat_252_4096 PROPERTIES  _BACKTRACE_TRIPLES "/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;84;add_test;/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;0;")
+add_test(SPECK_nist_cat_252_4096 "SPECK_nist_cat_252_4096")
+set_tests_properties(SPECK_nist_cat_252_4096 PROPERTIES  _BACKTRACE_TRIPLES "/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;92;add_test;/home/raximus/repos/work/speck/implementation/bench/speck/CMakeLists.txt;0;")

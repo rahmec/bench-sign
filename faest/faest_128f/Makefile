@@ -23,4 +23,5 @@ clean:
 		$(wildcard NIST-KATs/*.o) \
 		$(wildcard tests/*.o) \
 		$(wildcard bench/*.o) \
+		$(wildcard avx2/*.o) \
 		$(LIBFAEST) $(EXECUTABLE_BENCH)

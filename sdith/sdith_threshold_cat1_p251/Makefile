@@ -22,7 +22,7 @@ APP_INCLUDE=-Ibenchmark
 %.o : %.c
 	$(CC) -c $(ALL_FLAGS) $(HASH_INCLUDE) $(APP_INCLUDE) -I. $< -o $@
 
-all: kat_gen bench
+all: bench
 
 libhash:
 	$(HASH_MAKE_OPTIONS) make -C $(HASH_PATH)
