@@ -211,10 +211,10 @@ void CROSS_sign_verify_speed(int print_tex){
     } else {
         info();
         printf("Timings (kcycles):\n");
-        printf("Key generation kCycles (avg,stddev): ");
+        printf("Keygen kCycles (avg,stddev): ");
         welford_print(timer_KG);
         printf("\n");
-        printf("Key generation milliseconds (avg): %0.2Lf \n",ms_kg);
+        printf("Keygen milliseconds (avg): %0.2Lf \n",ms_kg);
 
         printf("Signing kCycles (avg,stddev): ");
         welford_print(timer_Sig);

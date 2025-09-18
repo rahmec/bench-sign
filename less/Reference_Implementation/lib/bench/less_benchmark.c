@@ -203,7 +203,7 @@ void LESS_sign_verify_speed(void){
         ms_end = SEC_TO_MS((uint64_t)ts.tv_sec) + NS_TO_MS((uint64_t)ts.tv_nsec);
         ms_sum += ms_end-ms_start;
     }
-    printf("Key generation kCycles (avg,stddev): ");
+    printf("Keygen kCycles (avg,stddev): ");
     welford_print(timer);
     printf("\n");
     printf("Keygen milliseconds (avg): %0.2Lf \n",(long double)ms_sum/NUM_RUNS);
