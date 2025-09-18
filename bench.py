@@ -3,15 +3,27 @@ import time
 import argparse
 import os
 
-parser = argparse.ArgumentParser()
-parser.add_argument("type", help="Specify function to benchmark", type=str, choices={'verification','signing','keygen'})
 
-args = parser.parse_args()
+# Check turboboost disabled
 
-#if not args.type:
-#    parser.print_help()
+def check_turbo_boost():
+    check_cmd = "cat $(find /sys/devices/system/cpu/ -iname '*no_turbo' | head -n 1)"
+    turbo_boost_disabled = subprocess.run(check_cmd, shell=True, capture_output=True).stdout.decode()
+    if turbo_boost_disabled == '0\n':
+        print("Turbo boost is not disabled! This will affect benchmarking results.")
+        file_cmd = "find /sys/devices/system/cpu/ -iname '*no_turbo' | head -n 1"
+        turbo_boost_file = subprocess.run(file_cmd, shell=True, capture_output=True).stdout.decode()
+        disable_tb_cmd = f"echo 1 | sudo tee {turbo_boost_file}"
+        print(f"To disable it run {disable_tb_cmd}")
+        time.sleep(0.5)
 
-print("Benchmarking Verification Times (AVG of 128 runs)")
+def check_scaling_governor():
+    check_cmd = "cat $(find /sys/devices/system/cpu -iname '*scaling_governor') | grep powersave | wc -l"
+    powersave_cpus = int(subprocess.run(check_cmd, shell=True, capture_output=True).stdout.decode())
+    if powersave_cpus > 0:
+        print("CPU is set to powersave mode! This will affected benchmarking results.")
+        print("Set it to performance using a system utility, e.g. `sudo cpupower frequency-set -g performance`")
+        time.sleep(0.5)
 
 benchmarks = {}
 
@@ -108,14 +120,22 @@ less_pairs = [
 ]
 
 
-run_benchs('sdith',sdith_pairs)
-run_benchs('speck',speck_pairs)
-run_benchs('sqisign',sqisign_pairs)
-run_benchs('mirath',mirath_pairs)
-run_benchs('perk',perk_pairs)
-run_benchs('faest',faest_pairs)
-run_benchs('mqom',mqom_pairs)
-run_benchs('ryde',ryde_pairs)
-run_benchs('cross',cross_pairs)
-run_benchs('less',less_pairs)
-sort_and_print(benchmarks)
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("type", help="Specify function to benchmark", type=str, choices={'verification','signing','keygen'})
+    args = parser.parse_args()
+    print(f"Benchmarking {args.type} Times (average of 128 runs)")
+    check_turbo_boost()
+    check_scaling_governor()
+    run_benchs('sdith',sdith_pairs)
+    run_benchs('speck',speck_pairs)
+    run_benchs('sqisign',sqisign_pairs)
+    run_benchs('mirath',mirath_pairs)
+    run_benchs('perk',perk_pairs)
+    run_benchs('faest',faest_pairs)
+    run_benchs('mqom',mqom_pairs)
+    run_benchs('ryde',ryde_pairs)
+    run_benchs('cross',cross_pairs)
+    run_benchs('less',less_pairs)
+    sort_and_print(benchmarks)
