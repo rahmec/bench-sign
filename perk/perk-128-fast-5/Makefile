@@ -45,7 +45,8 @@ LIB_INCLUDE:=-I $(LIB_DIR)/cryptocode -I $(LIB_DIR)/XKCP -I $(LIB_DIR)/randombyt
 PERK_INCLUDE:=-I $(SRC_DIR) $(LIB_INCLUDE)
 
 .PHONY: all
-all: perk-128-fast-5 perk-128-fast-5-verbose perk-128-fast-5-kat bench
+#all: perk-128-fast-5 perk-128-fast-5-verbose perk-128-fast-5-kat bench
+all: bench
 
 # build rules
 $(LIB_COBJS): $(BUILD_DIR)/%.o: %.c
@@ -69,30 +70,30 @@ $(PERK_OBJS): $(BUILD_DIR)/%$(EXT).o: %.c
 	$(CC) $(CFLAGS) -c $< $(PERK_INCLUDE) -o $@
 
 # main targets
-$(MAIN_PERK_EXEC): $(MAIN_PERK_SRC) $(PERK_OBJS) $(LIB_OBJS)
-	@echo -e "\n### Compiling PERK scheme\n"
-	@mkdir -p $(dir $@)
-	$(CC) $(CFLAGS) $^ $(PERK_INCLUDE) -o $@ $(LDFLAGS)
-
-$(MAIN_KAT_EXEC): $(MAIN_KAT_SRC)  $(PERK_OBJS) $(LIB_OBJS)
-	@echo -e "\n### Compiling PERK PQCgenKAT_sign\n"
-	@mkdir -p $(dir $@)
-	$(CC) $(CFLAGS) -Wno-strict-prototypes -Wno-unused-result $^ $(PERK_INCLUDE) -o $@ $(LDFLAGS)
-
+#$(MAIN_PERK_EXEC): $(MAIN_PERK_SRC) $(PERK_OBJS) $(LIB_OBJS)
+#	@echo -e "\n### Compiling PERK scheme\n"
+#	@mkdir -p $(dir $@)
+#	$(CC) $(CFLAGS) $^ $(PERK_INCLUDE) -o $@ $(LDFLAGS)
+#
+#$(MAIN_KAT_EXEC): $(MAIN_KAT_SRC)  $(PERK_OBJS) $(LIB_OBJS)
+#	@echo -e "\n### Compiling PERK PQCgenKAT_sign\n"
+#	@mkdir -p $(dir $@)
+#	$(CC) $(CFLAGS) -Wno-strict-prototypes -Wno-unused-result $^ $(PERK_INCLUDE) -o $@ $(LDFLAGS)
+#
 $(MAIN_BENCH_EXEC): $(MAIN_BENCH_SRC)  $(PERK_OBJS) $(LIB_OBJS)
 	@echo -e "\n### Compiling PERK BENCHMARK (CMON)\n"
 	@mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -Wno-strict-prototypes -Wno-unused-result $^ $(PERK_INCLUDE) -o $@ $(LDFLAGS) -lm
 
-.PHONY: perk-128-fast-5
-perk-128-fast-5: $(MAIN_PERK_EXEC)
-
-.PHONY: perk-128-fast-5-verbose
-perk-128-fast-5-verbose:
-	$(MAKE) EXT='-verbose' CFLAGS="$(CFLAGS) -DVERBOSE" perk-128-fast-5
-
-.PHONY: perk-128-fast-5-kat
-perk-128-fast-5-kat: $(MAIN_KAT_EXEC)
+#.PHONY: perk-128-fast-5
+#perk-128-fast-5: $(MAIN_PERK_EXEC)
+#
+#.PHONY: perk-128-fast-5-verbose
+#perk-128-fast-5-verbose:
+#	$(MAKE) EXT='-verbose' CFLAGS="$(CFLAGS) -DVERBOSE" perk-128-fast-5
+#
+#.PHONY: perk-128-fast-5-kat
+#perk-128-fast-5-kat: $(MAIN_KAT_EXEC)
 
 .PHONY: bench 
 bench: $(MAIN_BENCH_EXEC)

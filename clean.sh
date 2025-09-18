@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e # Exit if something goes wrong
-bench_dir=$(pwd)
+bench_dir=$(dirname $(realpath $0))
 
 while true; do
     read -p "Do you wish to clean all binaries? " yn
@@ -17,7 +17,7 @@ echo "Starting binaries removal!"
 
 echo "Cleaning CROSS"
 
-cd cross/Additional_Implementations/Benchmarking
+cd $bench_dir/cross/Additional_Implementations/Benchmarking
 rm -rf build
 cd $bench_dir
 
@@ -27,7 +27,7 @@ echo "CROSS binaries removed successfully"
 
 echo "Cleaning LESS"
 
-cd less/Optimized_Implementation/avx2
+cd $bench_dir/less/Optimized_Implementation/avx2
 rm -rf build
 cd $bench_dir
 
@@ -37,7 +37,7 @@ echo "LESS binaries removed successfully"
 
 echo "Cleaning SPECK"
 
-cd speck
+cd $bench_dir/speck
 rm -rf build
 cd $bench_dir
 
@@ -47,7 +47,7 @@ echo "SPECK binaries removed successfully"
 
 echo "Cleaning FAEST"
 
-cd faest/faest_128f
+cd $bench_dir/faest/faest_128f
 make clean
 cd ../faest_128s
 make clean
@@ -63,7 +63,7 @@ echo "FAEST binaries removed successfully"
 
 echo "Cleaning MQOM"
 
-cd mqom
+cd $bench_dir/mqom
 rm -rf build
 cd $bench_dir
 
@@ -73,14 +73,9 @@ echo "MQOM binaries removed successfully"
 
 echo "Cleaning MIRATH"
 
-cd mirath/mirath_tcith_1a_fast
-rm -rf build
-cd ../mirath_tcith_1a_short
-rm -rf build
-cd ../mirath_tcith_1b_fast
-rm -rf build
-cd ../mirath_tcith_1b_short
-rm -rf build
+for target in mirath_tcith_1a_fast mirath_tcith_1a_short mirath_tcith_1b_fast mirath_tcith_1b_short; do
+    (cd $bench_dir/mirath/$target && rm -rf build)
+done
 cd $bench_dir
 
 echo "MIRATH binaries removed successfully"
@@ -89,10 +84,9 @@ echo "MIRATH binaries removed successfully"
 
 echo "Cleaning RYDE"
 
-cd ryde/ryde1f
-rm -rf build
-cd ../ryde1s
-rm -rf build
+for target in ryde1f ryde1s; do
+    (cd $bench_dir/ryde/$target && rm -rf build)
+done
 cd $bench_dir
 
 echo "RYDE binaries removed successfully"
@@ -101,7 +95,7 @@ echo "RYDE binaries removed successfully"
 
 echo "Cleaning SQISIGN"
 
-cd sqisign
+cd $bench_dir/sqisign
 rm -rf build
 cd $bench_dir
 
@@ -111,14 +105,9 @@ echo "SQISIGN binaries removed successfully"
 
 echo "Cleaning SDITH"
 
-cd sdith/sdith_hypercube_cat1_gf256
-make clean
-cd ../sdith_hypercube_cat1_p251
-make clean
-cd ../sdith_threshold_cat1_gf256
-make clean
-cd ../sdith_threshold_cat1_p251
-make clean
+for target in sdith_hypercube_cat1_gf256 sdith_hypercube_cat1_p251 sdith_threshold_cat1_gf256 sdith_threshold_cat1_p251; do
+    (cd $bench_dir/sdith/$target && make clean)
+done
 cd $bench_dir
 
 echo "SDITH binaries removed successfully"
@@ -127,14 +116,9 @@ echo "SDITH binaries removed successfully"
 
 echo "Cleaning PERK"
 
-cd perk/perk-128-fast-3
-make clean
-cd ../perk-128-fast-5
-make clean
-cd ../perk-128-short-3
-make clean
-cd ../perk-128-short-5
-make clean
+for target in perk-128-fast-3 perk-128-fast-5 perk-128-short-3 perk-128-short-5; do
+    (cd $bench_dir/perk/$target && make clean)
+done
 cd $bench_dir
 
 echo "PERK binaries removed successfully"

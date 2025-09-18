@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e # Exit if something goes wrong
-bench_dir=$(pwd)
+bench_dir=$(dirname $(realpath $0))
 
 while true; do
     read -p "Do you wish to recompile all schemes? " yn
@@ -17,7 +17,7 @@ echo "Starting compilation of all schemes!"
 
 echo "Starting CROSS compilation"
 
-cd cross/Additional_Implementations/Benchmarking
+cd $bench_dir/cross/Additional_Implementations/Benchmarking
 rm -rf build
 mkdir build
 cd build
@@ -31,7 +31,7 @@ echo "CROSS compiled successfully"
 
 echo "Starting LESS compilation"
 
-cd less/Optimized_Implementation/avx2
+cd $bench_dir/less/Optimized_Implementation/avx2
 rm -rf build
 mkdir build
 cd build
@@ -45,7 +45,7 @@ echo "LESS compiled successfully"
 
 echo "Starting SPECK compilation"
 
-cd speck
+cd $bench_dir/speck
 rm -rf build
 mkdir build
 cd build
@@ -59,14 +59,9 @@ echo "SPECK compiled successfully"
 
 echo "Starting FAEST compilation"
 
-cd faest/faest_128f
-make -j8
-cd ../faest_128s
-make -j8
-cd ../faest_em_128f
-make -j8
-cd ../faest_em_128s
-make -j8
+for target in faest_128f faest_128s faest_em_128f faest_em_128s; do
+    (cd "$bench_dir/faest/$target" && make -j8)
+done
 cd $bench_dir
 
 echo "FAEST compiled successfully"
@@ -75,7 +70,7 @@ echo "FAEST compiled successfully"
 
 echo "Starting MQOM compilation"
 
-cd mqom
+cd $bench_dir/mqom
 python3 manage.py compile cat1
 cd $bench_dir
 
@@ -85,30 +80,9 @@ echo "MQOM compiled successfully"
 
 echo "Starting MIRATH compilation"
 
-cd mirath/mirath_tcith_1a_fast
-rm -rf build
-mkdir build
-cd build
-cmake ..
-make -j8
-cd ../../mirath_tcith_1a_short
-rm -rf build
-mkdir build
-cd build
-cmake ..
-make -j8
-cd ../../mirath_tcith_1b_fast
-rm -rf build
-mkdir build
-cd build
-cmake ..
-make -j8
-cd ../../mirath_tcith_1b_short
-rm -rf build
-mkdir build
-cd build
-cmake ..
-make -j8
+for target in mirath_tcith_1a_fast mirath_tcith_1a_short mirath_tcith_1b_fast mirath_tcith_1b_short; do
+    (cd "$bench_dir/mirath/$target" && rm -rf build && mkdir build && cd build && cmake .. && make -j8)
+done
 cd $bench_dir
 
 echo "MIRATH compiled successfully"
@@ -117,14 +91,9 @@ echo "MIRATH compiled successfully"
 
 echo "Starting RYDE compilation"
 
-cd ryde/ryde1f
-rm -rf build
-cmake -DCMAKE_BUILD_TYPE=Release -DOPT_IMPL=avx -B build
-cmake --build build
-cd ../ryde1s
-rm -rf build
-cmake -DCMAKE_BUILD_TYPE=Release -DOPT_IMPL=avx -B build
-cmake --build build
+for target in ryde1f ryde1s; do
+    (cd "ryde/$target" && rm -rf build && cmake -DCMAKE_BUILD_TYPE=Release -DOPT_IMPL=avx -B build && cmake --build build)
+done
 cd $bench_dir
 
 echo "RYDE compiled successfully"
@@ -133,7 +102,7 @@ echo "RYDE compiled successfully"
 
 echo "Starting SQISIGN compilation"
 
-cd sqisign
+cd $bench_dir/sqisign
 rm -rf build
 mkdir build
 cd build
@@ -147,14 +116,9 @@ echo "SQISIGN compiled successfully"
 
 echo "Starting SDITH compilation"
 
-cd sdith/sdith_hypercube_cat1_gf256
-make -j8
-cd ../sdith_hypercube_cat1_p251
-make -j8
-cd ../sdith_threshold_cat1_gf256
-make -j8
-cd ../sdith_threshold_cat1_p251
-make -j8
+for target in sdith_hypercube_cat1_gf256 sdith_hypercube_cat1_p251 sdith_threshold_cat1_gf256 sdith_threshold_cat1_p251; do
+    (cd "$bench_dir/sdith/$target" && make -j8)
+done
 cd $bench_dir
 
 echo "SDITH compiled successfully"
@@ -163,14 +127,9 @@ echo "SDITH compiled successfully"
 
 echo "Starting PERK compilation"
 
-cd perk/perk-128-fast-3
-make -j8
-cd ../perk-128-fast-5
-make -j8
-cd ../perk-128-short-3
-make -j8
-cd ../perk-128-short-5
-make -j8
+for target in perk-128-fast-3 perk-128-fast-5 perk-128-short-3 perk-128-short-5; do
+    (cd "$bench_dir/perk/$target" && make -j8)
+done
 cd $bench_dir
 
 echo "PERK compiled successfully"

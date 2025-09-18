@@ -2,7 +2,10 @@ import subprocess
 import time
 import argparse
 import os
+import sys
 
+def get_script_path():
+    return os.path.dirname(os.path.realpath(sys.argv[0]))
 
 # Check turboboost disabled
 
@@ -22,7 +25,7 @@ def check_scaling_governor():
     powersave_cpus = int(subprocess.run(check_cmd, shell=True, capture_output=True).stdout.decode())
     if powersave_cpus > 0:
         print("CPU is set to powersave mode! This will affected benchmarking results.")
-        print("Set it to performance using a system utility, e.g. `sudo cpupower frequency-set -g performance`")
+        print("Set it to performance mode using a system utility, e.g. `sudo cpupower frequency-set -g performance`")
         time.sleep(0.5)
 
 benchmarks = {}
@@ -30,11 +33,12 @@ benchmarks = {}
 def run_benchs(name,pairs):
     print(f"--------------------------{name.upper()}--------------------------")
     print("")
+    script_dir = get_script_path()
     for pair in pairs:
         if not os.path.exists(pair[1]):
             print(f"Binary not found, have you compiled {pair[0].split('_')[0].upper()}? Run compile.sh")
             break
-        cmd = f"{pair[1]} 2>/dev/null | grep -i '{args.type}' | grep -o '[0-9]*\\.[0-9]*'"
+        cmd = f"{script_dir+pair[1][1:]} 2>/dev/null | grep -i '{args.type}' | grep -o '[0-9]*\\.[0-9]*'"
         result = subprocess.run(cmd, shell=True, capture_output=True).stdout.decode()
         values = [float(val) for val in result.split() if val]
         # values = [KCycles AVG, KCycles STDDEV, milliseconds AVG]
