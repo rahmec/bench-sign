@@ -16,12 +16,19 @@ Currently benchmarkable schemes:
 
 Still a work in progress.
 
-## USAGE
+## Requirements
+
+Currently tested only on Arch linux with kernel 6.16 or higher.
+
+Required software:
+
+- python3
+- cmake
+
+## Usage
 
 Run `./compile.sh` to compile all schemes' source code.
 
-Run `python3 bench_signing.py` to benchmark signing times
-
-Run `python3 bench_verification.py` to benchmark signing times
+Run `python3 bench.py {keygen,signing,verification}` to benchmark the preferred signature phase. 
 
 Run `./clean.sh` to remove all compiled binaries.

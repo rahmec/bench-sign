@@ -1,5 +1,14 @@
 import subprocess
 import time
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("type", help="Specify function to benchmark", type=str, choices={'verification','signing','keygen'})
+
+args = parser.parse_args()
+
+#if not args.type:
+#    parser.print_help()
 
 print("Benchmarking Verification Times (AVG of 128 runs)")
 
@@ -8,7 +17,7 @@ benchmarks = {}
 def run_benchs(name,pairs):
     print(f"--------------------------{name.upper()}--------------------------")
     for pair in pairs:
-        cmd = f"{pair[1]} 2>/dev/null | grep 'Verification' | grep -o '[0-9]*\\.[0-9]*'"
+        cmd = f"{pair[1]} 2>/dev/null | grep -i '{args.type}' | grep -o '[0-9]*\\.[0-9]*'"
         result = subprocess.run(cmd, shell=True, capture_output=True).stdout.decode()
         values = [float(val) for val in result.split() if val]
         # values = [KCycles AVG, KCycles STDDEV, milliseconds AVG]
@@ -23,11 +32,11 @@ def sort_and_print(benchmarks):
         print(f"{(i+1):02}) {sorted_bench[i][0]:<30} {sorted_bench[i][1][0]:>10.2f} KCycles {sorted_bench[i][1][1]:>10.2f} ms")
         
 speck_pairs = [
-    ['speck_128_133', './speck/build/SPECK_benchmark_cat_128_133'],
-    ['speck_128_256', './speck/build/SPECK_benchmark_cat_128_256'],
-    ['speck_128_512', './speck/build/SPECK_benchmark_cat_128_512'],
-    ['speck_128_768', './speck/build/SPECK_benchmark_cat_128_768'],
-    ['speck_128_4096', './speck/build/SPECK_benchmark_cat_128_4096']
+    ['speck_252_133', './speck/build/SPECK_benchmark_cat_252_133'],
+    ['speck_252_256', './speck/build/SPECK_benchmark_cat_252_256'],
+    ['speck_252_512', './speck/build/SPECK_benchmark_cat_252_512'],
+    ['speck_252_768', './speck/build/SPECK_benchmark_cat_252_768'],
+    ['speck_252_4096', './speck/build/SPECK_benchmark_cat_252_4096']
 ]
 
 sqisign_pairs = [

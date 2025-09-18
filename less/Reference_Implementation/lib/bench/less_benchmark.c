@@ -224,10 +224,10 @@ void LESS_sign_verify_speed(void){
         ms_sum += ms_end-ms_start;
 
     }
-    printf("Signature kCycles (avg,stddev): ");
+    printf("Signing kCycles (avg,stddev): ");
     welford_print(timer);
     printf("\n");
-    printf("Signature milliseconds (avg): %0.2Lf \n",(long double)ms_sum/NUM_RUNS);
+    printf("Signing milliseconds (avg): %0.2Lf \n",(long double)ms_sum/NUM_RUNS);
 
     ms_sum = 0;
 

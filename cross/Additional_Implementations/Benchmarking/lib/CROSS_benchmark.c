@@ -36,6 +36,7 @@
 #include "timing_and_stat.h"
 #include "CROSS.h"
 #include "csprng_hash.h"
+#include "api.h"
 
 
 #define NUM_TESTS 128
@@ -84,10 +85,13 @@ void info(){
 void CROSS_sign_verify_speed(int print_tex){
     fprintf(stderr,"Computing number of clock cycles as the average of %d runs\n", NUM_TESTS);
     uint64_t cycles;
-    pk_t pk;
-    sk_t sk;
-    CROSS_sig_t signature;
-    char message[32] = "Signme!!Signme!!Signme!!Signme!";
+    unsigned char pk[CRYPTO_PUBLICKEYBYTES];
+    unsigned char sk[CRYPTO_SECRETKEYBYTES];
+    unsigned char m[8] = "Signme!";
+    unsigned long long mlen = 8;
+
+    unsigned long long smlen;
+    unsigned char sm[sizeof(m) + CRYPTO_BYTES];
 
     welford_t timer_KG,timer_Sig,timer_Ver;
     welford_init(&timer_KG);
@@ -110,7 +114,8 @@ void CROSS_sign_verify_speed(int print_tex){
         ms_start = SEC_TO_MS((uint64_t)ts.tv_sec) + NS_TO_MS((uint64_t)ts.tv_nsec);
 
         cycles = x86_64_rtdsc();
-        CROSS_keygen(&sk,&pk);
+        //CROSS_keygen(&sk,&pk);
+        crypto_sign_keypair(pk, sk);
         welford_update(&timer_KG,(x86_64_rtdsc()-cycles)/1000.0);
         clock_gettime(CLOCK_MONOTONIC_RAW, &ts);
         ms_end = SEC_TO_MS((uint64_t)ts.tv_sec) + NS_TO_MS((uint64_t)ts.tv_nsec);
@@ -124,7 +129,8 @@ void CROSS_sign_verify_speed(int print_tex){
         clock_gettime(CLOCK_MONOTONIC_RAW, &ts);
         ms_start = SEC_TO_MS((uint64_t)ts.tv_sec) + NS_TO_MS((uint64_t)ts.tv_nsec);
         cycles = x86_64_rtdsc();
-        CROSS_sign(&sk,message,8,&signature);
+        //CROSS_sign(&sk,message,8,&signature);
+        crypto_sign(sm, &smlen, m, sizeof(m), sk);
         welford_update(&timer_Sig,(x86_64_rtdsc()-cycles)/1000.0);
         clock_gettime(CLOCK_MONOTONIC_RAW, &ts);
         ms_end = SEC_TO_MS((uint64_t)ts.tv_sec) + NS_TO_MS((uint64_t)ts.tv_nsec);
@@ -132,17 +138,18 @@ void CROSS_sign_verify_speed(int print_tex){
     }
     ms_sig=(long double)ms_sum/NUM_TESTS;
     ms_sum = 0;
-    int is_signature_still_ok = 1;
+    int is_signature_still_ok = 0;
     for(int i = 0; i <NUM_TESTS; i++) {
         clock_gettime(CLOCK_MONOTONIC_RAW, &ts);
         ms_start = SEC_TO_MS((uint64_t)ts.tv_sec) + NS_TO_MS((uint64_t)ts.tv_nsec);
         cycles = x86_64_rtdsc();
-        int is_signature_ok = CROSS_verify(&pk,message,8,&signature);
+        //int is_signature_ok = CROSS_verify(&pk,message,8,&signature);
+        int is_signature_ok = crypto_sign_open(m, &mlen, sm, smlen, pk);
         welford_update(&timer_Ver,(x86_64_rtdsc()-cycles)/1000.0);
         clock_gettime(CLOCK_MONOTONIC_RAW, &ts);
         ms_end = SEC_TO_MS((uint64_t)ts.tv_sec) + NS_TO_MS((uint64_t)ts.tv_nsec);
         ms_sum += ms_end-ms_start;
-        is_signature_still_ok = is_signature_ok && is_signature_still_ok;
+        is_signature_still_ok = is_signature_ok || is_signature_still_ok;
     }
     ms_ver=(long double)ms_sum/NUM_TESTS;
     ms_sum = 0;
@@ -209,16 +216,17 @@ void CROSS_sign_verify_speed(int print_tex){
         printf("\n");
         printf("Key generation milliseconds (avg): %0.2Lf \n",ms_kg);
 
-        printf("Signature kCycles (avg,stddev): ");
+        printf("Signing kCycles (avg,stddev): ");
         welford_print(timer_Sig);
         printf("\n");
-        printf("Signature milliseconds (avg): %0.2Lf \n",ms_sig);
+        printf("Signing milliseconds (avg): %0.2Lf \n",ms_sig);
 
         printf("Verification kCycles (avg,stddev):");
         welford_print(timer_Ver);
         printf("\n");
         printf("Verification milliseconds (avg): %0.2Lf \n",ms_ver);
-        fprintf(stderr,"Keygen-Sign-Verify: %s", is_signature_still_ok == 1 ? "functional\n": "not functional\n" );
+        // Changed to 0 because of API
+        fprintf(stderr,"Keygen-Sign-Verify: %s", is_signature_still_ok == 0 ? "functional\n": "not functional\n" );
     }
 }
 
