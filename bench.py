@@ -1,6 +1,7 @@
 import subprocess
 import time
 import argparse
+import os
 
 parser = argparse.ArgumentParser()
 parser.add_argument("type", help="Specify function to benchmark", type=str, choices={'verification','signing','keygen'})
@@ -16,7 +17,11 @@ benchmarks = {}
 
 def run_benchs(name,pairs):
     print(f"--------------------------{name.upper()}--------------------------")
+    print("")
     for pair in pairs:
+        if not os.path.exists(pair[1]):
+            print(f"Binary not found, have you compiled {pair[0].split('_')[0].upper()}? Run compile.sh")
+            break
         cmd = f"{pair[1]} 2>/dev/null | grep -i '{args.type}' | grep -o '[0-9]*\\.[0-9]*'"
         result = subprocess.run(cmd, shell=True, capture_output=True).stdout.decode()
         values = [float(val) for val in result.split() if val]
@@ -24,6 +29,7 @@ def run_benchs(name,pairs):
         print(f"{pair[0]:<30} {values[0]:>10.2f} KCycles {values[2]:>10.2f} ms")
         benchmarks[pair[0]] = [values[0],values[2]]
         time.sleep(0.01)
+    print("")
 
 def sort_and_print(benchmarks):
     print(f"--------------------------ORDERED LIST--------------------------")
